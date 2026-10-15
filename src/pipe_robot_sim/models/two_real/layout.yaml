@@ -1,0 +1,55 @@
+# two_real 부품 배치 v2 (단위 mm, g). 좌표: 마디 중심 기준, x = 앞(진행), y = 왼쪽, z = 위
+#   shape: box [x, y, z 크기] | cyl_x [지름, 길이] (축이 x) | cyl_z [지름, 길이] (축이 z) | mass (질량만)
+#   external: 몸통 밖(노즈 캡, 측면 창, 관절부)이어도 됨 / est: 치수·무게 추정 / allow: 겹쳐도 되는 부품
+#   v1(구매 리스트 그대로)은 2마디에 안 들어가서 부품을 바꿈 -> layout_v1_parts.yaml 참고
+#   바꾼 것: Pi Zero+OV5647+ESP32 DevKit -> XIAO ESP32S3 Sense(카메라) + XIAO ESP32S3(제어)
+#            UT 만능기판 -> 맞춤 PCB 32x28, 28BYJ-48 -> N20 + AS5600, 펌프·탱크 -> 젤 머금은 펠트(빼냄)
+#            18650 x2 -> 14500 x2 (마디마다 1개, 직렬 2S): 18650(Ø18.4)은 바퀴 고리 바닥 틈을 못 지남
+# 검사: ros2 run pipe_robot_sim layout_check two_real [--apply]
+
+hull:
+  outer_d: 56
+  wall: 2.0              # PLA 출력 벽 두께
+  density: 1.24          # g/cm^3 (PLA)
+wheel_module:            # 바퀴 + 슬라이더 + 스프링 + N20 이 움직이는 공간 (부품 금지 구역)
+  x_half: 18             # 바퀴 고리 위치(마디 중심) ±18 mm
+  angles: [90, 210, 330]
+  half_width: 9          # 원주 방향 반폭 (바퀴 폭 8 + 모터 10 기준)
+  r_min: 13              # 바퀴가 다 눌렸을 때 안쪽 끝 (중심에서 13 mm)
+
+segments:
+  front:                 # 앞마디: 카메라·센서·주행 제어
+    length: 100
+    parts:
+      - {name: cell_14500_1, shape: cyl_x, size: [14.2, 50],    pos: [0, 0, -18.6],  mass: 20}   # 바닥 틈, 바퀴 고리 통과 (18650은 안 들어감)
+      - {name: xiao_s3_sense_cam, shape: box, size: [21, 17.5, 15], pos: [39, 0, 6], mass: 6}   # 카메라 포함, 앞을 봄
+      - {name: xiao_s3_ctrl, shape: box,   size: [21, 17.5, 4],  pos: [-35, 0, 8],    mass: 3}
+      - {name: mpu6050,      shape: box,   size: [21, 16, 3],    pos: [-35, 0, 14],   mass: 2}
+      - {name: drv8833_a,    shape: box,   size: [18, 16, 4],    pos: [-35, -11, -2], mass: 2}
+      - {name: drv8833_b,    shape: box,   size: [18, 16, 4],    pos: [-35, 11, -2],  mass: 2}
+      - {name: mp1584_logic, shape: box,   size: [22, 17, 4],    pos: [30, -10, -4],  mass: 2}
+      - {name: mp1584_servo, shape: box,   size: [22, 17, 4],    pos: [30, 10, -4],   mass: 2}
+      - {name: bms_2s,       shape: box,   size: [25, 3, 8],     pos: [-35, 15, -10], mass: 3, est: true}
+      - {name: vl6180_left,  shape: box,   size: [18, 3, 13],    pos: [35, 23.5, 3],  mass: 2, external: true}  # 측면 창
+      - {name: vl6180_right, shape: box,   size: [18, 3, 13],    pos: [35, -23.5, 3], mass: 2, external: true}
+      - {name: led_ring,     shape: box,   size: [3, 20, 20],    pos: [52, 0, 6],     mass: 3, external: true}
+      - {name: tof_vl53l5cx, shape: box,   size: [3, 13, 13],    pos: [52, 0, -14],   mass: 2, external: true}
+      - {name: servo_pitch,  shape: box,   size: [22.5, 12, 30], pos: [-58, 0, 0],    mass: 14, external: true}  # 관절부
+      - {name: servo_yaw,    shape: box,   size: [12, 30, 22.5], pos: [-76, 0, 0],    mass: 14, external: true}
+      - {name: wheel_modules, shape: mass, pos: [0, 0, 0],       mass: 78}   # (N20 12 + 바퀴 8 + 슬라이더·스프링 6) x 3
+      - {name: wiring,       shape: mass,  pos: [0, 0, 0],       mass: 15}
+
+  rear:                  # 뒷마디: UT 검사 + 전원
+    length: 110
+    parts:
+      - {name: cell_14500_2, shape: cyl_x, size: [14.2, 50],    pos: [-3, 0, -18.6], mass: 20}   # 앞마디 셀과 직렬 -> 2S 7.4 V
+      - {name: ut_pcb,       shape: box,   size: [32, 28, 10],   pos: [36, 0, 4],     mass: 8, est: true}   # 펄서·수신 맞춤 PCB
+      - {name: hv_ham1518,   shape: box,   size: [30, 20, 12],   pos: [36, 0, 15],    mass: 8, est: true}
+      - {name: boost_12v,    shape: box,   size: [20, 12, 5],    pos: [36, 16, -10],  mass: 2, est: true}
+      - {name: mp1584_ut,    shape: box,   size: [22, 4, 17],    pos: [36, -16, -6],  mass: 2}
+      - {name: xiao_s3_ut,   shape: box,   size: [21, 17.5, 4],  pos: [8, 0, 4],      mass: 3}   # 바퀴 고리 가운데 통로
+      - {name: n20_rotate,   shape: box,   size: [25, 12, 10],   pos: [-15.5, 0, -1.8], mass: 12}  # 탐촉자 회전 (+AS5600)
+      - {name: ut_hub,       shape: cyl_x, size: [52, 26],       pos: [-42, 0, 0],    mass: 20, est: true, allow: [probe_5p14n]}  # 회전 허브 + SG90 들기 + 펠트
+      - {name: probe_5p14n,  shape: cyl_z, size: [20, 30],       pos: [-42, 0, -30],  mass: 25, est: true, external: true, allow: [ut_hub]}
+      - {name: wheel_modules, shape: mass, pos: [0, 0, 0],       mass: 78}
+      - {name: wiring,       shape: mass,  pos: [0, 0, 0],       mass: 15}

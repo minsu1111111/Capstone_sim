@@ -1,0 +1,189 @@
+[INFO] [launch]: All log files can be found below /home/aisl/.ros/log/2026-10-15-10-31-14-250827-aisl-15G880-SD76K-159792
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign-1]: process started with pid [159794]
+[INFO] [robot_state_publisher-2]: process started with pid [159796]
+[INFO] [create-3]: process started with pid [159798]
+[INFO] [parameter_bridge-4]: process started with pid [159800]
+[INFO] [odometry-5]: process started with pid [159802]
+[INFO] [pipe_markers-6]: process started with pid [159804]
+[INFO] [encoder_sim-7]: process started with pid [159806]
+[INFO] [motor_driver-8]: process started with pid [159808]
+[INFO] [clamp_torque-9]: process started with pid [159810]
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[motor_driver-8] Traceback (most recent call last):
+[motor_driver-8]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver", line 33, in <module>
+[motor_driver-8]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'motor_driver')())
+[motor_driver-8]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/motor_driver.py", line 129, in main
+[motor_driver-8]     rclpy.spin(MotorDriver())
+[motor_driver-8]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/motor_driver.py", line 24, in __init__
+[motor_driver-8]     super().__init__('motor_driver')
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 199, in __init__
+[motor_driver-8]     self._parameter_event_publisher = self.create_publisher(
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1296, in create_publisher
+[motor_driver-8]     check_is_valid_msg_type(msg_type)
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/type_support.py", line 35, in check_is_valid_msg_type
+[motor_driver-8]     check_for_type_support(msg_type)
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/type_support.py", line 29, in check_for_type_support
+[motor_driver-8]     msg_or_srv_type.__class__.__import_type_support__()
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rcl_interfaces/msg/_parameter_event.py", line 28, in __import_type_support__
+[motor_driver-8]     from rosidl_generator_py import import_type_support
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py", line 23, in <module>
+[motor_driver-8]     from .generate_py_impl import generate_py
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/generate_py_impl.py", line 21, in <module>
+[motor_driver-8]     from rosidl_cmake import convert_camel_case_to_lower_case_underscore
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 24, in <module>
+[motor_driver-8]     from rosidl_parser.parser import parse_idl_file
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 20, in <module>
+[motor_driver-8]     from lark import Lark
+[motor_driver-8]   File "/usr/lib/python3/dist-packages/lark/__init__.py", line 7, in <module>
+[encoder_sim-7] Traceback (most recent call last):
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim", line 33, in <module>
+[encoder_sim-7]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'encoder_sim')())
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/encoder_sim.py", line 40, in main
+[encoder_sim-7]     rclpy.spin(EncoderSim())
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/encoder_sim.py", line 16, in __init__
+[encoder_sim-7]     super().__init__('encoder_sim')
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 199, in __init__
+[encoder_sim-7]     self._parameter_event_publisher = self.create_publisher(
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1296, in create_publisher
+[encoder_sim-7]     check_is_valid_msg_type(msg_type)
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/type_support.py", line 35, in check_is_valid_msg_type
+[encoder_sim-7]     check_for_type_support(msg_type)
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/type_support.py", line 29, in check_for_type_support
+[encoder_sim-7]     msg_or_srv_type.__class__.__import_type_support__()
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rcl_interfaces/msg/_parameter_event.py", line 28, in __import_type_support__
+[encoder_sim-7]     from rosidl_generator_py import import_type_support
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py", line 23, in <module>
+[encoder_sim-7]     from .generate_py_impl import generate_py
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/generate_py_impl.py", line 21, in <module>
+[INFO] [clamp_torque-9]: sending signal 'SIGINT' to process[clamp_torque-9]
+[INFO] [motor_driver-8]: sending signal 'SIGINT' to process[motor_driver-8]
+[INFO] [encoder_sim-7]: sending signal 'SIGINT' to process[encoder_sim-7]
+[ERROR] [clamp_torque-9]: process has died [pid 159810, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/clamp_torque --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_9szsx9s0'].
+[INFO] [pipe_markers-6]: sending signal 'SIGINT' to process[pipe_markers-6]
+[INFO] [odometry-5]: sending signal 'SIGINT' to process[odometry-5]
+[INFO] [parameter_bridge-4]: sending signal 'SIGINT' to process[parameter_bridge-4]
+[ERROR] [motor_driver-8]: process has died [pid 159808, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_fl9shkie'].
+[ERROR] [encoder_sim-7]: process has died [pid 159806, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_3cndr2pk'].
+[INFO] [create-3]: sending signal 'SIGINT' to process[create-3]
+[ERROR] [pipe_markers-6]: process has died [pid 159804, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers --ros-args --params-file /tmp/launch_params_hvqhv4y2 --params-file /tmp/launch_params_pxwpp5xk'].
+[ERROR] [odometry-5]: process has died [pid 159802, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/odometry --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_bkyt07zm --params-file /tmp/launch_params_1rzqo0d0'].
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[INFO] [ign-1]: sending signal 'SIGINT' to process[ign-1]
+[encoder_sim-7]     from rosidl_cmake import convert_camel_case_to_lower_case_underscore
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 24, in <module>
+[encoder_sim-7]     from rosidl_parser.parser import parse_idl_file
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 20, in <module>
+[encoder_sim-7]     from lark import Lark
+[encoder_sim-7]   File "/usr/lib/python3/dist-packages/lark/__init__.py", line 3, in <module>
+[encoder_sim-7]     from .visitors import Transformer, Visitor, v_args, Discard, Transformer_NonRecursive
+[encoder_sim-7]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[encoder_sim-7]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[encoder_sim-7]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[encoder_sim-7]   File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+[encoder_sim-7]   File "<frozen importlib._bootstrap_external>", line 1012, in get_code
+[encoder_sim-7]   File "<frozen importlib._bootstrap_external>", line 672, in _compile_bytecode
+[encoder_sim-7] KeyboardInterrupt
+[robot_state_publisher-2] [INFO] [1792027875.878780872] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[create-3] [INFO] [1792027875.879931302] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[create-3] terminate called after throwing an instance of 'rclcpp::exceptions::RCLError'
+[create-3]   what():  could not create subscription: rcl node's context is invalid, at ./src/rcl/node.c:428
+[parameter_bridge-4] [INFO] [1792027875.883074948] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-4] terminate called after throwing an instance of 'rclcpp::exceptions::RCLError'
+[parameter_bridge-4]   what():  could not create service: rcl node's context is invalid, at ./src/rcl/node.c:428
+[clamp_torque-9] Traceback (most recent call last):
+[clamp_torque-9]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/clamp_torque", line 33, in <module>
+[clamp_torque-9]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'clamp_torque')())
+[clamp_torque-9]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/clamp_torque.py", line 28, in main
+[clamp_torque-9]     rclpy.spin(ClampTorque())
+[clamp_torque-9]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/clamp_torque.py", line 13, in __init__
+[clamp_torque-9]     super().__init__('clamp_torque')
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 199, in __init__
+[clamp_torque-9]     self._parameter_event_publisher = self.create_publisher(
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1296, in create_publisher
+[clamp_torque-9]     check_is_valid_msg_type(msg_type)
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/type_support.py", line 35, in check_is_valid_msg_type
+[clamp_torque-9]     check_for_type_support(msg_type)
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/type_support.py", line 29, in check_for_type_support
+[clamp_torque-9]     msg_or_srv_type.__class__.__import_type_support__()
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rcl_interfaces/msg/_parameter_event.py", line 28, in __import_type_support__
+[clamp_torque-9]     from rosidl_generator_py import import_type_support
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py", line 23, in <module>
+[clamp_torque-9]     from .generate_py_impl import generate_py
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/generate_py_impl.py", line 21, in <module>
+[clamp_torque-9]     from rosidl_cmake import convert_camel_case_to_lower_case_underscore
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 24, in <module>
+[clamp_torque-9]     from rosidl_parser.parser import parse_idl_file
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 20, in <module>
+[clamp_torque-9]     from lark import Lark
+[clamp_torque-9]   File "/usr/lib/python3/dist-packages/lark/__init__.py", line 7, in <module>
+[clamp_torque-9]     from .lark import Lark
+[clamp_torque-9]   File "/usr/lib/python3/dist-packages/lark/lark.py", line 19, in <module>
+[clamp_torque-9]     from .load_grammar import load_grammar, FromPackageLoader, Grammar, verify_used_files, PackageResource
+[clamp_torque-9]   File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 15, in <module>
+[clamp_torque-9]     from .parse_tree_builder import ParseTreeBuilder
+[clamp_torque-9]   File "/usr/lib/python3/dist-packages/lark/parse_tree_builder.py", line 14, in <module>
+[clamp_torque-9]     class ExpandSingleChild:
+[clamp_torque-9] KeyboardInterrupt
+[odometry-5] Traceback (most recent call last):
+[odometry-5]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/odometry", line 33, in <module>
+[odometry-5]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'odometry')())
+[odometry-5]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/odometry.py", line 170, in main
+[odometry-5]     rclpy.spin(Odom())
+[odometry-5]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/odometry.py", line 45, in __init__
+[odometry-5]     super().__init__('odometry')
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 199, in __init__
+[odometry-5]     self._parameter_event_publisher = self.create_publisher(
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1299, in create_publisher
+[odometry-5]     publisher_object = _rclpy.Publisher(
+[odometry-5] KeyboardInterrupt
+[pipe_markers-6] Traceback (most recent call last):
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers", line 33, in <module>
+[pipe_markers-6]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'pipe_markers')())
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/pipe_markers.py", line 35, in main
+[pipe_markers-6]     rclpy.spin(PipeMarkers())
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/pipe_markers.py", line 14, in __init__
+[pipe_markers-6]     super().__init__('pipe_markers')
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 199, in __init__
+[pipe_markers-6]     self._parameter_event_publisher = self.create_publisher(
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1299, in create_publisher
+[pipe_markers-6]     publisher_object = _rclpy.Publisher(
+[pipe_markers-6] KeyboardInterrupt
+[motor_driver-8]     from .lark import Lark
+[motor_driver-8]   File "/usr/lib/python3/dist-packages/lark/lark.py", line 19, in <module>
+[motor_driver-8]     from .load_grammar import load_grammar, FromPackageLoader, Grammar, verify_used_files, PackageResource
+[motor_driver-8]   File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 663, in <module>
+[motor_driver-8]     class ValidateSymbols(Transformer_InPlace):
+[motor_driver-8]   File "/usr/lib/python3.10/abc.py", line 106, in __new__
+[motor_driver-8]     cls = super().__new__(mcls, name, bases, namespace, **kwargs)
+[motor_driver-8]   File "/usr/lib/python3.10/typing.py", line 1350, in __init_subclass__
+[motor_driver-8]     def __init_subclass__(cls, *args, **kwargs):
+[motor_driver-8] KeyboardInterrupt
+[robot_state_publisher-2] [WARN] [1792027875.956657232] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-2] [INFO] [1792027875.956773402] [robot_state_publisher]: got segment b_bracket
+[robot_state_publisher-2] [INFO] [1792027875.956781327] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1792027875.956785453] [robot_state_publisher]: got segment c_bracket
+[robot_state_publisher-2] [INFO] [1792027875.956790595] [robot_state_publisher]: got segment c_frame
+[robot_state_publisher-2] [INFO] [1792027875.956795304] [robot_state_publisher]: got segment d_bracket
+[robot_state_publisher-2] [INFO] [1792027875.956800362] [robot_state_publisher]: got segment d_frame
+[robot_state_publisher-2] [INFO] [1792027875.956804947] [robot_state_publisher]: got segment e_bracket
+[robot_state_publisher-2] [INFO] [1792027875.956809541] [robot_state_publisher]: got segment f1_link
+[robot_state_publisher-2] [INFO] [1792027875.956814707] [robot_state_publisher]: got segment f2_link
+[robot_state_publisher-2] [INFO] [1792027875.956820484] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-2] [INFO] [1792027875.956826021] [robot_state_publisher]: got segment nose_link
+[robot_state_publisher-2] [INFO] [1792027875.956831252] [robot_state_publisher]: got segment r1_link
+[robot_state_publisher-2] [INFO] [1792027875.956836963] [robot_state_publisher]: got segment r2_link
+[robot_state_publisher-2] [INFO] [1792027875.956842249] [robot_state_publisher]: got segment wheel_a_link
+[robot_state_publisher-2] [INFO] [1792027875.956845695] [robot_state_publisher]: got segment wheel_b_link
+[robot_state_publisher-2] [INFO] [1792027875.956849357] [robot_state_publisher]: got segment wheel_c_link
+[robot_state_publisher-2] [INFO] [1792027875.956854820] [robot_state_publisher]: got segment wheel_d_link
+[robot_state_publisher-2] [INFO] [1792027875.956860029] [robot_state_publisher]: got segment wheel_e_link
+[robot_state_publisher-2] [INFO] [1792027875.956863679] [robot_state_publisher]: got segment wheel_f_link
+[robot_state_publisher-2] terminate called after throwing an instance of 'rclcpp::exceptions::RCLError'
+[robot_state_publisher-2]   what():  could not create subscription: rcl node's context is invalid, at ./src/rcl/node.c:428
+[INFO] [ign-1]: process has finished cleanly [pid 159794]
+[ERROR] [create-3]: process has died [pid 159798, exit code -6, cmd '/opt/ros/humble/lib/ros_gz_sim/create -name pipe_robot -topic robot_description -x 0.22 -y 0 -z 0.057 --ros-args'].
+[ERROR] [parameter_bridge-4]: process has died [pid 159800, exit code -6, cmd '/opt/ros/humble/lib/ros_gz_bridge/parameter_bridge --ros-args --params-file /tmp/launch_params_lqpnimge --params-file /tmp/launch_params_8kj7h5x1'].
+[ERROR] [robot_state_publisher-2]: process[robot_state_publisher-2] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [robot_state_publisher-2]: sending signal 'SIGTERM' to process[robot_state_publisher-2]
+[ERROR] [robot_state_publisher-2]: process has died [pid 159796, exit code -6, cmd '/opt/ros/humble/lib/robot_state_publisher/robot_state_publisher --ros-args --params-file /tmp/launch_params_mpx8ewpl --params-file /tmp/launch_params_7d_tow_f'].

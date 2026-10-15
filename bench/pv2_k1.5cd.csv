@@ -1,0 +1,10 @@
+model,course,fitting,result,real_ok,time_s,progress,align_max,align_where,roll_max,sat_s,sat_joint,slip_pct,stall_s,est_err_mm,note
+pirate_v,straight,-,PASS,X,31.1,90%,0.2,wheel_d_link:wheel_f_link@0.12m,0.0,0.0,,15.4,0.0,241,
+pirate_v,elbow45,-,PASS,X,31.9,90%,22.9,wheel_d_link:wheel_f_link@1.06m,24.9,0.0,,14.1,0.0,274,
+pirate_v,elbow90,-,PASS,X,33.3,90%,45.2,wheel_d_link:wheel_f_link@1.10m,31.7,0.1,d_yaw,16.9,0.0,370,
+pirate_v,demo,-,PASS,X,43.8,92%,42.6,wheel_a_link:wheel_c_link@1.65m,25.0,0.4,d_yaw,15.5,0.0,444,
+pirate_v,elbow45_up,-,STUCK,X,29.6,54%,14.1,wheel_a_link:wheel_c_link@1.00m,0.0,15.0,b_pitch,87.1,15.0,592,
+pirate_v,elbow45_down,-,PASS,X,24.0,88%,38.7,wheel_d_link:wheel_f_link@1.00m,0.7,0.9,c_pitch,13.5,0.0,162,
+pirate_v,elbow90_up,-,STUCK,X,29.6,56%,19.1,wheel_a_link:wheel_c_link@1.00m,0.0,15.0,b_pitch,76.7,15.5,511,
+pirate_v,elbow90_down,-,STUCK,X,-14.0,100%,68.6,wheel_a_link:wheel_c_link@1.10m,85.9,0.9,c_pitch,-116.4,0.0,152,
+pirate_v,demo3d,-,STUCK,X,29.7,31%,14.1,wheel_a_link:wheel_c_link@1.00m,0.0,15.0,b_pitch,87.1,15.0,592,

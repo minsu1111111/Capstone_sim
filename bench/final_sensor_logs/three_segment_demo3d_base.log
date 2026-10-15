@@ -1,0 +1,393 @@
+[INFO] [launch]: All log files can be found below /home/aisl/.ros/log/2026-10-14-18-02-46-807892-aisl-15G880-SD76K-106972
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign-1]: process started with pid [106973]
+[INFO] [robot_state_publisher-2]: process started with pid [106975]
+[INFO] [create-3]: process started with pid [106977]
+[INFO] [parameter_bridge-4]: process started with pid [106979]
+[INFO] [odometry-5]: process started with pid [106981]
+[INFO] [pipe_markers-6]: process started with pid [106983]
+[INFO] [encoder_sim-7]: process started with pid [106985]
+[INFO] [motor_driver-8]: process started with pid [106987]
+[INFO] [joint_follow-9]: process started with pid [106989]
+[create-3] [INFO] [1791968568.091279551] [ros_gz_sim]: Requesting list of world names.
+[robot_state_publisher-2] [WARN] [1791968568.126965108] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-2] [INFO] [1791968568.127153998] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1791968568.127224382] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-2] [INFO] [1791968568.127237059] [robot_state_publisher]: got segment j_front_link
+[robot_state_publisher-2] [INFO] [1791968568.127245295] [robot_state_publisher]: got segment j_rear_link
+[robot_state_publisher-2] [INFO] [1791968568.127252978] [robot_state_publisher]: got segment mid_link
+[robot_state_publisher-2] [INFO] [1791968568.127260466] [robot_state_publisher]: got segment mid_slider_0_link
+[robot_state_publisher-2] [INFO] [1791968568.127267995] [robot_state_publisher]: got segment mid_slider_1_link
+[robot_state_publisher-2] [INFO] [1791968568.127275695] [robot_state_publisher]: got segment mid_slider_2_link
+[robot_state_publisher-2] [INFO] [1791968568.127285286] [robot_state_publisher]: got segment mid_wheel_0_link
+[robot_state_publisher-2] [INFO] [1791968568.127293119] [robot_state_publisher]: got segment mid_wheel_1_link
+[robot_state_publisher-2] [INFO] [1791968568.127300668] [robot_state_publisher]: got segment mid_wheel_2_link
+[robot_state_publisher-2] [INFO] [1791968568.127308136] [robot_state_publisher]: got segment nose_link
+[robot_state_publisher-2] [INFO] [1791968568.127315581] [robot_state_publisher]: got segment rear_link
+[robot_state_publisher-2] [INFO] [1791968568.127323025] [robot_state_publisher]: got segment rear_slider_0_link
+[robot_state_publisher-2] [INFO] [1791968568.127330429] [robot_state_publisher]: got segment rear_slider_1_link
+[robot_state_publisher-2] [INFO] [1791968568.127337828] [robot_state_publisher]: got segment rear_slider_2_link
+[robot_state_publisher-2] [INFO] [1791968568.127345465] [robot_state_publisher]: got segment rear_wheel_0_link
+[robot_state_publisher-2] [INFO] [1791968568.127352926] [robot_state_publisher]: got segment rear_wheel_1_link
+[robot_state_publisher-2] [INFO] [1791968568.127360568] [robot_state_publisher]: got segment rear_wheel_2_link
+[robot_state_publisher-2] [INFO] [1791968568.127368345] [robot_state_publisher]: got segment slider_0_link
+[robot_state_publisher-2] [INFO] [1791968568.127375730] [robot_state_publisher]: got segment slider_1_link
+[robot_state_publisher-2] [INFO] [1791968568.127383076] [robot_state_publisher]: got segment slider_2_link
+[robot_state_publisher-2] [INFO] [1791968568.127390857] [robot_state_publisher]: got segment tof_front_link
+[robot_state_publisher-2] [INFO] [1791968568.127398448] [robot_state_publisher]: got segment tof_left_link
+[robot_state_publisher-2] [INFO] [1791968568.127405908] [robot_state_publisher]: got segment tof_right_link
+[robot_state_publisher-2] [INFO] [1791968568.127413307] [robot_state_publisher]: got segment wheel_0_link
+[robot_state_publisher-2] [INFO] [1791968568.127420674] [robot_state_publisher]: got segment wheel_1_link
+[robot_state_publisher-2] [INFO] [1791968568.127428139] [robot_state_publisher]: got segment wheel_2_link
+[create-3] [INFO] [1791968568.569744615] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[create-3] [INFO] [1791968568.584870861] [ros_gz_sim]: Requested creation of entity.
+[create-3] [INFO] [1791968568.584962420] [ros_gz_sim]: OK creation of entity.
+[INFO] [create-3]: process has finished cleanly [pid 106977]
+[motor_driver-8] [INFO] [1791968568.828145639] [motor_driver]: mode=speed_pid, 최고속도 24.9 cm/s (무부하)
+[joint_follow-9] [INFO] [1791968568.905058688] [joint_follow]: 능동 관절: ['j_front_pitch', 'j_front_yaw', 'j_rear_pitch', 'j_rear_yaw'] (mode=sensor)
+[pipe_markers-6] [INFO] [1791968568.968334490] [pipe_markers]: demo3d: 중심선 2.91 m, 특징점 [('dv45:up', 1.0), ('dv45:down', 1.4569019147828906), ('dv90:left', 2.013803829565781), ('cap', 2.9116224055002693)]
+[parameter_bridge-4] [INFO] [1791968569.103525334] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (ignition.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.106429761] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/joint_states (ignition.msgs.Model) -> /joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.113658537] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/imu (ignition.msgs.IMU) -> /imu (sensor_msgs/msg/Imu)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.116333065] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/ground_truth/odom (ignition.msgs.Odometry) -> /ground_truth/odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.121413732] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/pipe_world/dynamic_pose/info (ignition.msgs.Pose_V) -> /gz_poses (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.125451901] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tof/front (ignition.msgs.LaserScan) -> /tof/front (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.127224578] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tof/left (ignition.msgs.LaserScan) -> /tof/left (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.128443912] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tof/right (ignition.msgs.LaserScan) -> /tof/right (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.129530641] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tof/front/points (ignition.msgs.PointCloudPacked) -> /tof/front/points (sensor_msgs/msg/PointCloud2)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.130794386] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/wheel_0_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/wheel_0_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.132473955] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/wheel_1_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/wheel_1_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.133595746] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/wheel_2_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/wheel_2_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.134561901] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/mid_wheel_0_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/mid_wheel_0_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.135541370] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/mid_wheel_1_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/mid_wheel_1_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.136451344] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/mid_wheel_2_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/mid_wheel_2_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.137438583] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/servo/j_front_pitch (std_msgs/msg/Float64) -> /servo/j_front_pitch (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.138380728] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/servo/j_front_yaw (std_msgs/msg/Float64) -> /servo/j_front_yaw (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.139369309] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/servo/j_rear_pitch (std_msgs/msg/Float64) -> /servo/j_rear_pitch (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791968569.140237957] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/servo/j_rear_yaw (std_msgs/msg/Float64) -> /servo/j_rear_yaw (ignition.msgs.Double)] (Lazy 0)
+[ign-1] libEGL warning: egl: failed to create dri2 screen
+[ign-1] libEGL warning: egl: failed to create dri2 screen
+[parameter_bridge-4] [INFO] [1791968570.853810599] [ros_gz_bridge]: Passing message from ROS std_msgs/msg/Float64 to Gazebo gz.msgs.Double (showing msg only once per type)
+[joint_follow-9] [INFO] [1791968570.890179206] [joint_follow]: s=0.000 트인방향(피치,요)=(-0,0) 명령=[0, 0, 0, 0] 실제=[0, 0, 0, 0]
+[joint_follow-9] [INFO] [1791968571.399711202] [joint_follow]: s=-0.000 트인방향(피치,요)=(-0,-0) 명령=[0, 0, 0, 0] 실제=[0, 0, 0, 0]
+[joint_follow-9] [INFO] [1791968571.901783529] [joint_follow]: s=0.001 트인방향(피치,요)=(-0,0) 명령=[0, 0, 0, 0] 실제=[0, 0, 0, 0]
+[odometry-5] [INFO] [1791968571.912987899] [odometry]: 이동거리 정답 0.000 m / 엔코더 -0.000 m | 위치 오차 0.0 mm
+[joint_follow-9] [INFO] [1791968572.409861100] [joint_follow]: s=0.029 트인방향(피치,요)=(-0,-0) 명령=[1, 0, 0, 0] 실제=[0, 0, 0, 0]
+[joint_follow-9] [INFO] [1791968572.922468069] [joint_follow]: s=0.057 트인방향(피치,요)=(-0,0) 명령=[0, 0, 0, 0] 실제=[0, 0, 0, 0]
+[odometry-5] [INFO] [1791968572.991121594] [odometry]: 이동거리 정답 0.059 m / 엔코더 0.060 m | 위치 오차 0.8 mm
+[joint_follow-9] [INFO] [1791968573.435623566] [joint_follow]: s=0.084 트인방향(피치,요)=(-0,0) 명령=[0, 0, 0, 0] 실제=[0, 0, 0, 0]
+[joint_follow-9] [INFO] [1791968573.954688206] [joint_follow]: s=0.112 트인방향(피치,요)=(-0,0) 명령=[0, 0, 0, 0] 실제=[0, 0, 0, 0]
+[odometry-5] [INFO] [1791968574.116584961] [odometry]: 이동거리 정답 0.119 m / 엔코더 0.120 m | 위치 오차 0.9 mm
+[joint_follow-9] [INFO] [1791968574.476895017] [joint_follow]: s=0.140 트인방향(피치,요)=(0,0) 명령=[0, 0, 0, 0] 실제=[0, 0, 0, 0]
+[joint_follow-9] [INFO] [1791968574.993930766] [joint_follow]: s=0.167 트인방향(피치,요)=(0,0) 명령=[0, 0, 0, 0] 실제=[0, 0, 0, 0]
+[odometry-5] [INFO] [1791968575.238135633] [odometry]: 이동거리 정답 0.179 m / 엔코더 0.180 m | 위치 오차 0.9 mm
+[joint_follow-9] [INFO] [1791968575.514779261] [joint_follow]: s=0.195 트인방향(피치,요)=(0,0) 명령=[0, 0, 0, 0] 실제=[0, 0, 0, 0]
+[joint_follow-9] [INFO] [1791968576.016757058] [joint_follow]: s=0.221 트인방향(피치,요)=(0,0) 명령=[0, 0, 0, 0] 실제=[0, 0, 0, 0]
+[odometry-5] [INFO] [1791968576.386811624] [odometry]: 이동거리 정답 0.239 m / 엔코더 0.240 m | 위치 오차 0.9 mm
+[joint_follow-9] [INFO] [1791968576.530974335] [joint_follow]: s=0.248 트인방향(피치,요)=(0,0) 명령=[-1, 0, 0, 0] 실제=[0, 0, 0, 0]
+[joint_follow-9] [INFO] [1791968577.032432652] [joint_follow]: s=0.274 트인방향(피치,요)=(0,0) 명령=[-1, 0, 0, 0] 실제=[0, 0, 0, 0]
+[joint_follow-9] [INFO] [1791968577.538038015] [joint_follow]: s=0.300 트인방향(피치,요)=(-0,-0) 명령=[0, 0, 0, 0] 실제=[0, 0, 0, 0]
+[odometry-5] [INFO] [1791968577.538684446] [odometry]: 이동거리 정답 0.299 m / 엔코더 0.300 m | 위치 오차 1.0 mm
+[joint_follow-9] [INFO] [1791968578.059151655] [joint_follow]: s=0.328 트인방향(피치,요)=(-1,-0) 명령=[1, 0, 0, 0] 실제=[0, 0, -1, 0]
+[joint_follow-9] [INFO] [1791968578.568561369] [joint_follow]: s=0.354 트인방향(피치,요)=(-1,-0) 명령=[1, 0, 0, 0] 실제=[0, 0, -1, 0]
+[odometry-5] [INFO] [1791968578.689968451] [odometry]: 이동거리 정답 0.359 m / 엔코더 0.360 m | 위치 오차 1.1 mm
+[joint_follow-9] [INFO] [1791968579.069856247] [joint_follow]: s=0.380 트인방향(피치,요)=(-1,-0) 명령=[1, 0, 0, 0] 실제=[1, 0, 0, 0]
+[joint_follow-9] [INFO] [1791968579.580886499] [joint_follow]: s=0.406 트인방향(피치,요)=(-0,0) 명령=[1, 0, 0, 0] 실제=[1, 0, 0, 0]
+[odometry-5] [INFO] [1791968579.865473236] [odometry]: 이동거리 정답 0.419 m / 엔코더 0.420 m | 위치 오차 1.3 mm
+[joint_follow-9] [INFO] [1791968580.098398195] [joint_follow]: s=0.432 트인방향(피치,요)=(-1,-0) 명령=[2, 0, -1, 0] 실제=[1, 0, 0, 0]
+[joint_follow-9] [INFO] [1791968580.601213021] [joint_follow]: s=0.459 트인방향(피치,요)=(-1,-0) 명령=[2, 0, 0, 0] 실제=[1, 0, 0, 0]
+[odometry-5] [INFO] [1791968581.013110466] [odometry]: 이동거리 정답 0.479 m / 엔코더 0.480 m | 위치 오차 1.2 mm
+[joint_follow-9] [INFO] [1791968581.103939673] [joint_follow]: s=0.485 트인방향(피치,요)=(-4,0) 명령=[6, 0, 0, 0] 실제=[3, 0, -1, 0]
+[joint_follow-9] [INFO] [1791968581.620959254] [joint_follow]: s=0.511 트인방향(피치,요)=(-6,-0) 명령=[8, 0, 0, 0] 실제=[3, 0, -1, 0]
+[joint_follow-9] [INFO] [1791968582.130257922] [joint_follow]: s=0.538 트인방향(피치,요)=(-11,0) 명령=[15, 0, 1, 0] 실제=[7, 0, -2, 0]
+[odometry-5] [INFO] [1791968582.175799972] [odometry]: 이동거리 정답 0.539 m / 엔코더 0.540 m | 위치 오차 2.8 mm
+[joint_follow-9] [INFO] [1791968582.638284088] [joint_follow]: s=0.564 트인방향(피치,요)=(-13,0) 명령=[17, 0, 1, 0] 실제=[9, 0, -2, 0]
+[joint_follow-9] [INFO] [1791968583.153150594] [joint_follow]: s=0.591 트인방향(피치,요)=(-14,-0) 명령=[19, 0, 1, 0] 실제=[10, 0, -2, 0]
+[odometry-5] [INFO] [1791968583.335974519] [odometry]: 이동거리 정답 0.598 m / 엔코더 0.600 m | 위치 오차 8.6 mm
+[joint_follow-9] [INFO] [1791968583.661828414] [joint_follow]: s=0.617 트인방향(피치,요)=(-14,0) 명령=[21, 0, 2, 0] 실제=[12, 0, -2, 0]
+[joint_follow-9] [INFO] [1791968584.175027009] [joint_follow]: s=0.642 트인방향(피치,요)=(-16,0) 명령=[24, 0, 2, 0] 실제=[15, 0, -2, 0]
+[odometry-5] [INFO] [1791968584.566459045] [odometry]: 이동거리 정답 0.658 m / 엔코더 0.660 m | 위치 오차 16.5 mm
+[joint_follow-9] [INFO] [1791968584.695836089] [joint_follow]: s=0.666 트인방향(피치,요)=(-18,0) 명령=[27, 0, 4, 0] 실제=[18, 0, 0, 0]
+[joint_follow-9] [INFO] [1791968585.207074387] [joint_follow]: s=0.691 트인방향(피치,요)=(-20,-0) 명령=[35, 0, 5, 0] 실제=[24, 0, -1, 0]
+[joint_follow-9] [INFO] [1791968585.715863667] [joint_follow]: s=0.715 트인방향(피치,요)=(-17,0) 명령=[41, 0, 5, 0] 실제=[34, 0, 0, 0]
+[odometry-5] [INFO] [1791968585.814997334] [odometry]: 이동거리 정답 0.710 m / 엔코더 0.720 m | 위치 오차 21.8 mm
+[joint_follow-9] [INFO] [1791968586.225890876] [joint_follow]: s=0.742 트인방향(피치,요)=(-10,0) 명령=[41, 0, 7, 0] 실제=[40, 0, 6, 0]
+[joint_follow-9] [INFO] [1791968586.733057873] [joint_follow]: s=0.769 트인방향(피치,요)=(1,-0) 명령=[39, 0, 8, 0] 실제=[45, 0, 13, 0]
+[odometry-5] [INFO] [1791968586.949422118] [odometry]: 이동거리 정답 0.759 m / 엔코더 0.780 m | 위치 오차 31.6 mm
+[joint_follow-9] [INFO] [1791968587.235751002] [joint_follow]: s=0.792 트인방향(피치,요)=(9,0) 명령=[35, 0, 11, 0] 실제=[45, 0, 20, 0]
+[joint_follow-9] [INFO] [1791968587.762453242] [joint_follow]: s=0.817 트인방향(피치,요)=(16,0) 명령=[34, 1, 13, 0] 실제=[53, 1, 20, 0]
+[odometry-5] [INFO] [1791968588.233661748] [odometry]: 이동거리 정답 0.811 m / 엔코더 0.839 m | 위치 오차 39.6 mm
+[joint_follow-9] [INFO] [1791968588.287415815] [joint_follow]: s=0.841 트인방향(피치,요)=(19,0) 명령=[25, 0, 22, 0] 실제=[47, 0, 29, 0]
+[joint_follow-9] [INFO] [1791968588.805537873] [joint_follow]: s=0.865 트인방향(피치,요)=(19,0) 명령=[12, 0, 29, 0] 실제=[34, 0, 36, 0]
+[joint_follow-9] [INFO] [1791968589.326256349] [joint_follow]: s=0.890 트인방향(피치,요)=(17,0) 명령=[-4, 0, 37, 0] 실제=[16, 0, 42, 0]
+[odometry-5] [INFO] [1791968589.537897880] [odometry]: 이동거리 정답 0.866 m / 엔코더 0.900 m | 위치 오차 53.1 mm
+[joint_follow-9] [INFO] [1791968589.833054947] [joint_follow]: s=0.913 트인방향(피치,요)=(7,0) 명령=[-17, 0, 43, 0] 실제=[-9, 0, 46, 0]
+[joint_follow-9] [INFO] [1791968590.333321123] [joint_follow]: s=0.937 트인방향(피치,요)=(-2,0) 명령=[-23, 0, 48, 0] 실제=[-21, 0, 43, 0]
+[odometry-5] [INFO] [1791968590.825750166] [odometry]: 이동거리 정답 0.918 m / 엔코더 0.958 m | 위치 오차 53.9 mm
+[joint_follow-9] [INFO] [1791968590.851607845] [joint_follow]: s=0.959 트인방향(피치,요)=(-8,0) 명령=[-34, -1, 54, 1] 실제=[-32, -1, 45, 0]
+[joint_follow-9] [INFO] [1791968591.364925469] [joint_follow]: s=0.981 트인방향(피치,요)=(-10,0) 명령=[-33, -1, 45, 0] 실제=[-34, -1, 38, 0]
+[joint_follow-9] [INFO] [1791968591.877273165] [joint_follow]: s=1.004 트인방향(피치,요)=(-10,0) 명령=[-28, 0, 32, 0] 실제=[-29, -1, 26, 0]
+[odometry-5] [INFO] [1791968592.189469632] [odometry]: 이동거리 정답 0.973 m / 엔코더 1.018 m | 위치 오차 53.5 mm
+[joint_follow-9] [INFO] [1791968592.385821902] [joint_follow]: s=1.028 트인방향(피치,요)=(-10,-0) 명령=[-18, 0, 14, 0] 실제=[-21, -1, 13, 0]
+[joint_follow-9] [INFO] [1791968592.886161248] [joint_follow]: s=1.052 트인방향(피치,요)=(-3,-0) 명령=[-4, 0, -10, 0] 실제=[-6, -1, -5, 0]
+[joint_follow-9] [INFO] [1791968593.399732336] [joint_follow]: s=1.077 트인방향(피치,요)=(6,-0) 명령=[-6, 0, -25, 0] 실제=[-1, -1, -17, 0]
+[odometry-5] [INFO] [1791968593.431105667] [odometry]: 이동거리 정답 1.026 m / 엔코더 1.078 m | 위치 오차 58.1 mm
+[joint_follow-9] [INFO] [1791968593.917491813] [joint_follow]: s=1.102 트인방향(피치,요)=(13,-0) 명령=[-6, 0, -42, 0] 실제=[3, 0, -26, 0]
+[joint_follow-9] [INFO] [1791968594.434977566] [joint_follow]: s=1.126 트인방향(피치,요)=(14,-0) 명령=[-4, 0, -43, 0] 실제=[7, 0, -30, 0]
+[odometry-5] [INFO] [1791968594.694920288] [odometry]: 이동거리 정답 1.075 m / 엔코더 1.137 m | 위치 오차 65.3 mm
+[joint_follow-9] [INFO] [1791968594.950390796] [joint_follow]: s=1.145 트인방향(피치,요)=(15,-0) 명령=[-10, 1, -40, -1] 실제=[-1, 0, -30, -1]
+[joint_follow-9] [INFO] [1791968595.463751114] [joint_follow]: s=1.159 트인방향(피치,요)=(17,0) 명령=[-17, 1, -35, -1] 실제=[-10, 0, -22, -1]
+[joint_follow-9] [INFO] [1791968595.966596823] [joint_follow]: s=1.184 트인방향(피치,요)=(17,0) 명령=[-26, 1, -12, -1] 실제=[-14, 1, -8, -1]
+[odometry-5] [INFO] [1791968595.968958333] [odometry]: 이동거리 정답 1.104 m / 엔코더 1.184 m | 위치 오차 83.5 mm
+[joint_follow-9] [INFO] [1791968596.497190929] [joint_follow]: s=1.204 트인방향(피치,요)=(18,0) 명령=[-31, 1, -5, -1] 실제=[-23, 1, -1, -1]
+[joint_follow-9] [INFO] [1791968597.000191208] [joint_follow]: s=1.224 트인방향(피치,요)=(17,0) 명령=[-34, 1, 1, 0] 실제=[-28, 1, 1, 0]
+[odometry-5] [INFO] [1791968597.465583597] [odometry]: 이동거리 정답 1.163 m / 엔코더 1.245 m | 위치 오차 84.3 mm
+[joint_follow-9] [INFO] [1791968597.511248125] [joint_follow]: s=1.247 트인방향(피치,요)=(13,0) 명령=[-38, 1, 8, 0] 실제=[-35, 1, 3, 0]
+[joint_follow-9] [INFO] [1791968598.032232966] [joint_follow]: s=1.272 트인방향(피치,요)=(7,0) 명령=[-39, 1, 9, 0] 실제=[-40, 1, 2, 0]
+[joint_follow-9] [INFO] [1791968598.539198263] [joint_follow]: s=1.296 트인방향(피치,요)=(3,0) 명령=[-31, 0, 1, 1] 실제=[-35, 0, -10, 0]
+[odometry-5] [INFO] [1791968598.691097154] [odometry]: 이동거리 정답 1.217 m / 엔코더 1.303 m | 위치 오차 86.2 mm
+[joint_follow-9] [INFO] [1791968599.040269157] [joint_follow]: s=1.322 트인방향(피치,요)=(-3,0) 명령=[-27, 0, -10, 1] 실제=[-36, 0, -17, 0]
+[joint_follow-9] [INFO] [1791968599.558015815] [joint_follow]: s=1.345 트인방향(피치,요)=(-5,-0) 명령=[-24, 0, -14, 1] 실제=[-33, 0, -22, 1]
+[odometry-5] [INFO] [1791968599.984055443] [odometry]: 이동거리 정답 1.285 m / 엔코더 1.366 m | 위치 오차 76.8 mm
+[joint_follow-9] [INFO] [1791968600.070564080] [joint_follow]: s=1.370 트인방향(피치,요)=(-12,0) 명령=[-19, 0, -20, 1] 실제=[-33, 0, -26, 0]
+[joint_follow-9] [INFO] [1791968600.585830088] [joint_follow]: s=1.395 트인방향(피치,요)=(-17,0) 명령=[-9, -1, -28, 1] 실제=[-29, -1, -29, 1]
+[joint_follow-9] [INFO] [1791968601.108177511] [joint_follow]: s=1.420 트인방향(피치,요)=(-13,1) 명령=[0, -1, -31, 1] 실제=[-12, -1, -34, 1]
+[odometry-5] [INFO] [1791968601.211837413] [odometry]: 이동거리 정답 1.343 m / 엔코더 1.425 m | 위치 오차 72.6 mm
+[joint_follow-9] [INFO] [1791968601.627029150] [joint_follow]: s=1.446 트인방향(피치,요)=(-7,1) 명령=[11, -1, -38, 0] 실제=[3, 0, -37, 0]
+[joint_follow-9] [INFO] [1791968602.127886598] [joint_follow]: s=1.470 트인방향(피치,요)=(-1,1) 명령=[7, -1, -31, 0] 실제=[3, 0, -26, 0]
+[odometry-5] [INFO] [1791968602.453533325] [odometry]: 이동거리 정답 1.395 m / 엔코더 1.484 m | 위치 오차 78.0 mm
+[joint_follow-9] [INFO] [1791968602.628806953] [joint_follow]: s=1.491 트인방향(피치,요)=(2,1) 명령=[15, -1, -32, 0] 실제=[13, 0, -24, 0]
+[joint_follow-9] [INFO] [1791968603.131113508] [joint_follow]: s=1.514 트인방향(피치,요)=(10,1) 명령=[18, -1, -32, 0] 실제=[22, 0, -26, 0]
+[joint_follow-9] [INFO] [1791968603.636599693] [joint_follow]: s=1.538 트인방향(피치,요)=(12,2) 명령=[14, -1, -23, 0] 실제=[20, -1, -18, 0]
+[odometry-5] [INFO] [1791968603.784948775] [odometry]: 이동거리 정답 1.455 m / 엔코더 1.545 m | 위치 오차 80.2 mm
+[joint_follow-9] [INFO] [1791968604.139969452] [joint_follow]: s=1.563 트인방향(피치,요)=(10,2) 명령=[8, -2, -12, 0] 실제=[14, -1, -7, 0]
+[joint_follow-9] [INFO] [1791968604.648085883] [joint_follow]: s=1.589 트인방향(피치,요)=(7,2) 명령=[-3, -3, 4, 0] 실제=[2, -1, 5, 0]
+[odometry-5] [INFO] [1791968605.001852038] [odometry]: 이동거리 정답 1.514 m / 엔코더 1.606 m | 위치 오차 82.2 mm
+[joint_follow-9] [INFO] [1791968605.170709407] [joint_follow]: s=1.614 트인방향(피치,요)=(6,4) 명령=[-5, -6, 8, 0] 실제=[0, -3, 6, 1]
+[joint_follow-9] [INFO] [1791968605.690286678] [joint_follow]: s=1.638 트인방향(피치,요)=(0,5) 명령=[-14, -8, 22, 0] 실제=[-14, -5, 17, 1]
+[joint_follow-9] [INFO] [1791968606.203601743] [joint_follow]: s=1.663 트인방향(피치,요)=(-2,5) 명령=[-13, -9, 29, 0] 실제=[-16, -6, 22, 1]
+[odometry-5] [INFO] [1791968606.259071299] [odometry]: 이동거리 정답 1.569 m / 엔코더 1.665 m | 위치 오차 86.4 mm
+[joint_follow-9] [INFO] [1791968606.709328028] [joint_follow]: s=1.687 트인방향(피치,요)=(-2,5) 명령=[-11, -11, 23, 0] 실제=[-14, -8, 18, 0]
+[joint_follow-9] [INFO] [1791968607.221630303] [joint_follow]: s=1.712 트인방향(피치,요)=(-1,5) 명령=[-8, -12, 15, 0] 실제=[-11, -9, 13, 0]
+[odometry-5] [INFO] [1791968607.491953502] [odometry]: 이동거리 정답 1.630 m / 엔코더 1.725 m | 위치 오차 83.9 mm
+[joint_follow-9] [INFO] [1791968607.725376997] [joint_follow]: s=1.737 트인방향(피치,요)=(-0,5) 명령=[-5, -14, 5, -1] 실제=[-5, -12, 5, -1]
+[joint_follow-9] [INFO] [1791968608.227583897] [joint_follow]: s=1.761 트인방향(피치,요)=(0,5) 명령=[1, -14, -3, -3] 실제=[0, -13, -1, -2]
+[joint_follow-9] [INFO] [1791968608.735205414] [joint_follow]: s=1.781 트인방향(피치,요)=(1,5) 명령=[7, -14, -13, -5] 실제=[9, -11, -9, -5]
+[odometry-5] [INFO] [1791968608.850171673] [odometry]: 이동거리 정답 1.693 m / 엔코더 1.786 m | 위치 오차 82.0 mm
+[joint_follow-9] [INFO] [1791968609.238388101] [joint_follow]: s=1.803 트인방향(피치,요)=(-0,-1) 명령=[7, -6, -15, -6] 실제=[10, -10, -10, -7]
+[joint_follow-9] [INFO] [1791968609.758168898] [joint_follow]: s=1.826 트인방향(피치,요)=(-0,-0) 명령=[8, -14, -13, -7] 실제=[12, -15, -8, -9]
+[odometry-5] [INFO] [1791968610.143350379] [odometry]: 이동거리 정답 1.741 m / 엔코더 1.844 m | 위치 오차 108.1 mm
+[joint_follow-9] [INFO] [1791968610.266069046] [joint_follow]: s=1.849 트인방향(피치,요)=(-1,-4) 명령=[8, -20, -11, -8] 실제=[12, -25, -6, -11]
+[joint_follow-9] [INFO] [1791968610.792797987] [joint_follow]: s=1.873 트인방향(피치,요)=(-1,-10) 명령=[6, -21, -5, -10] 실제=[8, -31, -1, -15]
+[joint_follow-9] [INFO] [1791968611.298237623] [joint_follow]: s=1.897 트인방향(피치,요)=(-4,0) 명령=[6, -44, -1, -9] 실제=[6, -46, 0, -14]
+[odometry-5] [INFO] [1791968611.435147590] [odometry]: 이동거리 정답 1.778 m / 엔코더 1.904 m | 위치 오차 144.2 mm
+[joint_follow-9] [INFO] [1791968611.801224693] [joint_follow]: s=1.922 트인방향(피치,요)=(-9,11) 명령=[1, -82, 8, -8] 실제=[-4, -77, 7, -8]
+[joint_follow-9] [INFO] [1791968612.333348460] [joint_follow]: s=1.943 트인방향(피치,요)=(-6,-2) 명령=[-4, -86, 8, -7] 실제=[0, -89, 7, -13]
+[joint_follow-9] [INFO] [1791968612.857079804] [joint_follow]: s=1.964 트인방향(피치,요)=(-7,-17) 명령=[-6, -71, 9, -16] 실제=[-3, -90, 6, -25]
+[odometry-5] [INFO] [1791968612.864409231] [odometry]: 이동거리 정답 1.813 m / 엔코더 1.964 m | 위치 오차 143.5 mm
+[joint_follow-9] [INFO] [1791968613.370585586] [joint_follow]: s=1.983 트인방향(피치,요)=(-8,-18) 명령=[-9, -71, 9, -24] 실제=[-3, -90, 5, -36]
+[joint_follow-9] [INFO] [1791968613.875149716] [joint_follow]: s=2.004 트인방향(피치,요)=(-6,-15) 명령=[-7, -72, 5, -29] 실제=[-3, -90, 5, -35]
+[odometry-5] [INFO] [1791968614.300709243] [odometry]: 이동거리 정답 1.863 m / 엔코더 2.023 m | 위치 오차 120.8 mm
+[joint_follow-9] [INFO] [1791968614.400509856] [joint_follow]: s=2.027 트인방향(피치,요)=(0,4) 명령=[-31, -84, 4, -42] 실제=[-4, -88, 3, -39]
+[joint_follow-9] [INFO] [1791968614.925482267] [joint_follow]: s=2.051 트인방향(피치,요)=(-0,7) 명령=[15, -58, -9, -66] 실제=[14, -70, -6, -57]
+[joint_follow-9] [INFO] [1791968615.438148658] [joint_follow]: s=2.075 트인방향(피치,요)=(8,-15) 명령=[6, 12, -40, -84] 실제=[14, -17, -2, -83]
+[odometry-5] [INFO] [1791968615.610379998] [odometry]: 이동거리 정답 1.925 m / 엔코더 2.084 m | 위치 오차 94.5 mm
+[joint_follow-9] [INFO] [1791968615.938877230] [joint_follow]: s=2.098 트인방향(피치,요)=(7,6) 명령=[6, 30, -90, -86] 실제=[10, 26, -3, -83]
+[joint_follow-9] [INFO] [1791968616.457144419] [joint_follow]: s=2.120 트인방향(피치,요)=(6,17) 명령=[2, 37, -90, -86] 실제=[7, 33, -4, -70]
+[odometry-5] [INFO] [1791968616.939501988] [odometry]: 이동거리 정답 1.977 m / 엔코더 2.142 m | 위치 오차 109.4 mm
+[joint_follow-9] [INFO] [1791968616.962843927] [joint_follow]: s=2.143 트인방향(피치,요)=(4,20) 명령=[-2, 48, 90, -88] 실제=[2, 46, -3, -58]
+[joint_follow-9] [INFO] [1791968617.478312396] [joint_follow]: s=2.164 트인방향(피치,요)=(2,20) 명령=[1, 53, -20, -87] 실제=[5, 54, -8, -61]
+[joint_follow-9] [INFO] [1791968617.979554510] [joint_follow]: s=2.187 트인방향(피치,요)=(1,20) 명령=[-11, 44, 20, -58] 실제=[-3, 52, 7, -60]
+[odometry-5] [INFO] [1791968618.456366149] [odometry]: 이동거리 정답 2.039 m / 엔코더 2.204 m | 위치 오차 137.8 mm
+[joint_follow-9] [INFO] [1791968618.508172376] [joint_follow]: s=2.206 트인방향(피치,요)=(-5,20) 명령=[-10, 15, 17, -15] 실제=[-16, 31, 19, -24]
+[joint_follow-9] [INFO] [1791968619.011266744] [joint_follow]: s=2.226 트인방향(피치,요)=(-6,4) 명령=[-7, -18, 14, 24] 실제=[-9, -12, 10, 16]
+[joint_follow-9] [INFO] [1791968619.525568624] [joint_follow]: s=2.250 트인방향(피치,요)=(-5,-7) 명령=[-5, -19, 19, 44] 실제=[-8, -20, 15, 34]
+[odometry-5] [INFO] [1791968619.796790262] [odometry]: 이동거리 정답 2.090 m / 엔코더 2.263 m | 위치 오차 142.5 mm
+[joint_follow-9] [INFO] [1791968620.030782419] [joint_follow]: s=2.275 트인방향(피치,요)=(-2,-9) 명령=[-5, -27, 20, 61] 실제=[-8, -27, 18, 39]
+[joint_follow-9] [INFO] [1791968620.552875289] [joint_follow]: s=2.299 트인방향(피치,요)=(-1,-13) 명령=[-5, -27, 27, 69] 실제=[-8, -31, 20, 42]
+[odometry-5] [INFO] [1791968621.048432615] [odometry]: 이동거리 정답 2.146 m / 엔코더 2.323 m | 위치 오차 133.1 mm
+[joint_follow-9] [INFO] [1791968621.066590789] [joint_follow]: s=2.324 트인방향(피치,요)=(1,-13) 명령=[7, -23, -5, 67] 실제=[5, -32, 3, 47]
+[joint_follow-9] [INFO] [1791968621.586071408] [joint_follow]: s=2.348 트인방향(피치,요)=(7,-10) 명령=[5, -5, -19, 25] 실제=[12, -20, -12, 26]
+[joint_follow-9] [INFO] [1791968622.091319025] [joint_follow]: s=2.373 트인방향(피치,요)=(5,2) 명령=[2, 13, -10, -18] 실제=[8, 12, -7, -11]
+[odometry-5] [INFO] [1791968622.323848154] [odometry]: 이동거리 정답 2.206 m / 엔코더 2.383 m | 위치 오차 135.1 mm
+[joint_follow-9] [INFO] [1791968622.597550121] [joint_follow]: s=2.397 트인방향(피치,요)=(4,4) 명령=[0, 10, -6, -28] 실제=[5, 13, -3, -19]
+[joint_follow-9] [INFO] [1791968623.103031667] [joint_follow]: s=2.420 트인방향(피치,요)=(3,6) 명령=[-1, 13, -4, -38] 실제=[4, 18, -2, -26]
+[odometry-5] [INFO] [1791968623.585911873] [odometry]: 이동거리 정답 2.263 m / 엔코더 2.443 m | 위치 오차 144.5 mm
+[joint_follow-9] [INFO] [1791968623.606194372] [joint_follow]: s=2.444 트인방향(피치,요)=(3,6) 명령=[0, 13, -6, -39] 실제=[4, 17, -2, -27]
+[joint_follow-9] [INFO] [1791968624.113893240] [joint_follow]: s=2.468 트인방향(피치,요)=(1,6) 명령=[-9, 10, 12, -35] 실제=[-4, 16, 10, -27]
+[joint_follow-9] [INFO] [1791968624.631735643] [joint_follow]: s=2.494 트인방향(피치,요)=(-2,3) 명령=[-4, -4, 11, -4] 실제=[-5, 3, 8, -9]
+[odometry-5] [INFO] [1791968624.856275571] [odometry]: 이동거리 정답 2.322 m / 엔코더 2.504 m | 위치 오차 151.6 mm
+[joint_follow-9] [INFO] [1791968625.142383664] [joint_follow]: s=2.518 트인방향(피치,요)=(-1,-2) 명령=[-3, -4, 8, 13] 실제=[-3, -5, 7, 7]
+[joint_follow-9] [INFO] [1791968625.643283561] [joint_follow]: s=2.543 트인방향(피치,요)=(-1,-2) 명령=[-3, -4, 4, 14] 실제=[-3, -5, 4, 7]
+[odometry-5] [INFO] [1791968626.056679580] [odometry]: 이동거리 정답 2.381 m / 엔코더 2.563 m | 위치 오차 154.9 mm
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [joint_follow-9]: sending signal 'SIGINT' to process[joint_follow-9]
+[INFO] [motor_driver-8]: sending signal 'SIGINT' to process[motor_driver-8]
+[INFO] [encoder_sim-7]: sending signal 'SIGINT' to process[encoder_sim-7]
+[INFO] [pipe_markers-6]: sending signal 'SIGINT' to process[pipe_markers-6]
+[INFO] [odometry-5]: sending signal 'SIGINT' to process[odometry-5]
+[INFO] [parameter_bridge-4]: sending signal 'SIGINT' to process[parameter_bridge-4]
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[ERROR] [joint_follow-9]: process has died [pid 106989, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/joint_follow --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/three_segment/robot.yaml --params-file /tmp/launch_params_qnkn4uyd --params-file /tmp/launch_params_l8uabxtb'].
+[INFO] [ign-1]: sending signal 'SIGINT' to process[ign-1]
+[ERROR] [odometry-5]: process has died [pid 106981, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/odometry --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/three_segment/robot.yaml --params-file /tmp/launch_params_vakwm2of --params-file /tmp/launch_params_tswjucca'].
+[ERROR] [pipe_markers-6]: process has died [pid 106983, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers --ros-args --params-file /tmp/launch_params__uiij308 --params-file /tmp/launch_params_va9fminy'].
+[parameter_bridge-4] [INFO] [1791968626.145001561] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[pipe_markers-6] Traceback (most recent call last):
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers", line 33, in <module>
+[pipe_markers-6]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'pipe_markers')())
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/pipe_markers.py", line 35, in main
+[pipe_markers-6]     rclpy.spin(PipeMarkers())
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[pipe_markers-6]     executor.spin_once()
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[ERROR] [robot_state_publisher-2]: process has died [pid 106975, exit code -2, cmd '/opt/ros/humble/lib/robot_state_publisher/robot_state_publisher --ros-args --params-file /tmp/launch_params_vs3dc8rc --params-file /tmp/launch_params_wi6x50x_'].
+[odometry-5] Traceback (most recent call last):
+[odometry-5]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/odometry", line 33, in <module>
+[odometry-5]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'odometry')())
+[odometry-5]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/odometry.py", line 170, in main
+[odometry-5]     rclpy.spin(Odom())
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[odometry-5]     executor.spin_once()
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[joint_follow-9] Traceback (most recent call last):
+[joint_follow-9]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/joint_follow", line 33, in <module>
+[joint_follow-9]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'joint_follow')())
+[joint_follow-9]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/joint_follow.py", line 230, in main
+[joint_follow-9]     rclpy.spin(JointFollow())
+[joint_follow-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[robot_state_publisher-2] [INFO] [1791968626.145097408] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[joint_follow-9]     executor.spin_once()
+[joint_follow-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[joint_follow-9]     self._spin_once_impl(timeout_sec)
+[joint_follow-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+[joint_follow-9]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[joint_follow-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+[joint_follow-9]     return next(self._cb_iter)
+[joint_follow-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+[joint_follow-9]     wait_set.wait(timeout_nsec)
+[joint_follow-9] KeyboardInterrupt
+[pipe_markers-6]     self._spin_once_impl(timeout_sec)
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+[pipe_markers-6]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+[pipe_markers-6]     return next(self._cb_iter)
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 624, in _wait_for_ready_callbacks
+[pipe_markers-6]     context_stack.enter_context(srv.handle)
+[pipe_markers-6]   File "/usr/lib/python3.10/contextlib.py", line 492, in enter_context
+[pipe_markers-6]     result = _cm_type.__enter__(cm)
+[pipe_markers-6] KeyboardInterrupt
+[odometry-5]     self._spin_once_impl(timeout_sec)
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+[odometry-5]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+[odometry-5]     return next(self._cb_iter)
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line -1, in _wait_for_ready_callbacks
+[odometry-5] KeyboardInterrupt
+[motor_driver-8] Traceback (most recent call last):
+[motor_driver-8]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver", line 33, in <module>
+[motor_driver-8]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'motor_driver')())
+[motor_driver-8]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/motor_driver.py", line 110, in main
+[motor_driver-8]     rclpy.spin(MotorDriver())
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[motor_driver-8]     executor.spin_once()
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[motor_driver-8]     self._spin_once_impl(timeout_sec)
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 809, in _spin_once_impl
+[motor_driver-8]     raise handler.exception()
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+[motor_driver-8]     result = coro.send(None)
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 478, in handler
+[motor_driver-8]     arg = take_from_wait_list(entity)
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 400, in _take_subscription
+[motor_driver-8]     msg_info = sub.handle.take_message(sub.msg_type, sub.raw)
+[motor_driver-8] RuntimeError: Unable to convert call argument to Python object (compile in debug mode for details)
+[motor_driver-8] Error in sys.excepthook:
+[motor_driver-8] Traceback (most recent call last):
+[motor_driver-8]   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 72, in apport_excepthook
+[motor_driver-8]     from apport.fileutils import likely_packaged, get_recent_crashes
+[motor_driver-8]   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+[motor_driver-8]     from apport.report import Report
+[motor_driver-8]   File "/usr/lib/python3/dist-packages/apport/report.py", line 15, in <module>
+[motor_driver-8]     import xml.dom, xml.dom.minidom
+[motor_driver-8]   File "/usr/lib/python3.10/xml/dom/minidom.py", line 23, in <module>
+[motor_driver-8]     from xml.dom.xmlbuilder import DOMImplementationLS, DocumentLS
+[motor_driver-8]   File "/usr/lib/python3.10/xml/dom/xmlbuilder.py", line 367, in <module>
+[motor_driver-8]     class DOMImplementationLS:
+[motor_driver-8]   File "/usr/lib/python3.10/xml/dom/xmlbuilder.py", line 367, in DOMImplementationLS
+[motor_driver-8]     class DOMImplementationLS:
+[motor_driver-8] KeyboardInterrupt
+[motor_driver-8] 
+[motor_driver-8] Original exception was:
+[motor_driver-8] Traceback (most recent call last):
+[motor_driver-8]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver", line 33, in <module>
+[motor_driver-8]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'motor_driver')())
+[motor_driver-8]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/motor_driver.py", line 110, in main
+[motor_driver-8]     rclpy.spin(MotorDriver())
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[motor_driver-8]     executor.spin_once()
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[motor_driver-8]     self._spin_once_impl(timeout_sec)
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 809, in _spin_once_impl
+[motor_driver-8]     raise handler.exception()
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+[encoder_sim-7] Traceback (most recent call last):
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim", line 33, in <module>
+[encoder_sim-7]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'encoder_sim')())
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/encoder_sim.py", line 40, in main
+[encoder_sim-7]     rclpy.spin(EncoderSim())
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[encoder_sim-7]     executor.spin_once()
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[encoder_sim-7]     self._spin_once_impl(timeout_sec)
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 809, in _spin_once_impl
+[encoder_sim-7]     raise handler.exception()
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+[motor_driver-8]     result = coro.send(None)
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 478, in handler
+[motor_driver-8]     arg = take_from_wait_list(entity)
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 400, in _take_subscription
+[encoder_sim-7]     result = coro.send(None)
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 478, in handler
+[encoder_sim-7]     arg = take_from_wait_list(entity)
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 400, in _take_subscription
+[encoder_sim-7]     msg_info = sub.handle.take_message(sub.msg_type, sub.raw)
+[encoder_sim-7] RuntimeError: Unable to convert call argument to Python object (compile in debug mode for details)
+[encoder_sim-7] Error in sys.excepthook:
+[encoder_sim-7] Traceback (most recent call last):
+[encoder_sim-7]   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 72, in apport_excepthook
+[encoder_sim-7]     from apport.fileutils import likely_packaged, get_recent_crashes
+[encoder_sim-7]   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+[encoder_sim-7]     from apport.report import Report
+[encoder_sim-7]   File "/usr/lib/python3/dist-packages/apport/report.py", line 16, in <module>
+[encoder_sim-7]     from xml.parsers.expat import ExpatError
+[encoder_sim-7]   File "/usr/lib/python3.10/xml/parsers/expat.py", line 4, in <module>
+[motor_driver-8]     msg_info = sub.handle.take_message(sub.msg_type, sub.raw)
+[motor_driver-8] RuntimeError: Unable to convert call argument to Python object (compile in debug mode for details)
+[parameter_bridge-4] [INFO] [1791968626.161676244] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[encoder_sim-7]     from pyexpat import *
+[encoder_sim-7] KeyboardInterrupt
+[encoder_sim-7] 
+[encoder_sim-7] Original exception was:
+[encoder_sim-7] Traceback (most recent call last):
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim", line 33, in <module>
+[encoder_sim-7]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'encoder_sim')())
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/encoder_sim.py", line 40, in main
+[encoder_sim-7]     rclpy.spin(EncoderSim())
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[encoder_sim-7]     executor.spin_once()
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[encoder_sim-7]     self._spin_once_impl(timeout_sec)
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 809, in _spin_once_impl
+[encoder_sim-7]     raise handler.exception()
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+[encoder_sim-7]     result = coro.send(None)
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 478, in handler
+[encoder_sim-7]     arg = take_from_wait_list(entity)
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 400, in _take_subscription
+[encoder_sim-7]     msg_info = sub.handle.take_message(sub.msg_type, sub.raw)
+[encoder_sim-7] RuntimeError: Unable to convert call argument to Python object (compile in debug mode for details)
+[INFO] [parameter_bridge-4]: process has finished cleanly [pid 106979]
+[INFO] [ign-1]: process has finished cleanly [pid 106973]
+[ERROR] [motor_driver-8]: process has died [pid 106987, exit code 1, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/three_segment/robot.yaml --params-file /tmp/launch_params_cnr7gg_i'].
+[ERROR] [encoder_sim-7]: process has died [pid 106985, exit code 1, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/three_segment/robot.yaml --params-file /tmp/launch_params_zzpfvlx2'].

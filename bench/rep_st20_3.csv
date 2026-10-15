@@ -1,0 +1,2 @@
+model,course,fitting,result,real_ok,time_s,progress,align_max,align_where,roll_max,sat_s,sat_joint,slip_pct,stall_s,est_err_mm,note
+two_real,elbow90_down,-,PASS,X,21.4,87%,52.3,mid_link@1.09m,1.8,0.0,,1.4,0.2,60,

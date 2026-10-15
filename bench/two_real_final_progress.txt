@@ -1,0 +1,13 @@
+[1/13] two_real       straight  -        PASS    실물OK O 정렬max   0.1° 롤max   0.0° 한계접촉  0.0s() 미끄럼  -0.0% 정체  0.0s 추정오차   14mm | 최대정렬 위치 base_link@0.38m 
+[2/13] two_real       elbow45   -        PASS    실물OK X 정렬max  33.5° 롤max   7.9° 한계접촉  0.0s() 미끄럼   0.8% 정체  0.0s 추정오차   44mm | 최대정렬 위치 mid_link@1.06m 
+[3/13] two_real       elbow90   -        PASS    실물OK X 정렬max  54.1° 롤max  25.6° 한계접촉  0.0s() 미끄럼   4.0% 정체  0.0s 추정오차   82mm | 최대정렬 위치 mid_link@1.09m 
+[4/13] two_real       elbow90   dv_ll90  PASS    실물OK X 정렬max  42.0° 롤max  26.1° 한계접촉  0.0s() 미끄럼   2.5% 정체  0.1s 추정오차   39mm | 최대정렬 위치 mid_link@1.16m 
+[5/13] two_real       elbow90   ts90     PASS    실물OK X 정렬max  60.3° 롤max  40.8° 한계접촉  1.0s(j_front_yaw) 미끄럼   4.5% 정체  0.1s 추정오차   58mm | 최대정렬 위치 mid_link@1.10m 
+[6/13] two_real       demo      -        PASS    실물OK X 정렬max  55.7° 롤max  34.6° 한계접촉  0.0s() 미끄럼   3.0% 정체  0.0s 추정오차   58mm | 최대정렬 위치 mid_link@1.65m 
+[7/13] two_real       demo      dv_ll90  PASS    실물OK X 정렬max  41.8° 롤max  46.9° 한계접촉  0.0s() 미끄럼   3.3% 정체  0.0s 추정오차   90mm | 최대정렬 위치 mid_link@1.72m 
+[8/13] two_real       demo      ts90     PASS    실물OK X 정렬max  60.9° 롤max  17.0° 한계접촉  0.0s() 미끄럼   3.0% 정체  0.1s 추정오차   82mm | 최대정렬 위치 mid_link@1.65m 
+[9/13] two_real       elbow45_up -        PASS    실물OK X 정렬max  30.5° 롤max   0.4° 한계접촉  0.0s() 미끄럼   1.9% 정체  0.0s 추정오차   51mm | 최대정렬 위치 mid_link@1.06m 
+[10/13] two_real       elbow45_down -        PASS    실물OK X 정렬max  38.6° 롤max   2.3° 한계접촉  0.0s() 미끄럼   0.4% 정체  0.2s 추정오차   49mm | 최대정렬 위치 base_link@0.98m 
+[11/13] two_real       elbow90_up -        PASS    실물OK X 정렬max  53.9° 롤max   8.1° 한계접촉  2.3s(j_front_pitch) 미끄럼   6.9% 정체  0.0s 추정오차  114mm | 최대정렬 위치 mid_link@1.10m 
+[12/13] two_real       elbow90_down -        STUCK   실물OK X 정렬max  42.0° 롤max   9.0° 한계접촉  0.0s() 미끄럼  79.9% 정체 14.6s 추정오차  815mm | 최대정렬 위치 base_link@1.10m 
+[13/13] two_real       demo3d    -        PASS    실물OK X 정렬max  54.9° 롤max  49.4° 한계접촉  0.0s() 미끄럼   3.6% 정체  0.0s 추정오차   42mm | 최대정렬 위치 mid_link@2.10m 

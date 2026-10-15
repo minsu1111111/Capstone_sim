@@ -1,0 +1,159 @@
+[INFO] [launch]: All log files can be found below /home/aisl/.ros/log/2026-10-15-10-33-16-626423-aisl-15G880-SD76K-160490
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign-1]: process started with pid [160491]
+[INFO] [robot_state_publisher-2]: process started with pid [160493]
+[INFO] [create-3]: process started with pid [160495]
+[INFO] [parameter_bridge-4]: process started with pid [160497]
+[INFO] [odometry-5]: process started with pid [160499]
+[INFO] [pipe_markers-6]: process started with pid [160501]
+[INFO] [encoder_sim-7]: process started with pid [160503]
+[INFO] [motor_driver-8]: process started with pid [160505]
+[INFO] [clamp_torque-9]: process started with pid [160507]
+[create-3] [INFO] [1792027997.805953794] [ros_gz_sim]: Requesting list of world names.
+[robot_state_publisher-2] [WARN] [1792027997.928170746] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-2] [INFO] [1792027997.928362550] [robot_state_publisher]: got segment b_bracket
+[robot_state_publisher-2] [INFO] [1792027997.928448983] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1792027997.928463057] [robot_state_publisher]: got segment c_bracket
+[robot_state_publisher-2] [INFO] [1792027997.928473188] [robot_state_publisher]: got segment c_frame
+[robot_state_publisher-2] [INFO] [1792027997.928482567] [robot_state_publisher]: got segment d_bracket
+[robot_state_publisher-2] [INFO] [1792027997.928491445] [robot_state_publisher]: got segment d_frame
+[robot_state_publisher-2] [INFO] [1792027997.928500570] [robot_state_publisher]: got segment e_bracket
+[robot_state_publisher-2] [INFO] [1792027997.928509354] [robot_state_publisher]: got segment f1_link
+[robot_state_publisher-2] [INFO] [1792027997.928518534] [robot_state_publisher]: got segment f2_link
+[robot_state_publisher-2] [INFO] [1792027997.928527231] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-2] [INFO] [1792027997.928535862] [robot_state_publisher]: got segment nose_link
+[robot_state_publisher-2] [INFO] [1792027997.928544895] [robot_state_publisher]: got segment r1_link
+[robot_state_publisher-2] [INFO] [1792027997.928553660] [robot_state_publisher]: got segment r2_link
+[robot_state_publisher-2] [INFO] [1792027997.928562350] [robot_state_publisher]: got segment wheel_a_link
+[robot_state_publisher-2] [INFO] [1792027997.928571442] [robot_state_publisher]: got segment wheel_b_link
+[robot_state_publisher-2] [INFO] [1792027997.928580694] [robot_state_publisher]: got segment wheel_c_link
+[robot_state_publisher-2] [INFO] [1792027997.928588951] [robot_state_publisher]: got segment wheel_d_link
+[robot_state_publisher-2] [INFO] [1792027997.928597006] [robot_state_publisher]: got segment wheel_e_link
+[robot_state_publisher-2] [INFO] [1792027997.928605545] [robot_state_publisher]: got segment wheel_f_link
+[create-3] [INFO] [1792027998.414258175] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[create-3] [INFO] [1792027998.873091400] [ros_gz_sim]: Requested creation of entity.
+[create-3] [INFO] [1792027998.873132959] [ros_gz_sim]: OK creation of entity.
+[parameter_bridge-4] [INFO] [1792027998.909765340] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (ignition.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[INFO] [create-3]: process has finished cleanly [pid 160495]
+[parameter_bridge-4] [INFO] [1792027998.986119643] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/joint_states (ignition.msgs.Model) -> /joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1792027998.988883923] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/imu (ignition.msgs.IMU) -> /imu (sensor_msgs/msg/Imu)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1792027998.990018252] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/ground_truth/odom (ignition.msgs.Odometry) -> /ground_truth/odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1792027998.992047572] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/pipe_world/dynamic_pose/info (ignition.msgs.Pose_V) -> /gz_poses (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1792027998.994054672] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tof/front (ignition.msgs.LaserScan) -> /tof/front (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1792027998.994909941] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tof/left (ignition.msgs.LaserScan) -> /tof/left (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1792027998.995566130] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tof/right (ignition.msgs.LaserScan) -> /tof/right (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1792027998.996226999] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tof/front/points (ignition.msgs.PointCloudPacked) -> /tof/front/points (sensor_msgs/msg/PointCloud2)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1792027998.997211396] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/wheel_a_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/wheel_a_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1792027998.998545510] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/wheel_b_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/wheel_b_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1792027998.999485398] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/wheel_c_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/wheel_c_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1792027999.000532782] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/wheel_d_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/wheel_d_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1792027999.001515038] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/wheel_e_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/wheel_e_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1792027999.002363693] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/wheel_f_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/wheel_f_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1792027999.002946910] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/b_pitch/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/b_pitch/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1792027999.003584920] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/e_pitch/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/e_pitch/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[robot_state_publisher-2] [INFO] [1792027999.089411159] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [clamp_torque-9]: sending signal 'SIGINT' to process[clamp_torque-9]
+[INFO] [motor_driver-8]: sending signal 'SIGINT' to process[motor_driver-8]
+[INFO] [encoder_sim-7]: sending signal 'SIGINT' to process[encoder_sim-7]
+[INFO] [pipe_markers-6]: sending signal 'SIGINT' to process[pipe_markers-6]
+[INFO] [odometry-5]: sending signal 'SIGINT' to process[odometry-5]
+[INFO] [parameter_bridge-4]: sending signal 'SIGINT' to process[parameter_bridge-4]
+[ERROR] [pipe_markers-6]: process has died [pid 160501, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers --ros-args --params-file /tmp/launch_params_d2m9ozkh --params-file /tmp/launch_params_hygkfopl'].
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[ERROR] [odometry-5]: process has died [pid 160499, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/odometry --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_gosq3q4y --params-file /tmp/launch_params_m7hfk6c7'].
+[INFO] [ign-1]: sending signal 'SIGINT' to process[ign-1]
+[parameter_bridge-4] [INFO] [1792027999.090898990] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[odometry-5] Traceback (most recent call last):
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 175, in __init__
+[odometry-5]     self.__node = _rclpy.Node(
+[odometry-5] rclpy._rclpy_pybind11.RCLError: error creating node: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/guard_condition.c:67
+[odometry-5] 
+[odometry-5] During handling of the above exception, another exception occurred:
+[odometry-5] 
+[odometry-5] Traceback (most recent call last):
+[odometry-5]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/odometry", line 33, in <module>
+[clamp_torque-9] Traceback (most recent call last):
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 175, in __init__
+[clamp_torque-9]     self.__node = _rclpy.Node(
+[clamp_torque-9] rclpy._rclpy_pybind11.RCLError: error creating node: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/guard_condition.c:67
+[clamp_torque-9] 
+[clamp_torque-9] During handling of the above exception, another exception occurred:
+[clamp_torque-9] 
+[clamp_torque-9] Traceback (most recent call last):
+[clamp_torque-9]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/clamp_torque", line 33, in <module>
+[clamp_torque-9]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'clamp_torque')())
+[clamp_torque-9]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/clamp_torque.py", line 28, in main
+[clamp_torque-9]     rclpy.spin(ClampTorque())
+[clamp_torque-9]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/clamp_torque.py", line 13, in __init__
+[clamp_torque-9]     super().__init__('clamp_torque')
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 175, in __init__
+[clamp_torque-9]     self.__node = _rclpy.Node(
+[clamp_torque-9] KeyboardInterrupt
+[odometry-5]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'odometry')())
+[odometry-5]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/odometry.py", line 170, in main
+[odometry-5]     rclpy.spin(Odom())
+[odometry-5]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/odometry.py", line 45, in __init__
+[odometry-5]     super().__init__('odometry')
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 175, in __init__
+[odometry-5]     self.__node = _rclpy.Node(
+[odometry-5] KeyboardInterrupt
+[encoder_sim-7] Traceback (most recent call last):
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 175, in __init__
+[encoder_sim-7]     self.__node = _rclpy.Node(
+[encoder_sim-7] rclpy._rclpy_pybind11.RCLError: error creating node: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/guard_condition.c:67
+[encoder_sim-7] 
+[encoder_sim-7] During handling of the above exception, another exception occurred:
+[encoder_sim-7] 
+[encoder_sim-7] Traceback (most recent call last):
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim", line 33, in <module>
+[encoder_sim-7]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'encoder_sim')())
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/encoder_sim.py", line 40, in main
+[encoder_sim-7]     rclpy.spin(EncoderSim())
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/encoder_sim.py", line 16, in __init__
+[encoder_sim-7]     super().__init__('encoder_sim')
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 175, in __init__
+[encoder_sim-7]     self.__node = _rclpy.Node(
+[encoder_sim-7] KeyboardInterrupt
+[pipe_markers-6] Traceback (most recent call last):
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 175, in __init__
+[pipe_markers-6]     self.__node = _rclpy.Node(
+[pipe_markers-6] rclpy._rclpy_pybind11.RCLError: error creating node: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/guard_condition.c:67
+[pipe_markers-6] 
+[pipe_markers-6] During handling of the above exception, another exception occurred:
+[pipe_markers-6] 
+[pipe_markers-6] Traceback (most recent call last):
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers", line 33, in <module>
+[pipe_markers-6]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'pipe_markers')())
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/pipe_markers.py", line 35, in main
+[pipe_markers-6]     rclpy.spin(PipeMarkers())
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/pipe_markers.py", line 14, in __init__
+[pipe_markers-6]     super().__init__('pipe_markers')
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 175, in __init__
+[pipe_markers-6]     self.__node = _rclpy.Node(
+[pipe_markers-6] KeyboardInterrupt
+[motor_driver-8] Traceback (most recent call last):
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 175, in __init__
+[motor_driver-8]     self.__node = _rclpy.Node(
+[motor_driver-8] rclpy._rclpy_pybind11.RCLError: error creating node: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/guard_condition.c:67
+[motor_driver-8] 
+[motor_driver-8] During handling of the above exception, another exception occurred:
+[motor_driver-8] 
+[motor_driver-8] Traceback (most recent call last):
+[motor_driver-8]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver", line 33, in <module>
+[motor_driver-8]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'motor_driver')())
+[motor_driver-8]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/motor_driver.py", line 129, in main
+[motor_driver-8]     rclpy.spin(MotorDriver())
+[motor_driver-8]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/motor_driver.py", line 24, in __init__
+[motor_driver-8]     super().__init__('motor_driver')
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 175, in __init__
+[motor_driver-8]     self.__node = _rclpy.Node(
+[motor_driver-8] KeyboardInterrupt
+[robot_state_publisher-2] [INFO] [1792027999.263342024] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ERROR] [encoder_sim-7]: process has died [pid 160503, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params__j0akh8b'].
+[ERROR] [clamp_torque-9]: process has died [pid 160507, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/clamp_torque --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_qd20any6'].
+[ERROR] [motor_driver-8]: process has died [pid 160505, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_faezuq9z'].
+[parameter_bridge-4] [INFO] [1792027999.422006361] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 160493]
+[INFO] [parameter_bridge-4]: process has finished cleanly [pid 160497]
+[INFO] [ign-1]: process has finished cleanly [pid 160491]

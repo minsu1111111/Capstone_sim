@@ -1,0 +1,1 @@
+[1/1] three_segment  elbow90_up -        PASS    실물OK X 정렬max  52.8° 롤max   2.3° 한계접촉  2.1s(j_front_pitch) 미끄럼  10.2% 정체  0.0s 추정오차   62mm | 최대정렬 위치 rear_link@1.07m 

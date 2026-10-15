@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!-- two_active: 시뮬 결과 반영 2마디 권장안. 능동 2축 관절 + 두 마디 모두 구동 + ToF·IMU·엔코더 센서 제어.
+     구조는 three_segment 파일을 그대로 쓰고 마디 수만 2 (robot.yaml n_segments). -->
+<robot name="two_active" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find pipe_robot_sim)/models/three_segment/three_segment.urdf.xacro"/>
+</robot>

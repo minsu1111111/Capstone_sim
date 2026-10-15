@@ -1,0 +1,2 @@
+model,course,fitting,result,real_ok,time_s,progress,align_max,align_where,roll_max,sat_s,sat_joint,slip_pct,stall_s,est_err_mm,note
+two_real,elbow90_down,-,STUCK,X,35.9,72%,46.7,base_link@1.10m,5.6,0.0,,69.7,15.3,724,

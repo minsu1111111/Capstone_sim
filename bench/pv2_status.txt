@@ -1,0 +1,6 @@
+done base
+done k0.5
+done k1.5
+done k4.0
+done k1.5cd
+ALLDONE

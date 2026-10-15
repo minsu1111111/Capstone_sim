@@ -1,0 +1,5 @@
+done clamp_k=0.5 pitch_k=0.0
+done clamp_k=1.5 pitch_k=0.0
+done clamp_k=4.0 pitch_k=0.0
+done clamp_k=1.5 pitch_k=0.5
+ALLDONE

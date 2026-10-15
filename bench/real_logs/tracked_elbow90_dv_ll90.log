@@ -1,0 +1,321 @@
+[INFO] [launch]: All log files can be found below /home/aisl/.ros/log/2026-10-14-14-58-36-825276-aisl-15G880-SD76K-84806
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign-1]: process started with pid [84808]
+[INFO] [robot_state_publisher-2]: process started with pid [84810]
+[INFO] [create-3]: process started with pid [84812]
+[INFO] [parameter_bridge-4]: process started with pid [84814]
+[INFO] [odometry-5]: process started with pid [84816]
+[INFO] [pipe_markers-6]: process started with pid [84818]
+[INFO] [encoder_sim-7]: process started with pid [84820]
+[INFO] [motor_driver-8]: process started with pid [84822]
+[INFO] [oracle_steer-9]: process started with pid [84824]
+[create-3] [INFO] [1791957517.320867071] [ros_gz_sim]: Requesting list of world names.
+[robot_state_publisher-2] [WARN] [1791957517.371179738] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-2] [INFO] [1791957517.371334260] [robot_state_publisher]: got segment aux_slider_0_link
+[robot_state_publisher-2] [INFO] [1791957517.371433412] [robot_state_publisher]: got segment aux_slider_1_link
+[robot_state_publisher-2] [INFO] [1791957517.371455275] [robot_state_publisher]: got segment aux_slider_2_link
+[robot_state_publisher-2] [INFO] [1791957517.371475177] [robot_state_publisher]: got segment aux_wheel_0_link
+[robot_state_publisher-2] [INFO] [1791957517.371485184] [robot_state_publisher]: got segment aux_wheel_1_link
+[robot_state_publisher-2] [INFO] [1791957517.371493548] [robot_state_publisher]: got segment aux_wheel_2_link
+[robot_state_publisher-2] [INFO] [1791957517.371501120] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1791957517.371508780] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-2] [INFO] [1791957517.371516691] [robot_state_publisher]: got segment l_tw_0_link
+[robot_state_publisher-2] [INFO] [1791957517.371524820] [robot_state_publisher]: got segment l_tw_1_link
+[robot_state_publisher-2] [INFO] [1791957517.371532756] [robot_state_publisher]: got segment l_tw_2_link
+[robot_state_publisher-2] [INFO] [1791957517.371541022] [robot_state_publisher]: got segment l_tw_3_link
+[robot_state_publisher-2] [INFO] [1791957517.371548914] [robot_state_publisher]: got segment left_track
+[robot_state_publisher-2] [INFO] [1791957517.371556854] [robot_state_publisher]: got segment r_tw_0_link
+[robot_state_publisher-2] [INFO] [1791957517.371565022] [robot_state_publisher]: got segment r_tw_1_link
+[robot_state_publisher-2] [INFO] [1791957517.371572757] [robot_state_publisher]: got segment r_tw_2_link
+[robot_state_publisher-2] [INFO] [1791957517.371580764] [robot_state_publisher]: got segment r_tw_3_link
+[robot_state_publisher-2] [INFO] [1791957517.371589150] [robot_state_publisher]: got segment right_track
+[motor_driver-8] [INFO] [1791957517.670376589] [motor_driver]: mode=speed_pid, 최고속도 16.6 cm/s (무부하)
+[create-3] [INFO] [1791957517.761950953] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[create-3] [INFO] [1791957517.773264698] [ros_gz_sim]: Requested creation of entity.
+[create-3] [INFO] [1791957517.773293946] [ros_gz_sim]: OK creation of entity.
+[pipe_markers-6] [INFO] [1791957517.805434058] [pipe_markers]: elbow90: 중심선 2.20 m, 특징점 [('dv90:left', 1.0), ('cap', 2.2023495408493625)]
+[INFO] [create-3]: process has finished cleanly [pid 84812]
+[parameter_bridge-4] [INFO] [1791957518.376500239] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (ignition.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957518.379330906] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/joint_states (ignition.msgs.Model) -> /joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957518.386905844] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/imu (ignition.msgs.IMU) -> /imu (sensor_msgs/msg/Imu)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957518.390750418] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/ground_truth/odom (ignition.msgs.Odometry) -> /ground_truth/odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957518.396211570] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/pipe_world/dynamic_pose/info (ignition.msgs.Pose_V) -> /gz_poses (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957518.401353800] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/r_tw_0_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/r_tw_0_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957518.404741885] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/r_tw_1_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/r_tw_1_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957518.406208525] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/r_tw_2_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/r_tw_2_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957518.407566803] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/r_tw_3_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/r_tw_3_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957518.409119439] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/l_tw_0_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/l_tw_0_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957518.410198537] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/l_tw_1_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/l_tw_1_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957518.411218800] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/l_tw_2_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/l_tw_2_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957518.412357988] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/l_tw_3_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/l_tw_3_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957519.668465124] [ros_gz_bridge]: Passing message from ROS std_msgs/msg/Float64 to Gazebo gz.msgs.Double (showing msg only once per type)
+[odometry-5] [INFO] [1791957520.683261604] [odometry]: 이동거리 정답 0.000 m / 엔코더 0.000 m | 위치 오차 0.1 mm
+[odometry-5] [INFO] [1791957521.658838636] [odometry]: 이동거리 정답 0.058 m / 엔코더 0.059 m | 위치 오차 1.0 mm
+[odometry-5] [INFO] [1791957522.660460486] [odometry]: 이동거리 정답 0.118 m / 엔코더 0.119 m | 위치 오차 1.1 mm
+[odometry-5] [INFO] [1791957523.660564265] [odometry]: 이동거리 정답 0.178 m / 엔코더 0.179 m | 위치 오차 1.1 mm
+[odometry-5] [INFO] [1791957524.660743496] [odometry]: 이동거리 정답 0.238 m / 엔코더 0.239 m | 위치 오차 1.3 mm
+[odometry-5] [INFO] [1791957525.662986338] [odometry]: 이동거리 정답 0.298 m / 엔코더 0.299 m | 위치 오차 1.4 mm
+[odometry-5] [INFO] [1791957526.664247082] [odometry]: 이동거리 정답 0.358 m / 엔코더 0.359 m | 위치 오차 1.7 mm
+[odometry-5] [INFO] [1791957527.666743750] [odometry]: 이동거리 정답 0.418 m / 엔코더 0.419 m | 위치 오차 2.0 mm
+[odometry-5] [INFO] [1791957528.669788401] [odometry]: 이동거리 정답 0.478 m / 엔코더 0.479 m | 위치 오차 2.4 mm
+[odometry-5] [INFO] [1791957529.671972401] [odometry]: 이동거리 정답 0.538 m / 엔코더 0.539 m | 위치 오차 2.8 mm
+[odometry-5] [INFO] [1791957530.671434820] [odometry]: 이동거리 정답 0.598 m / 엔코더 0.599 m | 위치 오차 3.3 mm
+[odometry-5] [INFO] [1791957531.672724654] [odometry]: 이동거리 정답 0.658 m / 엔코더 0.659 m | 위치 오차 3.8 mm
+[odometry-5] [INFO] [1791957532.673104848] [odometry]: 이동거리 정답 0.718 m / 엔코더 0.719 m | 위치 오차 4.4 mm
+[odometry-5] [INFO] [1791957533.673344602] [odometry]: 이동거리 정답 0.778 m / 엔코더 0.779 m | 위치 오차 5.0 mm
+[odometry-5] [INFO] [1791957534.673612548] [odometry]: 이동거리 정답 0.833 m / 엔코더 0.839 m | 위치 오차 7.8 mm
+[odometry-5] [INFO] [1791957535.673415675] [odometry]: 이동거리 정답 0.867 m / 엔코더 0.899 m | 위치 오차 32.8 mm
+[odometry-5] [INFO] [1791957536.674746965] [odometry]: 이동거리 정답 0.887 m / 엔코더 0.959 m | 위치 오차 72.6 mm
+[odometry-5] [INFO] [1791957537.674893970] [odometry]: 이동거리 정답 0.917 m / 엔코더 1.019 m | 위치 오차 102.5 mm
+[odometry-5] [INFO] [1791957538.673962407] [odometry]: 이동거리 정답 0.949 m / 엔코더 1.079 m | 위치 오차 127.5 mm
+[odometry-5] [INFO] [1791957539.675602713] [odometry]: 이동거리 정답 0.979 m / 엔코더 1.139 m | 위치 오차 153.3 mm
+[odometry-5] [INFO] [1791957540.675330308] [odometry]: 이동거리 정답 1.008 m / 엔코더 1.199 m | 위치 오차 177.3 mm
+[odometry-5] [INFO] [1791957541.676010162] [odometry]: 이동거리 정답 1.058 m / 엔코더 1.259 m | 위치 오차 180.8 mm
+[odometry-5] [INFO] [1791957542.676164491] [odometry]: 이동거리 정답 1.115 m / 엔코더 1.318 m | 위치 오차 181.1 mm
+[odometry-5] [INFO] [1791957543.675320986] [odometry]: 이동거리 정답 1.175 m / 엔코더 1.378 m | 위치 오차 181.1 mm
+[odometry-5] [INFO] [1791957544.675227213] [odometry]: 이동거리 정답 1.235 m / 엔코더 1.438 m | 위치 오차 181.0 mm
+[odometry-5] [INFO] [1791957545.677794072] [odometry]: 이동거리 정답 1.295 m / 엔코더 1.498 m | 위치 오차 180.8 mm
+[odometry-5] [INFO] [1791957546.680310803] [odometry]: 이동거리 정답 1.355 m / 엔코더 1.558 m | 위치 오차 180.5 mm
+[odometry-5] [INFO] [1791957547.683818787] [odometry]: 이동거리 정답 1.415 m / 엔코더 1.618 m | 위치 오차 180.3 mm
+[odometry-5] [INFO] [1791957548.685280491] [odometry]: 이동거리 정답 1.475 m / 엔코더 1.678 m | 위치 오차 180.1 mm
+[odometry-5] [INFO] [1791957549.685181555] [odometry]: 이동거리 정답 1.535 m / 엔코더 1.738 m | 위치 오차 179.8 mm
+[odometry-5] [INFO] [1791957550.691161556] [odometry]: 이동거리 정답 1.595 m / 엔코더 1.798 m | 위치 오차 179.5 mm
+[odometry-5] [INFO] [1791957551.691395319] [odometry]: 이동거리 정답 1.655 m / 엔코더 1.858 m | 위치 오차 179.2 mm
+[odometry-5] [INFO] [1791957552.691958782] [odometry]: 이동거리 정답 1.715 m / 엔코더 1.918 m | 위치 오차 178.9 mm
+[odometry-5] [INFO] [1791957553.693453685] [odometry]: 이동거리 정답 1.775 m / 엔코더 1.978 m | 위치 오차 178.6 mm
+[odometry-5] [INFO] [1791957554.693837929] [odometry]: 이동거리 정답 1.835 m / 엔코더 2.038 m | 위치 오차 178.2 mm
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[robot_state_publisher-2] [INFO] [1791957555.454004969] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-4] [INFO] [1791957555.454026587] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[odometry-5] Traceback (most recent call last):
+[odometry-5]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/odometry", line 33, in <module>
+[odometry-5]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'odometry')())
+[odometry-5]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/odometry.py", line 170, in main
+[INFO] [oracle_steer-9]: sending signal 'SIGINT' to process[oracle_steer-9]
+[INFO] [motor_driver-8]: sending signal 'SIGINT' to process[motor_driver-8]
+[INFO] [encoder_sim-7]: sending signal 'SIGINT' to process[encoder_sim-7]
+[INFO] [pipe_markers-6]: sending signal 'SIGINT' to process[pipe_markers-6]
+[INFO] [odometry-5]: sending signal 'SIGINT' to process[odometry-5]
+[INFO] [parameter_bridge-4]: sending signal 'SIGINT' to process[parameter_bridge-4]
+[ERROR] [motor_driver-8]: process has died [pid 84822, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/tracked/robot.yaml --params-file /tmp/launch_params_en9zh63w'].
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[INFO] [ign-1]: sending signal 'SIGINT' to process[ign-1]
+[motor_driver-8] Traceback (most recent call last):
+[motor_driver-8]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver", line 33, in <module>
+[motor_driver-8]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'motor_driver')())
+[motor_driver-8]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/motor_driver.py", line 110, in main
+[motor_driver-8]     rclpy.spin(MotorDriver())
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[motor_driver-8]     executor.spin_once()
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[ERROR] [odometry-5]: process has died [pid 84816, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/odometry --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/tracked/robot.yaml --params-file /tmp/launch_params_lqjvmpz0 --params-file /tmp/launch_params__2ykbyaw'].
+[ERROR] [robot_state_publisher-2]: process has died [pid 84810, exit code -2, cmd '/opt/ros/humble/lib/robot_state_publisher/robot_state_publisher --ros-args --params-file /tmp/launch_params_8n0evwuq --params-file /tmp/launch_params_1ab58ahi'].
+[odometry-5]     rclpy.spin(Odom())
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[odometry-5]     executor.spin_once()
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[odometry-5]     self._spin_once_impl(timeout_sec)
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+[odometry-5]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+[odometry-5]     return next(self._cb_iter)
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 725, in _wait_for_ready_callbacks
+[odometry-5]     handler = self._make_handler(
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 497, in _make_handler
+[odometry-5]     task = Task(
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 253, in __init__
+[odometry-5]     super().__init__(executor=executor)
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 50, in __init__
+[odometry-5]     self._lock = threading.Lock()
+[odometry-5] KeyboardInterrupt
+[motor_driver-8]     self._spin_once_impl(timeout_sec)
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+[motor_driver-8]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+[motor_driver-8]     return next(self._cb_iter)
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+[motor_driver-8]     context_stack.enter_context(sub.handle)
+[motor_driver-8]   File "/usr/lib/python3.10/contextlib.py", line 493, in enter_context
+[motor_driver-8]     self._push_cm_exit(cm, _exit)
+[motor_driver-8]   File "/usr/lib/python3.10/contextlib.py", line 512, in _push_cm_exit
+[motor_driver-8]     self._push_exit_callback(_exit_wrapper, True)
+[motor_driver-8] KeyboardInterrupt
+[oracle_steer-9] Traceback (most recent call last):
+[oracle_steer-9]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/oracle_steer", line 33, in <module>
+[oracle_steer-9]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'oracle_steer')())
+[oracle_steer-9]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/oracle_steer.py", line 47, in main
+[oracle_steer-9]     rclpy.spin(OracleSteer())
+[oracle_steer-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[oracle_steer-9]     executor.spin_once()
+[oracle_steer-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[oracle_steer-9]     self._spin_once_impl(timeout_sec)
+[oracle_steer-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 809, in _spin_once_impl
+[oracle_steer-9]     raise handler.exception()
+[oracle_steer-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+[oracle_steer-9]     result = coro.send(None)
+[oracle_steer-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 478, in handler
+[oracle_steer-9]     arg = take_from_wait_list(entity)
+[oracle_steer-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 400, in _take_subscription
+[oracle_steer-9]     msg_info = sub.handle.take_message(sub.msg_type, sub.raw)
+[oracle_steer-9] RuntimeError: Unable to convert call argument to Python object (compile in debug mode for details)
+[oracle_steer-9] Error in sys.excepthook:
+[oracle_steer-9] Traceback (most recent call last):
+[oracle_steer-9]   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 72, in apport_excepthook
+[oracle_steer-9]     from apport.fileutils import likely_packaged, get_recent_crashes
+[oracle_steer-9]   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+[oracle_steer-9]     from apport.report import Report
+[oracle_steer-9]   File "/usr/lib/python3/dist-packages/apport/report.py", line 15, in <module>
+[oracle_steer-9]     import xml.dom, xml.dom.minidom
+[oracle_steer-9]   File "/usr/lib/python3.10/xml/dom/minidom.py", line 1288, in <module>
+[oracle_steer-9]     class Identified:
+[oracle_steer-9] KeyboardInterrupt
+[oracle_steer-9] 
+[oracle_steer-9] Original exception was:
+[oracle_steer-9] Traceback (most recent call last):
+[oracle_steer-9]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/oracle_steer", line 33, in <module>
+[oracle_steer-9]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'oracle_steer')())
+[oracle_steer-9]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/oracle_steer.py", line 47, in main
+[oracle_steer-9]     rclpy.spin(OracleSteer())
+[oracle_steer-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[oracle_steer-9]     executor.spin_once()
+[oracle_steer-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[oracle_steer-9]     self._spin_once_impl(timeout_sec)
+[oracle_steer-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 809, in _spin_once_impl
+[oracle_steer-9]     raise handler.exception()
+[oracle_steer-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+[oracle_steer-9]     result = coro.send(None)
+[oracle_steer-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 478, in handler
+[oracle_steer-9]     arg = take_from_wait_list(entity)
+[oracle_steer-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 400, in _take_subscription
+[oracle_steer-9]     msg_info = sub.handle.take_message(sub.msg_type, sub.raw)
+[oracle_steer-9] RuntimeError: Unable to convert call argument to Python object (compile in debug mode for details)
+[encoder_sim-7] Traceback (most recent call last):
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim", line 33, in <module>
+[encoder_sim-7]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'encoder_sim')())
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/encoder_sim.py", line 40, in main
+[encoder_sim-7]     rclpy.spin(EncoderSim())
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[encoder_sim-7]     executor.spin_once()
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[encoder_sim-7]     self._spin_once_impl(timeout_sec)
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 809, in _spin_once_impl
+[encoder_sim-7]     raise handler.exception()
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+[encoder_sim-7]     result = coro.send(None)
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 478, in handler
+[encoder_sim-7]     arg = take_from_wait_list(entity)
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 400, in _take_subscription
+[encoder_sim-7]     msg_info = sub.handle.take_message(sub.msg_type, sub.raw)
+[encoder_sim-7] RuntimeError: Unable to convert call argument to Python object (compile in debug mode for details)
+[encoder_sim-7] Error in sys.excepthook:
+[encoder_sim-7] Traceback (most recent call last):
+[encoder_sim-7]   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 72, in apport_excepthook
+[encoder_sim-7]     from apport.fileutils import likely_packaged, get_recent_crashes
+[encoder_sim-7]   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+[encoder_sim-7]     from apport.report import Report
+[encoder_sim-7]   File "/usr/lib/python3/dist-packages/apport/report.py", line 21, in <module>
+[encoder_sim-7]     from urllib.request import urlopen
+[encoder_sim-7]   File "/usr/lib/python3.10/urllib/request.py", line 88, in <module>
+[encoder_sim-7]     import http.client
+[encoder_sim-7]   File "/usr/lib/python3.10/http/client.py", line 71, in <module>
+[encoder_sim-7]     import email.parser
+[encoder_sim-7]   File "/usr/lib/python3.10/email/parser.py", line 12, in <module>
+[encoder_sim-7]     from email.feedparser import FeedParser, BytesFeedParser
+[encoder_sim-7]   File "/usr/lib/python3.10/email/feedparser.py", line 32, in <module>
+[pipe_markers-6] Traceback (most recent call last):
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers", line 33, in <module>
+[pipe_markers-6]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'pipe_markers')())
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/pipe_markers.py", line 35, in main
+[pipe_markers-6]     rclpy.spin(PipeMarkers())
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[pipe_markers-6]     executor.spin_once()
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[pipe_markers-6]     self._spin_once_impl(timeout_sec)
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 809, in _spin_once_impl
+[pipe_markers-6]     raise handler.exception()
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+[pipe_markers-6]     result = coro.send(None)
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 478, in handler
+[pipe_markers-6]     arg = take_from_wait_list(entity)
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 400, in _take_subscription
+[pipe_markers-6]     msg_info = sub.handle.take_message(sub.msg_type, sub.raw)
+[pipe_markers-6] RuntimeError: Unable to convert call argument to Python object (compile in debug mode for details)
+[pipe_markers-6] Error in sys.excepthook:
+[pipe_markers-6] Traceback (most recent call last):
+[pipe_markers-6]   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 72, in apport_excepthook
+[pipe_markers-6]     from apport.fileutils import likely_packaged, get_recent_crashes
+[pipe_markers-6]   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+[pipe_markers-6]     from apport.report import Report
+[pipe_markers-6]   File "/usr/lib/python3/dist-packages/apport/report.py", line 21, in <module>
+[pipe_markers-6]     from urllib.request import urlopen
+[pipe_markers-6]   File "/usr/lib/python3.10/urllib/request.py", line 88, in <module>
+[pipe_markers-6]     import http.client
+[pipe_markers-6]   File "/usr/lib/python3.10/http/client.py", line 181, in <module>
+[pipe_markers-6]     class HTTPMessage(email.message.Message):
+[pipe_markers-6] KeyboardInterrupt
+[pipe_markers-6] 
+[pipe_markers-6] Original exception was:
+[pipe_markers-6] Traceback (most recent call last):
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers", line 33, in <module>
+[pipe_markers-6]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'pipe_markers')())
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/pipe_markers.py", line 35, in main
+[pipe_markers-6]     rclpy.spin(PipeMarkers())
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[pipe_markers-6]     executor.spin_once()
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[pipe_markers-6]     self._spin_once_impl(timeout_sec)
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 809, in _spin_once_impl
+[pipe_markers-6]     raise handler.exception()
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+[pipe_markers-6]     result = coro.send(None)
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 478, in handler
+[pipe_markers-6]     arg = take_from_wait_list(entity)
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 400, in _take_subscription
+[pipe_markers-6]     msg_info = sub.handle.take_message(sub.msg_type, sub.raw)
+[pipe_markers-6] RuntimeError: Unable to convert call argument to Python object (compile in debug mode for details)
+[encoder_sim-7]     NLCRE_bol = re.compile(r'(\r\n|\r|\n)')
+[encoder_sim-7]   File "/usr/lib/python3.10/re.py", line 251, in compile
+[encoder_sim-7]     return _compile(pattern, flags)
+[encoder_sim-7]   File "/usr/lib/python3.10/re.py", line 303, in _compile
+[encoder_sim-7]     p = sre_compile.compile(pattern, flags)
+[encoder_sim-7]   File "/usr/lib/python3.10/sre_compile.py", line 788, in compile
+[encoder_sim-7]     p = sre_parse.parse(p, flags)
+[encoder_sim-7]   File "/usr/lib/python3.10/sre_parse.py", line 955, in parse
+[encoder_sim-7]     p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+[encoder_sim-7]   File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+[encoder_sim-7]     itemsappend(_parse(source, state, verbose, nested + 1,
+[encoder_sim-7]   File "/usr/lib/python3.10/sre_parse.py", line 841, in _parse
+[encoder_sim-7]     p = _parse_sub(source, state, sub_verbose, nested + 1)
+[encoder_sim-7]   File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+[encoder_sim-7]     itemsappend(_parse(source, state, verbose, nested + 1,
+[encoder_sim-7]   File "/usr/lib/python3.10/sre_parse.py", line 860, in _parse
+[encoder_sim-7]     op, av = subpattern[i]
+[encoder_sim-7]   File "/usr/lib/python3.10/sre_parse.py", line 165, in __getitem__
+[encoder_sim-7]     def __getitem__(self, index):
+[encoder_sim-7] KeyboardInterrupt
+[encoder_sim-7] 
+[encoder_sim-7] Original exception was:
+[encoder_sim-7] Traceback (most recent call last):
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim", line 33, in <module>
+[encoder_sim-7]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'encoder_sim')())
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/encoder_sim.py", line 40, in main
+[encoder_sim-7]     rclpy.spin(EncoderSim())
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[encoder_sim-7]     executor.spin_once()
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[parameter_bridge-4] [INFO] [1791957555.475378145] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[encoder_sim-7]     self._spin_once_impl(timeout_sec)
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 809, in _spin_once_impl
+[encoder_sim-7]     raise handler.exception()
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+[encoder_sim-7]     result = coro.send(None)
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 478, in handler
+[encoder_sim-7]     arg = take_from_wait_list(entity)
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 400, in _take_subscription
+[encoder_sim-7]     msg_info = sub.handle.take_message(sub.msg_type, sub.raw)
+[encoder_sim-7] RuntimeError: Unable to convert call argument to Python object (compile in debug mode for details)
+[INFO] [ign-1]: process has finished cleanly [pid 84808]
+[INFO] [parameter_bridge-4]: process has finished cleanly [pid 84814]
+[ERROR] [encoder_sim-7]: process has died [pid 84820, exit code 1, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/tracked/robot.yaml --params-file /tmp/launch_params_6zhzrugo'].
+[ERROR] [pipe_markers-6]: process has died [pid 84818, exit code 1, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers --ros-args --params-file /tmp/launch_params_3p4641tj --params-file /tmp/launch_params_m1_0m46t'].
+[ERROR] [oracle_steer-9]: process has died [pid 84824, exit code 1, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/oracle_steer --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/tracked/robot.yaml --params-file /tmp/launch_params_c9vaas8b --params-file /tmp/launch_params_y2z9i5fz'].

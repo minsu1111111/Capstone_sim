@@ -1,0 +1,2 @@
+model,course,fitting,result,real_ok,time_s,progress,align_max,align_where,roll_max,sat_s,sat_joint,slip_pct,stall_s,est_err_mm,note
+three_segment,elbow90_up,-,PASS,X,20.9,87%,52.8,rear_link@1.07m,2.3,2.1,j_front_pitch,10.2,0.0,62,

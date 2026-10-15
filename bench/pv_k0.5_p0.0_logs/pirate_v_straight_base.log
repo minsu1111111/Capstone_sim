@@ -1,0 +1,177 @@
+[INFO] [launch]: All log files can be found below /home/aisl/.ros/log/2026-10-15-10-30-55-907430-aisl-15G880-SD76K-158608
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign-1]: process started with pid [158609]
+[INFO] [robot_state_publisher-2]: process started with pid [158611]
+[INFO] [create-3]: process started with pid [158613]
+[INFO] [parameter_bridge-4]: process started with pid [158615]
+[INFO] [odometry-5]: process started with pid [158617]
+[INFO] [pipe_markers-6]: process started with pid [158619]
+[INFO] [encoder_sim-7]: process started with pid [158621]
+[INFO] [motor_driver-8]: process started with pid [158623]
+[INFO] [clamp_torque-9]: process started with pid [158627]
+[create-3] [INFO] [1792027856.745484171] [ros_gz_sim]: Requesting list of world names.
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[ign-1] /usr/lib/ruby/vendor_ruby/rubygems/specification.rb:772:in `block (2 levels) in each_gemspec': Interrupt
+[ign-1] 	from /usr/lib/ruby/vendor_ruby/rubygems/specification.rb:770:in `each'
+[ign-1] 	from /usr/lib/ruby/vendor_ruby/rubygems/specification.rb:770:in `block in each_gemspec'
+[ign-1] 	from /usr/lib/ruby/vendor_ruby/rubygems/specification.rb:769:in `each'
+[ign-1] 	from /usr/lib/ruby/vendor_ruby/rubygems/specification.rb:769:in `each_gemspec'
+[ign-1] 	from /usr/lib/ruby/vendor_ruby/rubygems/specification.rb:798:in `each_spec'
+[ign-1] 	from /usr/lib/ruby/vendor_ruby/rubygems/specification.rb:869:in `load_defaults'
+[ign-1] 	from /usr/lib/ruby/vendor_ruby/rubygems.rb:1347:in `<top (required)>'
+[ign-1] 	from <internal:gem_prelude>:2:in `require'
+[ign-1] 	from <internal:gem_prelude>:2:in `<internal:gem_prelude>'
+[ERROR] [parameter_bridge-4]: process has died [pid 158615, exit code -2, cmd '/opt/ros/humble/lib/ros_gz_bridge/parameter_bridge --ros-args --params-file /tmp/launch_params_6_61pgpl --params-file /tmp/launch_params_pl4us5dx'].
+[ERROR] [ign-1]: process has died [pid 158609, exit code -2, cmd 'ign gazebo -s -r /tmp/pipe_robot_sim/158608/straight.sdf'].
+[create-3] [INFO] [1792027856.759249987] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ERROR] [motor_driver-8]: process has died [pid 158623, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_yt4ed0gv'].
+[encoder_sim-7] Traceback (most recent call last):
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim", line 10, in <module>
+[encoder_sim-7]     from importlib.metadata import distribution
+[encoder_sim-7]   File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 10, in <module>
+[INFO] [clamp_torque-9]: sending signal 'SIGINT' to process[clamp_torque-9]
+[INFO] [encoder_sim-7]: sending signal 'SIGINT' to process[encoder_sim-7]
+[ERROR] [odometry-5]: process has died [pid 158617, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/odometry --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_042jpvmz --params-file /tmp/launch_params_qmy00rh6'].
+[INFO] [pipe_markers-6]: sending signal 'SIGINT' to process[pipe_markers-6]
+[ERROR] [encoder_sim-7]: process has died [pid 158621, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_a_2lzd_y'].
+[ERROR] [pipe_markers-6]: process has died [pid 158619, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers --ros-args --params-file /tmp/launch_params_i9_kdbzl --params-file /tmp/launch_params_ibws79ud'].
+[INFO] [create-3]: sending signal 'SIGINT' to process[create-3]
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[ERROR] [clamp_torque-9]: process has died [pid 158627, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/clamp_torque --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_v5f_d8fg'].
+[motor_driver-8] Traceback (most recent call last):
+[motor_driver-8]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver", line 10, in <module>
+[motor_driver-8]     from importlib.metadata import distribution
+[motor_driver-8]   File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 17, in <module>
+[robot_state_publisher-2] [INFO] [1792027856.759518029] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[odometry-5] Traceback (most recent call last):
+[odometry-5]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/odometry", line 10, in <module>
+[odometry-5]     from importlib.metadata import distribution
+[odometry-5]   File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 17, in <module>
+[clamp_torque-9] Exception ignored in: <function _get_module_lock.<locals>.cb at 0x76860c6e7640>
+[clamp_torque-9] Traceback (most recent call last):
+[clamp_torque-9]   File "<frozen importlib._bootstrap>", line 199, in cb
+[clamp_torque-9] KeyboardInterrupt: 
+[pipe_markers-6] Traceback (most recent call last):
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers", line 33, in <module>
+[pipe_markers-6]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'pipe_markers')())
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers", line 25, in importlib_load_entry_point
+[pipe_markers-6]     return next(matches).load()
+[pipe_markers-6]   File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 171, in load
+[pipe_markers-6]     module = import_module(match.group('module'))
+[pipe_markers-6]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[pipe_markers-6]     return _bootstrap._gcd_import(name[level:], package, level)
+[pipe_markers-6]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[pipe_markers-6]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[pipe_markers-6]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[pipe_markers-6]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[pipe_markers-6]   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[pipe_markers-6]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/pipe_markers.py", line 2, in <module>
+[pipe_markers-6]     import rclpy
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 48, in <module>
+[pipe_markers-6]     from rclpy.parameter import Parameter
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/parameter.py", line 18, in <module>
+[pipe_markers-6]     from rcl_interfaces.msg import Parameter as ParameterMsg
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rcl_interfaces/msg/__init__.py", line 4, in <module>
+[pipe_markers-6]     from rcl_interfaces.msg._log import Log  # noqa: F401
+[pipe_markers-6] KeyboardInterrupt
+[odometry-5]     from . import _adapters, _meta
+[odometry-5]   File "/usr/lib/python3.10/importlib/metadata/_adapters.py", line 3, in <module>
+[odometry-5]     import email.message
+[odometry-5]   File "/usr/lib/python3.10/email/message.py", line 15, in <module>
+[odometry-5]     from email import utils
+[odometry-5]   File "/usr/lib/python3.10/email/utils.py", line 33, in <module>
+[odometry-5]     from email._parseaddr import quote
+[odometry-5]   File "/usr/lib/python3.10/email/_parseaddr.py", line 16, in <module>
+[odometry-5]     import time, calendar
+[odometry-5]   File "/usr/lib/python3.10/calendar.py", line 641, in <module>
+[odometry-5]     _EPOCH_ORD = datetime.date(EPOCH, 1, 1).toordinal()
+[odometry-5] KeyboardInterrupt
+[encoder_sim-7]     import textwrap
+[encoder_sim-7]   File "/usr/lib/python3.10/textwrap.py", line 17, in <module>
+[encoder_sim-7]     class TextWrapper:
+[encoder_sim-7]   File "/usr/lib/python3.10/textwrap.py", line 81, in TextWrapper
+[encoder_sim-7]     wordsep_re = re.compile(r'''
+[encoder_sim-7]   File "/usr/lib/python3.10/re.py", line 251, in compile
+[encoder_sim-7]     return _compile(pattern, flags)
+[encoder_sim-7]   File "/usr/lib/python3.10/re.py", line 303, in _compile
+[encoder_sim-7]     p = sre_compile.compile(pattern, flags)
+[encoder_sim-7]   File "/usr/lib/python3.10/sre_compile.py", line 788, in compile
+[encoder_sim-7]     p = sre_parse.parse(p, flags)
+[encoder_sim-7]   File "/usr/lib/python3.10/sre_parse.py", line 955, in parse
+[encoder_sim-7]     p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+[encoder_sim-7]   File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+[encoder_sim-7]     itemsappend(_parse(source, state, verbose, nested + 1,
+[encoder_sim-7]   File "/usr/lib/python3.10/sre_parse.py", line 841, in _parse
+[encoder_sim-7]     p = _parse_sub(source, state, sub_verbose, nested + 1)
+[encoder_sim-7]   File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+[encoder_sim-7]     itemsappend(_parse(source, state, verbose, nested + 1,
+[encoder_sim-7]   File "/usr/lib/python3.10/sre_parse.py", line 512, in _parse
+[encoder_sim-7]     sourceget()
+[encoder_sim-7]   File "/usr/lib/python3.10/sre_parse.py", line 257, in get
+[encoder_sim-7]     self.__next()
+[encoder_sim-7]   File "/usr/lib/python3.10/sre_parse.py", line 234, in __next
+[encoder_sim-7]     def __next(self):
+[encoder_sim-7] KeyboardInterrupt
+[motor_driver-8]     from . import _adapters, _meta
+[motor_driver-8]   File "/usr/lib/python3.10/importlib/metadata/_adapters.py", line 3, in <module>
+[motor_driver-8]     import email.message
+[motor_driver-8]   File "/usr/lib/python3.10/email/message.py", line 15, in <module>
+[motor_driver-8]     from email import utils
+[motor_driver-8]   File "/usr/lib/python3.10/email/utils.py", line 28, in <module>
+[motor_driver-8]     import random
+[motor_driver-8]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[motor_driver-8]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[motor_driver-8]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[motor_driver-8]   File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+[motor_driver-8]   File "<frozen importlib._bootstrap_external>", line 1012, in get_code
+[motor_driver-8]   File "<frozen importlib._bootstrap_external>", line 672, in _compile_bytecode
+[motor_driver-8] KeyboardInterrupt
+[clamp_torque-9] Traceback (most recent call last):
+[clamp_torque-9]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/clamp_torque", line 10, in <module>
+[clamp_torque-9]     from importlib.metadata import distribution
+[clamp_torque-9]   File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 17, in <module>
+[clamp_torque-9]     from . import _adapters, _meta
+[clamp_torque-9]   File "/usr/lib/python3.10/importlib/metadata/_adapters.py", line 3, in <module>
+[clamp_torque-9]     import email.message
+[clamp_torque-9]   File "/usr/lib/python3.10/email/message.py", line 15, in <module>
+[clamp_torque-9]     from email import utils
+[clamp_torque-9]   File "/usr/lib/python3.10/email/utils.py", line 33, in <module>
+[clamp_torque-9]     from email._parseaddr import quote
+[clamp_torque-9]   File "/usr/lib/python3.10/email/_parseaddr.py", line 16, in <module>
+[clamp_torque-9]     import time, calendar
+[clamp_torque-9]   File "/usr/lib/python3.10/calendar.py", line 10, in <module>
+[clamp_torque-9]     import locale as _locale
+[clamp_torque-9]   File "/usr/lib/python3.10/locale.py", line 96, in <module>
+[clamp_torque-9]     if 'strxfrm' not in globals():
+[clamp_torque-9] KeyboardInterrupt
+[create-3] [INFO] [1792027856.817946829] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-2] [INFO] [1792027856.825656349] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-2] [WARN] [1792027856.827967923] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-2] [INFO] [1792027856.828073941] [robot_state_publisher]: got segment b_bracket
+[robot_state_publisher-2] [INFO] [1792027856.828084143] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1792027856.828089816] [robot_state_publisher]: got segment c_bracket
+[robot_state_publisher-2] [INFO] [1792027856.828095202] [robot_state_publisher]: got segment c_frame
+[robot_state_publisher-2] [INFO] [1792027856.828099669] [robot_state_publisher]: got segment d_bracket
+[robot_state_publisher-2] [INFO] [1792027856.828103495] [robot_state_publisher]: got segment d_frame
+[robot_state_publisher-2] [INFO] [1792027856.828106873] [robot_state_publisher]: got segment e_bracket
+[robot_state_publisher-2] [INFO] [1792027856.828110620] [robot_state_publisher]: got segment f1_link
+[robot_state_publisher-2] [INFO] [1792027856.828113853] [robot_state_publisher]: got segment f2_link
+[robot_state_publisher-2] [INFO] [1792027856.828117066] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-2] [INFO] [1792027856.828120402] [robot_state_publisher]: got segment nose_link
+[robot_state_publisher-2] [INFO] [1792027856.828123976] [robot_state_publisher]: got segment r1_link
+[robot_state_publisher-2] [INFO] [1792027856.828127544] [robot_state_publisher]: got segment r2_link
+[robot_state_publisher-2] [INFO] [1792027856.828130738] [robot_state_publisher]: got segment wheel_a_link
+[robot_state_publisher-2] [INFO] [1792027856.828134262] [robot_state_publisher]: got segment wheel_b_link
+[robot_state_publisher-2] [INFO] [1792027856.828137792] [robot_state_publisher]: got segment wheel_c_link
+[robot_state_publisher-2] [INFO] [1792027856.828156782] [robot_state_publisher]: got segment wheel_d_link
+[robot_state_publisher-2] [INFO] [1792027856.828160002] [robot_state_publisher]: got segment wheel_e_link
+[robot_state_publisher-2] [INFO] [1792027856.828163431] [robot_state_publisher]: got segment wheel_f_link
+[robot_state_publisher-2] terminate called after throwing an instance of 'rclcpp::exceptions::RCLError'
+[robot_state_publisher-2]   what():  could not create subscription: rcl node's context is invalid, at ./src/rcl/node.c:428
+[ERROR] [robot_state_publisher-2]: process has died [pid 158611, exit code -6, cmd '/opt/ros/humble/lib/robot_state_publisher/robot_state_publisher --ros-args --params-file /tmp/launch_params_cb2b08i7 --params-file /tmp/launch_params_7djr4m1u'].
+[create-3] [INFO] [1792027861.749091453] [ros_gz_sim]: Timed out when getting world names.
+[ERROR] [create-3]: process[create-3] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [create-3]: sending signal 'SIGTERM' to process[create-3]
+[create-3] [INFO] [1792027861.792407275] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ERROR] [create-3]: process has died [pid 158613, exit code 255, cmd '/opt/ros/humble/lib/ros_gz_sim/create -name pipe_robot -topic robot_description -x 0.22 -y 0 -z 0.057 --ros-args'].

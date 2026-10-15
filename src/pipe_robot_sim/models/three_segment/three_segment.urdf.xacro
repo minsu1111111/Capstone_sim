@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<!-- three_segment: 앞(구동) - [피치+요 관절] - 가운데 - [피치+요 관절] - 뒤
+     좌표: x = 진행, y = 왼쪽, z = 위. base_link = 앞마디 중심.
+     마디마다 120° 3륜(위 1, 아래 2), 바퀴마다 반경 방향 스프링 슬라이더.
+     앞마디 바퀴만 모터 구동, 나머지는 종동. 관절 축마다 active/passive/fixed 선택(robot.yaml servo_modes). -->
+<robot name="three_segment" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:arg name="params_file" default=""/>
+  <xacro:arg name="pipe_inner_d" default="0.1008"/>
+  <xacro:arg name="suspension" default="all"/>
+
+  <xacro:property name="p" value="${xacro.load_yaml('$(arg params_file)')['/**']['ros__parameters']}"/>
+  <xacro:property name="suspension" value="$(arg suspension)"/>
+  <xacro:property name="wr" value="${p['wheel_radius']}"/>
+  <xacro:property name="ww" value="${p['wheel_width']}"/>
+  <xacro:property name="br" value="${p['body_d']/2}"/>
+  <xacro:property name="gap" value="${p['joint_gap']}"/>
+  <xacro:property name="L" value="${p['seg_len']}"/>
+  <xacro:property name="M" value="${p['seg_mass']}"/>
+  <xacro:property name="contact_rho" value="${$(arg pipe_inner_d) / 2 - wr}"/>
+  <xacro:property name="rho0" value="${contact_rho - 0.0005}"/>
+  <xacro:property name="motor_damping" value="${p['motor_stall_torque'] / p['motor_no_load_speed']}"/>
+  <xacro:property name="lim" value="${radians(p['joint_limit_deg'])}"/>
+  <xacro:property name="ch" value="${p.get('end_chamfer', 0.0)}"/>
+
+  <!-- ===== 마디 몸체 (링크 원점에서 x로 cx만큼 떨어진 원통) ===== -->
+  <!-- seg_com: 마디별 무게중심 오프셋 (부품 배치로 계산, 마디 중심 기준). body_alpha: 몸통 투명도 -->
+  <xacro:property name="SCF" value="${p.get('seg_com', [0.0] * 9)}"/>   <!-- [앞 x,y,z, 가운데 x,y,z, 뒤 x,y,z] -->
+  <xacro:property name="SC" value="${[SCF[0:3], SCF[3:6], SCF[6:9]]}"/>
+  <xacro:property name="alpha" value="${p.get('body_alpha', 1.0)}"/>
+  <xacro:macro name="segment_body" params="link cx length mass color idx">
+    <link name="${link}">
+      <inertial>
+        <origin xyz="${cx + SC[idx][0]} ${SC[idx][1]} ${SC[idx][2]}"/>
+        <mass value="${mass}"/>
+        <inertia ixx="${0.5*mass*br*br}" ixy="0" ixz="0" iyy="${mass*(3*br*br+length*length)/12}" iyz="0"
+                 izz="${mass*(3*br*br+length*length)/12}"/>
+      </inertial>
+      <!-- 몸통 + 양 끝 모따기(반경 br-ch, 길이 ch). 모서리가 늦게 부딪혀 관절이 더 꺾임 -->
+      <visual>
+        <origin xyz="${cx} 0 0" rpy="0 ${pi/2} 0"/>
+        <geometry><cylinder radius="${br}" length="${length - 2*ch}"/></geometry>
+        <material name="${link}_mat"><color rgba="${color}"/></material>
+      </visual>
+      <collision>
+        <origin xyz="${cx} 0 0" rpy="0 ${pi/2} 0"/>
+        <geometry><cylinder radius="${br}" length="${length - 2*ch}"/></geometry>
+      </collision>
+      <xacro:if value="${ch > 0}">
+        <xacro:macro name="cap" params="sx">
+          <visual>
+            <origin xyz="${cx + sx*(length/2 - ch/2)} 0 0" rpy="0 ${pi/2} 0"/>
+            <geometry><cylinder radius="${br - ch}" length="${ch}"/></geometry>
+            <material name="${link}_mat"><color rgba="${color}"/></material>
+          </visual>
+          <collision>
+            <origin xyz="${cx + sx*(length/2 - ch/2)} 0 0" rpy="0 ${pi/2} 0"/>
+            <geometry><cylinder radius="${br - ch}" length="${ch}"/></geometry>
+          </collision>
+        </xacro:macro>
+        <xacro:cap sx="1"/>
+        <xacro:cap sx="-1"/>
+      </xacro:if>
+    </link>
+    <gazebo reference="${link}">
+      <mu1>0.3</mu1><mu2>0.3</mu2>
+      <!-- 충돌 마스크 0x02: 몸체끼리는 부딪히고, 바퀴(0x01)와는 안 부딪힘. 배관은 0xff라 둘 다와 부딪힘 -->
+      <collision><surface><contact><collide_bitmask>0x02</collide_bitmask></contact></surface></collision>
+    </gazebo>
+  </xacro:macro>
+
+  <!-- ===== 바퀴 모듈: parent 링크의 x=cx 위치, 각도 인덱스 i ===== -->
+  <xacro:macro name="wheel_module" params="pre i parent cx driven">
+    <xacro:property name="ang" value="${radians(p['wheel_angles_deg'][i])}"/>
+    <xacro:property name="alpha" value="${ang - pi/2}"/>
+    <xacro:property name="sprung" value="${suspension == 'all' or i == 0}"/>
+    <xacro:property name="rho" value="${rho0 if sprung else contact_rho}"/>
+
+    <link name="${pre}slider_${i}_link">
+      <inertial><mass value="${p['slider_mass']}"/><inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7"/></inertial>
+      <visual>
+        <origin xyz="0 0 -0.006"/>
+        <geometry><box size="0.006 0.004 0.012"/></geometry>
+        <material name="arm"><color rgba="0.3 0.3 0.3 1"/></material>
+      </visual>
+    </link>
+    <joint name="${pre}slider_${i}_joint" type="${'prismatic' if sprung else 'fixed'}">
+      <parent link="${parent}"/><child link="${pre}slider_${i}_link"/>
+      <origin xyz="${cx} ${-sin(alpha)*rho} ${cos(alpha)*rho}" rpy="${alpha} 0 0"/>
+      <xacro:if value="${sprung}">
+        <axis xyz="0 0 1"/>
+        <limit lower="${-p['stroke']}" upper="${p['stroke']}" effort="100" velocity="1"/>
+        <dynamics damping="${p['spring_damping']}"/>
+      </xacro:if>
+    </joint>
+    <xacro:if value="${sprung}">
+      <gazebo reference="${pre}slider_${i}_joint">
+        <springStiffness>${p['spring_k']}</springStiffness>
+        <springReference>${0.0005 + p['spring_preload']}</springReference>
+      </gazebo>
+    </xacro:if>
+
+    <link name="${pre}wheel_${i}_link">
+      <xacro:property name="iyy" value="${0.5*p['wheel_mass']*wr*wr + (p['motor_reflected_inertia'] if driven else 0.0)}"/>
+      <xacro:property name="ixx" value="${max(p['wheel_mass']*(3*wr*wr+ww*ww)/12, 0.51*iyy)}"/>
+      <inertial><mass value="${p['wheel_mass']}"/><inertia ixx="${ixx}" ixy="0" ixz="0" iyy="${iyy}" iyz="0" izz="${ixx}"/></inertial>
+      <visual>
+        <origin rpy="${pi/2} 0 0"/>
+        <geometry><cylinder radius="${wr}" length="${ww}"/></geometry>
+        <material name="tire"><color rgba="0.1 0.1 0.1 1"/></material>
+      </visual>
+      <visual>
+        <origin xyz="0 0 ${wr*0.6}"/>
+        <geometry><box size="0.003 ${ww*1.1} 0.006"/></geometry>
+        <material name="mark"><color rgba="1 1 1 1"/></material>
+      </visual>
+      <!-- 충돌은 같은 반경의 구 (원통-메시 접촉보다 안정적) -->
+      <collision><geometry><sphere radius="${wr}"/></geometry></collision>
+    </link>
+    <joint name="${pre}wheel_${i}_joint" type="continuous">
+      <parent link="${pre}slider_${i}_link"/><child link="${pre}wheel_${i}_link"/>
+      <axis xyz="0 -1 0"/>
+      <xacro:if value="${driven}"><dynamics damping="${motor_damping}" friction="${p['gear_friction']}"/></xacro:if>
+      <xacro:unless value="${driven}"><dynamics damping="0.00001" friction="${p['idler_friction']}"/></xacro:unless>
+    </joint>
+    <gazebo reference="${pre}wheel_${i}_link">
+      <mu1>${p['wheel_mu']}</mu1><mu2>${p['wheel_mu']}</mu2>
+      <collision><surface><contact><collide_bitmask>0x01</collide_bitmask></contact></surface></collision>
+    </gazebo>
+    <xacro:if value="${driven}">
+      <gazebo>
+        <plugin filename="ignition-gazebo-apply-joint-force-system" name="ignition::gazebo::systems::ApplyJointForce">
+          <joint_name>${pre}wheel_${i}_joint</joint_name>
+        </plugin>
+      </gazebo>
+    </xacro:if>
+  </xacro:macro>
+
+  <xacro:macro name="wheel_ring" params="pre parent cx driven">
+    <xacro:wheel_module pre="${pre}" i="0" parent="${parent}" cx="${cx}" driven="${driven}"/>
+    <xacro:wheel_module pre="${pre}" i="1" parent="${parent}" cx="${cx}" driven="${driven}"/>
+    <xacro:wheel_module pre="${pre}" i="2" parent="${parent}" cx="${cx}" driven="${driven}"/>
+    <xacro:if value="${len(p['wheel_angles_deg']) > 3}">   <!-- 4륜 (예: X자 45/135/225/315) -->
+      <xacro:wheel_module pre="${pre}" i="3" parent="${parent}" cx="${cx}" driven="${driven}"/>
+    </xacro:if>
+  </xacro:macro>
+
+  <!-- ===== 관절 축 하나: mode = active(서보) | passive(스프링) | fixed ===== -->
+  <xacro:macro name="servo_axis" params="name parent child x axis">
+    <xacro:property name="mode" value="${p['servo_modes'][p['servo_joints'].index(name)]}"/>
+    <joint name="${name}" type="${'fixed' if mode == 'fixed' else 'revolute'}">
+      <parent link="${parent}"/><child link="${child}"/>
+      <origin xyz="${x} 0 0"/>
+      <xacro:unless value="${mode == 'fixed'}">
+        <axis xyz="${axis}"/>
+        <limit lower="${-lim}" upper="${lim}" effort="${p['servo_torque']}" velocity="6"/>
+        <dynamics damping="${p['passive_damping']}"/>
+      </xacro:unless>
+    </joint>
+    <xacro:if value="${mode == 'passive'}">
+      <gazebo reference="${name}"><springStiffness>${p['passive_k']}</springStiffness><springReference>0</springReference></gazebo>
+    </xacro:if>
+    <xacro:if value="${mode == 'active'}">
+      <gazebo>
+        <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+          <joint_name>${name}</joint_name>
+          <topic>servo/${name}</topic>
+          <p_gain>${p['servo_p']}</p_gain>
+          <i_gain>0</i_gain>
+          <d_gain>${p['servo_d']}</d_gain>
+          <cmd_max>${p['servo_torque']}</cmd_max>
+          <cmd_min>${-p['servo_torque']}</cmd_min>
+        </plugin>
+      </gazebo>
+    </xacro:if>
+  </xacro:macro>
+
+  <!-- 관절 사이 작은 링크 (피치 축과 요 축을 잇는 서보 브라켓) -->
+  <xacro:macro name="bracket" params="link">
+    <link name="${link}">
+      <inertial><mass value="0.012"/><inertia ixx="2e-6" ixy="0" ixz="0" iyy="2e-6" iyz="0" izz="2e-6"/></inertial>
+      <visual>
+        <geometry><box size="${gap*0.8} 0.024 0.024"/></geometry>
+        <material name="servo"><color rgba="0.15 0.15 0.15 1"/></material>
+      </visual>
+    </link>
+  </xacro:macro>
+
+  <!-- ===== 앞마디 (base_link, 구동) ===== -->
+  <xacro:segment_body link="base_link" cx="0" length="${L[0]}" mass="${M[0]}" color="0.2 0.45 0.8 ${alpha}" idx="0"/>
+  <link name="nose_link">
+    <visual><geometry><sphere radius="${br*0.6}"/></geometry>
+      <material name="nose"><color rgba="0.95 0.6 0.1 1"/></material></visual>
+  </link>
+  <joint name="nose_joint" type="fixed"><parent link="base_link"/><child link="nose_link"/><origin xyz="${L[0]/2} 0 0"/></joint>
+  <link name="imu_link"/>
+  <joint name="imu_joint" type="fixed"><parent link="base_link"/><child link="imu_link"/></joint>
+  <xacro:wheel_ring pre="" parent="base_link" cx="0" driven="${bool(p['driven_segments'][0])}"/>
+
+  <!-- ===== 앞 관절 (피치 -> 요) ===== -->
+  <xacro:bracket link="j_front_link"/>
+  <xacro:servo_axis name="j_front_pitch" parent="base_link" child="j_front_link" x="${-(L[0]/2 + gap/2)}" axis="0 1 0"/>
+
+  <!-- ===== 가운데 마디 (링크 원점 = 앞 관절 중심) ===== -->
+  <xacro:segment_body link="mid_link" cx="${-(gap/2 + L[1]/2)}" length="${L[1]}" mass="${M[1]}" color="0.3 0.65 0.4 ${alpha}" idx="1"/>
+  <xacro:servo_axis name="j_front_yaw" parent="j_front_link" child="mid_link" x="0" axis="0 0 1"/>
+  <xacro:wheel_ring pre="mid_" parent="mid_link" cx="${-(gap/2 + L[1]/2)}" driven="${bool(p['driven_segments'][1])}"/>
+
+  <xacro:if value="${p.get('n_segments', 3) == 3}">
+  <!-- ===== 뒤 관절 ===== -->
+  <xacro:bracket link="j_rear_link"/>
+  <xacro:servo_axis name="j_rear_pitch" parent="mid_link" child="j_rear_link" x="${-(gap + L[1])}" axis="0 1 0"/>
+
+  <!-- ===== 뒷마디 (UT 검사, 이번엔 탐촉자 기구 없음) ===== -->
+  <xacro:segment_body link="rear_link" cx="${-(gap/2 + L[2]/2)}" length="${L[2]}" mass="${M[2]}" color="0.75 0.3 0.3 ${alpha}" idx="2"/>
+  <xacro:servo_axis name="j_rear_yaw" parent="j_rear_link" child="rear_link" x="0" axis="0 0 1"/>
+  <xacro:wheel_ring pre="rear_" parent="rear_link" cx="${-(gap/2 + L[2]/2)}" driven="${bool(p['driven_segments'][2])}"/>
+
+  </xacro:if>
+
+  <!-- 마디끼리 충돌 검사 (관절이 많이 꺾이면 몸체 모서리가 서로 부딪힘) -->
+  <gazebo><self_collide>true</self_collide></gazebo>
+
+  <!-- ===== ToF 센서 (tof: true 일 때) — 센서 전용 배관(visibility 0x02)만 봄 ===== -->
+  <xacro:macro name="tof" params="name x y yaw hs vs hfov vfov rmin rmax rate">
+    <link name="${name}_link"/>
+    <joint name="${name}_joint" type="fixed">
+      <parent link="base_link"/><child link="${name}_link"/>
+      <origin xyz="${x} ${y} 0" rpy="0 0 ${yaw}"/>
+    </joint>
+    <gazebo reference="${name}_link">
+      <sensor name="${name}" type="gpu_lidar">
+        <topic>${name.replace('_', '/', 1)}</topic>
+        <update_rate>${rate}</update_rate>
+        <always_on>true</always_on>
+        <lidar>
+          <scan>
+            <horizontal><samples>${hs}</samples><resolution>1</resolution><min_angle>${-hfov/2}</min_angle><max_angle>${hfov/2}</max_angle></horizontal>
+            <vertical><samples>${vs}</samples><resolution>1</resolution><min_angle>${-vfov/2}</min_angle><max_angle>${vfov/2}</max_angle></vertical>
+          </scan>
+          <range><min>${rmin}</min><max>${rmax}</max><resolution>0.001</resolution></range>
+          <noise><type>gaussian</type><mean>0</mean><stddev>0.003</stddev></noise>
+          <visibility_mask>2</visibility_mask>
+        </lidar>
+      </sensor>
+    </gazebo>
+  </xacro:macro>
+  <xacro:if value="${p.get('tof', False)}">
+    <!-- 전방: 8x8 멀티존 (VL53L5CX급, 45° 시야) -->
+    <xacro:tof name="tof_front" x="${L[0]/2 + 0.004}" y="0" yaw="0" hs="8" vs="8" hfov="${radians(45)}" vfov="${radians(45)}" rmin="0.02" rmax="2.0" rate="15"/>
+    <!-- 좌우: VL6180급 (근거리 5~200 mm), 3x3 광선으로 시야 근사 -->
+    <xacro:tof name="tof_left" x="0" y="${br}" yaw="${pi/2}" hs="3" vs="3" hfov="${radians(20)}" vfov="${radians(20)}" rmin="0.005" rmax="0.2" rate="20"/>
+    <xacro:tof name="tof_right" x="0" y="${-br}" yaw="${-pi/2}" hs="3" vs="3" hfov="${radians(20)}" vfov="${radians(20)}" rmin="0.005" rmax="0.2" rate="20"/>
+  </xacro:if>
+
+  <!-- ===== 센서·플러그인 ===== -->
+  <gazebo reference="imu_link">
+    <sensor name="imu" type="imu">
+      <always_on>true</always_on>
+      <update_rate>200</update_rate>
+      <topic>imu</topic>
+      <imu>
+        <angular_velocity>
+          <x><noise type="gaussian"><mean>0</mean><stddev>0.0012</stddev><bias_mean>0.0005</bias_mean><bias_stddev>0.0002</bias_stddev></noise></x>
+          <y><noise type="gaussian"><mean>0</mean><stddev>0.0012</stddev><bias_mean>0.0005</bias_mean><bias_stddev>0.0002</bias_stddev></noise></y>
+          <z><noise type="gaussian"><mean>0</mean><stddev>0.0012</stddev><bias_mean>0.0005</bias_mean><bias_stddev>0.0002</bias_stddev></noise></z>
+        </angular_velocity>
+        <linear_acceleration>
+          <x><noise type="gaussian"><mean>0</mean><stddev>0.055</stddev><bias_mean>0.05</bias_mean><bias_stddev>0.01</bias_stddev></noise></x>
+          <y><noise type="gaussian"><mean>0</mean><stddev>0.055</stddev><bias_mean>0.05</bias_mean><bias_stddev>0.01</bias_stddev></noise></y>
+          <z><noise type="gaussian"><mean>0</mean><stddev>0.055</stddev><bias_mean>0.05</bias_mean><bias_stddev>0.01</bias_stddev></noise></z>
+        </linear_acceleration>
+      </imu>
+    </sensor>
+  </gazebo>
+  <gazebo>
+    <plugin filename="ignition-gazebo-joint-state-publisher-system" name="ignition::gazebo::systems::JointStatePublisher">
+      <topic>joint_states</topic>
+    </plugin>
+    <plugin filename="ignition-gazebo-odometry-publisher-system" name="ignition::gazebo::systems::OdometryPublisher">
+      <odom_frame>world</odom_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+      <dimensions>3</dimensions>
+      <odom_publish_frequency>50</odom_publish_frequency>
+      <odom_topic>ground_truth/odom</odom_topic>
+      <tf_topic>ground_truth/tf</tf_topic>
+    </plugin>
+  </gazebo>
+</robot>

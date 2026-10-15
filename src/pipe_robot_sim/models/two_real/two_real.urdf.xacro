@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!-- two_real: two_active 와 같은 구조 + layout.yaml 부품 배치 (길이·질량·무게중심은 layout_check 의 apply 옵션으로 robot.yaml 에 반영) -->
+<robot name="two_real" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find pipe_robot_sim)/models/three_segment/three_segment.urdf.xacro"/>
+  <xacro:include filename="$(find pipe_robot_sim)/models/two_real/components.urdf.xacro"/>
+</robot>

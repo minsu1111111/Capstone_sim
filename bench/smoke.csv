@@ -1,0 +1,2 @@
+model,course,fitting,result,time_s,progress,max_roll,max_pitch,est_err_mm,note
+tracked,straight,-,PASS,29.0,90%,0.0,0.1,11,

@@ -1,0 +1,53 @@
+# three_segment: v2 원안. 앞(구동)·가운데·뒤 3마디, 마디마다 120° 3륜(스프링), 관절 2개 x (피치+요)
+# 이 파일 하나를 xacro(모델)와 파이썬 노드가 같이 읽음. (추정) 표시 값은 확인 후 수정
+/**:
+  ros__parameters:
+    tof: true                    # 전방 8x8 멀티존 ToF + 좌우 ToF (Gazebo 렌더링 센서, 화면 있는 환경에서 실행)
+    follow_mode: sensor          # 관절 제어: oracle(배관 중심선 사용) | sensor(ToF + IMU + 엔코더만)
+    # bench 평가용: 배관과 일자인지 볼 몸통 (링크 이름 = 그 링크의 x축, "앞:뒤" = 두 링크를 잇는 선)
+    bench_spines: [base_link, mid_link, rear_link]
+    # ---- 노드가 쓰는 값 ----
+    # 구동 바퀴: driven_segments 에 맞춰 적을 것 (앞: wheel_i, 가운데: mid_wheel_i, 뒤: rear_wheel_i)
+    driven_segments: [true, true, false]   # 앞, 가운데, 뒤 마디 구동 여부 (앞만 구동하면 DV 90°에서 견인력 부족으로 멈춤)
+    wheel_joints: [wheel_0_joint, wheel_1_joint, wheel_2_joint, mid_wheel_0_joint, mid_wheel_1_joint, mid_wheel_2_joint]
+    wheel_radius: 0.012
+    encoder_cpr: 2800            # (추정)
+    motor_stall_torque: 0.147    # N·m (추정)
+    motor_no_load_speed: 16.8    # rad/s (추정)
+    rated_voltage: 6.0
+    supply_voltage: 7.4
+    control_rate: 100.0
+    drive_mode: speed_pid
+    kp: 0.01
+    ki: 1.0
+    kd: 0.0
+    # 관절 축: j_front = 앞-가운데, j_rear = 가운데-뒤
+    servo_joints: [j_front_pitch, j_front_yaw, j_rear_pitch, j_rear_yaw]
+    servo_modes: [active, active, active, active]   # active(서보 각도 제어) | passive(스프링으로 따라감) | fixed. 수동이면 DV 90°에서 관절이 제멋대로 꺾여 멈춤
+    spawn_x: 0.355                # 앞마디 중심 스폰 위치 (뒷마디 끝이 입구 안쪽에 들어오게)
+
+    # ---- 모델(xacro)이 쓰는 값 ----
+    body_d: 0.056
+    seg_len: [0.09, 0.10, 0.11]     # 앞, 가운데, 뒤
+    seg_mass: [0.20, 0.25, 0.25]       # kg (추정: 가운데 배터리, 뒤 UT)
+    joint_gap: 0.040                    # 마디 사이 관절부 길이. 몸체 모서리끼리 부딪히는 각도 = 2·atan(관절부/2 / 몸체반경) = 약 71°
+    body_len: 0.090                     # 앞마디 (스폰 계산 호환용)
+    wheel_width: 0.008
+    wheel_mass: 0.008
+    wheel_mu: 0.7
+    motor_reflected_inertia: 1.0e-5
+    gear_friction: 0.002
+    idler_friction: 0.0003              # 종동 바퀴 베어링 마찰 N·m (추정)
+    wheel_angles_deg: [90.0, 210.0, 330.0]
+    slider_mass: 0.005
+    spring_k: 800.0              # N/m
+    spring_preload: 0.008        # 벽에 닿은 뒤 더 펴질 수 있는 길이 -> 바퀴당 약 6.4 N (3.6 N이면 엘보에서 견인력 부족)
+    spring_damping: 5.0
+    stroke: 0.012
+    joint_limit_deg: 90.0
+    end_chamfer: 0.010                  # 마디 양 끝 모따기 깊이 (끝 10 mm는 반경 28->18 mm). 0이면 평평
+    servo_torque: 0.21                  # MG90S 스톨 약 2.2 kg·cm (추정)
+    servo_p: 2.0                        # 능동 서보 위치 제어 게인 [N·m/rad]
+    servo_d: 0.02
+    passive_k: 0.01                     # 수동 관절 복원 스프링 [N·m/rad] (힘 뺀 서보의 기어 저항 근사)
+    passive_damping: 0.003

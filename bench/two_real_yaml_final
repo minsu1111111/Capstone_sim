@@ -1,0 +1,58 @@
+# two_real: two_active + 실제 부품 배치(layout.yaml)로 정한 길이·질량·무게중심. 몸통 반투명, 부품 표시
+#   [앞마디 90] -(피치+요 능동 관절, 서보 0.35 N·m)- [뒷마디 100]
+#   - 마디마다 120° 3륜, 스프링으로 벽 누름 (바퀴당 약 9 N: 수직관 등반 기준)
+#   - 두 마디 바퀴 6개 모두 구동
+#   - 관절 제어: 전방 8x8 ToF(트인 방향) + IMU + 엔코더 (follow-the-leader), 배관 정보 안 씀
+#   - 마디 끝 10 mm 모따기, 관절부 40 mm
+#   - 2마디 수동 관절(two_module)은 엘보에서 V자로 접혀 실패했음 -> 능동 관절이 핵심
+/**:
+  ros__parameters:
+    seg_com: [-0.0069, 0.0002, -0.0015, -0.0056, 0.0000, -0.0040, 0.0, 0.0, 0.0] 
+    bench_spines: [base_link, mid_link]
+    n_segments: 2
+    tof: true
+    follow_mode: sensor
+    tof_gain: 1.0
+    body_alpha: 0.35             # 몸통 투명도 (안의 부품이 보이게)
+    driven_segments: [true, true, false]
+    wheel_joints: [wheel_0_joint, wheel_1_joint, wheel_2_joint, mid_wheel_0_joint, mid_wheel_1_joint, mid_wheel_2_joint]
+    wheel_radius: 0.012
+    encoder_cpr: 2800            # (추정)
+    motor_stall_torque: 0.147    # N·m (추정)
+    motor_no_load_speed: 16.8    # rad/s (추정)
+    rated_voltage: 6.0
+    supply_voltage: 7.4
+    control_rate: 100.0
+    drive_mode: speed_pid
+    kp: 0.01
+    ki: 1.0
+    kd: 0.0
+    servo_joints: [j_front_pitch, j_front_yaw]
+    servo_modes: [active, active]
+    spawn_x: 0.230 # 앞마디 중심 스폰 위치
+
+    # ---- 모델(xacro)이 쓰는 값 ----
+    body_d: 0.056
+    seg_len: [0.100, 0.110, 0.0] # 앞, 뒤 (세 번째는 안 씀)
+    seg_mass: [0.225, 0.250, 0.0] # kg, layout.yaml 부품 합 (layout_check 로 계산)
+    joint_gap: 0.050
+    body_len: 0.100 
+    wheel_width: 0.008
+    wheel_mass: 0.008
+    wheel_mu: 0.7
+    motor_reflected_inertia: 1.0e-5
+    gear_friction: 0.002
+    idler_friction: 0.0003
+    wheel_angles_deg: [90.0, 210.0, 330.0]
+    slider_mass: 0.005
+    spring_k: 1000.0             # N/m
+    spring_preload: 0.011        # 바퀴당 약 11 N
+    spring_damping: 5.0
+    stroke: 0.020                # 예압 11 mm 를 줘도 벽을 따라갈 여유 (±12 면 1 mm 만 멀어져도 끝에 닿음)
+    joint_limit_deg: 90.0
+    end_chamfer: 0.010
+    servo_torque: 0.35           # N·m (MG92B급)
+    servo_p: 2.0
+    servo_d: 0.02
+    passive_k: 0.01
+    passive_damping: 0.003

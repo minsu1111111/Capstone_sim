@@ -1,0 +1,10 @@
+model,course,fitting,result,real_ok,time_s,progress,align_max,align_where,roll_max,sat_s,sat_joint,slip_pct,stall_s,est_err_mm,note
+pirate_v,straight,-,STUCK,X,59.5,12%,0.0,wheel_d_link:wheel_f_link@0.12m,0.0,0.0,,,0.0,14,
+pirate_v,elbow45,-,STUCK,X,5.7,12%,0.1,wheel_c_link:wheel_d_link@0.23m,0.0,0.0,,-100.2,1117.4,29,
+pirate_v,elbow90,-,STUCK,X,60.3,15%,0.0,wheel_a_link:wheel_c_link@0.39m,0.0,0.0,,-108.0,0.0,150,
+pirate_v,demo,-,STUCK,X,60.2,13%,5.2,wheel_d_link:wheel_f_link@0.06m,0.0,0.0,,-97.9,0.0,258,
+pirate_v,elbow45_up,-,STUCK,X,68.4,15%,2.0,wheel_d_link:wheel_f_link@0.14m,0.2,0.0,,-89.8,0.0,290,
+pirate_v,elbow45_down,-,STUCK,X,63.1,16%,2.0,wheel_d_link:wheel_f_link@0.16m,0.2,0.0,,-100.0,0.0,112,
+pirate_v,elbow90_up,-,STUCK,X,2.2,18%,2.0,wheel_d_link:wheel_f_link@0.17m,0.3,0.0,,-108.2,0.0,973,
+pirate_v,elbow90_down,-,STUCK,X,63.5,18%,90.0,wheel_a_link:wheel_c_link@1.60m,0.3,0.0,,-100.0,0.0,997,
+pirate_v,demo3d,-,STUCK,X,2.1,10%,0.0,wheel_a_link:wheel_c_link@0.33m,0.4,0.0,,-100.2,0.0,970,

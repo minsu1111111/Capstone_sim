@@ -1,0 +1,188 @@
+[INFO] [launch]: All log files can be found below /home/aisl/.ros/log/2026-10-14-14-57-57-834932-aisl-15G880-SD76K-84659
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign-1]: process started with pid [84660]
+[INFO] [robot_state_publisher-2]: process started with pid [84662]
+[INFO] [create-3]: process started with pid [84664]
+[INFO] [parameter_bridge-4]: process started with pid [84666]
+[INFO] [odometry-5]: process started with pid [84668]
+[INFO] [pipe_markers-6]: process started with pid [84670]
+[INFO] [encoder_sim-7]: process started with pid [84672]
+[INFO] [motor_driver-8]: process started with pid [84674]
+[INFO] [oracle_steer-9]: process started with pid [84676]
+[create-3] [INFO] [1791957478.336782550] [ros_gz_sim]: Requesting list of world names.
+[robot_state_publisher-2] [WARN] [1791957478.385662199] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-2] [INFO] [1791957478.385763535] [robot_state_publisher]: got segment aux_slider_0_link
+[robot_state_publisher-2] [INFO] [1791957478.385815134] [robot_state_publisher]: got segment aux_slider_1_link
+[robot_state_publisher-2] [INFO] [1791957478.385821777] [robot_state_publisher]: got segment aux_slider_2_link
+[robot_state_publisher-2] [INFO] [1791957478.385826410] [robot_state_publisher]: got segment aux_wheel_0_link
+[robot_state_publisher-2] [INFO] [1791957478.385830835] [robot_state_publisher]: got segment aux_wheel_1_link
+[robot_state_publisher-2] [INFO] [1791957478.385835408] [robot_state_publisher]: got segment aux_wheel_2_link
+[robot_state_publisher-2] [INFO] [1791957478.385839808] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1791957478.385844282] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-2] [INFO] [1791957478.385848608] [robot_state_publisher]: got segment l_tw_0_link
+[robot_state_publisher-2] [INFO] [1791957478.385853027] [robot_state_publisher]: got segment l_tw_1_link
+[robot_state_publisher-2] [INFO] [1791957478.385857359] [robot_state_publisher]: got segment l_tw_2_link
+[robot_state_publisher-2] [INFO] [1791957478.385862017] [robot_state_publisher]: got segment l_tw_3_link
+[robot_state_publisher-2] [INFO] [1791957478.385866297] [robot_state_publisher]: got segment left_track
+[robot_state_publisher-2] [INFO] [1791957478.385870551] [robot_state_publisher]: got segment r_tw_0_link
+[robot_state_publisher-2] [INFO] [1791957478.385874927] [robot_state_publisher]: got segment r_tw_1_link
+[robot_state_publisher-2] [INFO] [1791957478.385879238] [robot_state_publisher]: got segment r_tw_2_link
+[robot_state_publisher-2] [INFO] [1791957478.385883449] [robot_state_publisher]: got segment r_tw_3_link
+[robot_state_publisher-2] [INFO] [1791957478.385887673] [robot_state_publisher]: got segment right_track
+[motor_driver-8] [INFO] [1791957478.663703648] [motor_driver]: mode=speed_pid, 최고속도 16.6 cm/s (무부하)
+[create-3] [INFO] [1791957478.756812150] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[create-3] [INFO] [1791957478.768671273] [ros_gz_sim]: Requested creation of entity.
+[create-3] [INFO] [1791957478.768708699] [ros_gz_sim]: OK creation of entity.
+[pipe_markers-6] [INFO] [1791957478.842039679] [pipe_markers]: elbow90: 중심선 2.10 m, 특징점 [('dv90:left', 1.0), ('cap', 2.0978185759344887)]
+[INFO] [create-3]: process has finished cleanly [pid 84664]
+[parameter_bridge-4] [INFO] [1791957479.368216614] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (ignition.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957479.371177028] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/joint_states (ignition.msgs.Model) -> /joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957479.378628708] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/imu (ignition.msgs.IMU) -> /imu (sensor_msgs/msg/Imu)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957479.381253617] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/ground_truth/odom (ignition.msgs.Odometry) -> /ground_truth/odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957479.386243241] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/pipe_world/dynamic_pose/info (ignition.msgs.Pose_V) -> /gz_poses (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957479.391410175] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/r_tw_0_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/r_tw_0_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957479.393973587] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/r_tw_1_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/r_tw_1_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957479.395338780] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/r_tw_2_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/r_tw_2_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957479.397114823] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/r_tw_3_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/r_tw_3_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957479.398566432] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/l_tw_0_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/l_tw_0_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957479.399909872] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/l_tw_1_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/l_tw_1_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957479.401347048] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/l_tw_2_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/l_tw_2_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957479.402677523] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/l_tw_3_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/l_tw_3_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791957480.659417331] [ros_gz_bridge]: Passing message from ROS std_msgs/msg/Float64 to Gazebo gz.msgs.Double (showing msg only once per type)
+[odometry-5] [INFO] [1791957481.679137041] [odometry]: 이동거리 정답 0.000 m / 엔코더 0.000 m | 위치 오차 0.1 mm
+[odometry-5] [INFO] [1791957482.650123244] [odometry]: 이동거리 정답 0.058 m / 엔코더 0.059 m | 위치 오차 1.0 mm
+[odometry-5] [INFO] [1791957483.653882923] [odometry]: 이동거리 정답 0.118 m / 엔코더 0.119 m | 위치 오차 1.4 mm
+[odometry-5] [INFO] [1791957484.653994551] [odometry]: 이동거리 정답 0.178 m / 엔코더 0.179 m | 위치 오차 1.1 mm
+[odometry-5] [INFO] [1791957485.653879272] [odometry]: 이동거리 정답 0.238 m / 엔코더 0.239 m | 위치 오차 1.3 mm
+[odometry-5] [INFO] [1791957486.654346713] [odometry]: 이동거리 정답 0.298 m / 엔코더 0.299 m | 위치 오차 1.5 mm
+[odometry-5] [INFO] [1791957487.654775833] [odometry]: 이동거리 정답 0.358 m / 엔코더 0.359 m | 위치 오차 1.8 mm
+[odometry-5] [INFO] [1791957488.656854916] [odometry]: 이동거리 정답 0.418 m / 엔코더 0.419 m | 위치 오차 2.1 mm
+[odometry-5] [INFO] [1791957489.657490587] [odometry]: 이동거리 정답 0.478 m / 엔코더 0.479 m | 위치 오차 2.5 mm
+[odometry-5] [INFO] [1791957490.658220521] [odometry]: 이동거리 정답 0.538 m / 엔코더 0.539 m | 위치 오차 3.0 mm
+[odometry-5] [INFO] [1791957491.659049113] [odometry]: 이동거리 정답 0.598 m / 엔코더 0.599 m | 위치 오차 3.5 mm
+[odometry-5] [INFO] [1791957492.660201799] [odometry]: 이동거리 정답 0.658 m / 엔코더 0.659 m | 위치 오차 4.1 mm
+[odometry-5] [INFO] [1791957493.660588638] [odometry]: 이동거리 정답 0.718 m / 엔코더 0.719 m | 위치 오차 4.8 mm
+[odometry-5] [INFO] [1791957494.665644033] [odometry]: 이동거리 정답 0.778 m / 엔코더 0.779 m | 위치 오차 5.5 mm
+[odometry-5] [INFO] [1791957495.666803194] [odometry]: 이동거리 정답 0.827 m / 엔코더 0.839 m | 위치 오차 13.1 mm
+[odometry-5] [INFO] [1791957496.667137031] [odometry]: 이동거리 정답 0.844 m / 엔코더 0.899 m | 위치 오차 55.3 mm
+[odometry-5] [INFO] [1791957497.667907857] [odometry]: 이동거리 정답 0.867 m / 엔코더 0.958 m | 위치 오차 92.0 mm
+[odometry-5] [INFO] [1791957498.667611597] [odometry]: 이동거리 정답 0.888 m / 엔코더 1.019 m | 위치 오차 131.5 mm
+[odometry-5] [INFO] [1791957499.668473868] [odometry]: 이동거리 정답 0.915 m / 엔코더 1.078 m | 위치 오차 163.5 mm
+[odometry-5] [INFO] [1791957500.668553335] [odometry]: 이동거리 정답 0.963 m / 엔코더 1.138 m | 위치 오차 174.0 mm
+[odometry-5] [INFO] [1791957501.669103608] [odometry]: 이동거리 정답 1.022 m / 엔코더 1.199 m | 위치 오차 177.3 mm
+[odometry-5] [INFO] [1791957502.669014335] [odometry]: 이동거리 정답 1.082 m / 엔코더 1.259 m | 위치 오차 178.9 mm
+[odometry-5] [INFO] [1791957503.669374857] [odometry]: 이동거리 정답 1.142 m / 엔코더 1.319 m | 위치 오차 180.1 mm
+[odometry-5] [INFO] [1791957504.673981124] [odometry]: 이동거리 정답 1.201 m / 엔코더 1.379 m | 위치 오차 181.2 mm
+[odometry-5] [INFO] [1791957505.677786156] [odometry]: 이동거리 정답 1.261 m / 엔코더 1.439 m | 위치 오차 182.3 mm
+[odometry-5] [INFO] [1791957506.680406425] [odometry]: 이동거리 정답 1.321 m / 엔코더 1.499 m | 위치 오차 183.4 mm
+[odometry-5] [INFO] [1791957507.683461925] [odometry]: 이동거리 정답 1.380 m / 엔코더 1.559 m | 위치 오차 184.6 mm
+[odometry-5] [INFO] [1791957508.686771826] [odometry]: 이동거리 정답 1.440 m / 엔코더 1.619 m | 위치 오차 185.8 mm
+[odometry-5] [INFO] [1791957509.688248823] [odometry]: 이동거리 정답 1.500 m / 엔코더 1.679 m | 위치 오차 187.0 mm
+[odometry-5] [INFO] [1791957510.688970843] [odometry]: 이동거리 정답 1.559 m / 엔코더 1.738 m | 위치 오차 188.3 mm
+[odometry-5] [INFO] [1791957511.690271330] [odometry]: 이동거리 정답 1.619 m / 엔코더 1.799 m | 위치 오차 189.6 mm
+[odometry-5] [INFO] [1791957512.690854699] [odometry]: 이동거리 정답 1.679 m / 엔코더 1.859 m | 위치 오차 191.0 mm
+[odometry-5] [INFO] [1791957513.690075172] [odometry]: 이동거리 정답 1.738 m / 엔코더 1.919 m | 위치 오차 192.4 mm
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[motor_driver-8] Traceback (most recent call last):
+[motor_driver-8]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver", line 33, in <module>
+[motor_driver-8]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'motor_driver')())
+[motor_driver-8]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/motor_driver.py", line 110, in main
+[motor_driver-8]     rclpy.spin(MotorDriver())
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[motor_driver-8]     executor.spin_once()
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[motor_driver-8]     self._spin_once_impl(timeout_sec)
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+[motor_driver-8]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+[parameter_bridge-4] [INFO] [1791957514.308920721] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[encoder_sim-7] Traceback (most recent call last):
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim", line 33, in <module>
+[encoder_sim-7]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'encoder_sim')())
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/encoder_sim.py", line 40, in main
+[encoder_sim-7]     rclpy.spin(EncoderSim())
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[encoder_sim-7]     executor.spin_once()
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[encoder_sim-7]     self._spin_once_impl(timeout_sec)
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+[encoder_sim-7]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+[odometry-5] Traceback (most recent call last):
+[odometry-5]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/odometry", line 33, in <module>
+[odometry-5]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'odometry')())
+[odometry-5]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/odometry.py", line 170, in main
+[odometry-5]     rclpy.spin(Odom())
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[odometry-5]     executor.spin_once()
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[odometry-5]     self._spin_once_impl(timeout_sec)
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+[odometry-5]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+[oracle_steer-9] Traceback (most recent call last):
+[oracle_steer-9]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/oracle_steer", line 33, in <module>
+[oracle_steer-9]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'oracle_steer')())
+[oracle_steer-9]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/oracle_steer.py", line 47, in main
+[oracle_steer-9]     rclpy.spin(OracleSteer())
+[oracle_steer-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[oracle_steer-9]     executor.spin_once()
+[oracle_steer-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[oracle_steer-9]     self._spin_once_impl(timeout_sec)
+[oracle_steer-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+[oracle_steer-9]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[oracle_steer-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+[oracle_steer-9]     return next(self._cb_iter)
+[oracle_steer-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+[robot_state_publisher-2] [INFO] [1791957514.309157404] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[pipe_markers-6] Traceback (most recent call last):
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers", line 33, in <module>
+[pipe_markers-6]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'pipe_markers')())
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/pipe_markers.py", line 35, in main
+[pipe_markers-6]     rclpy.spin(PipeMarkers())
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[pipe_markers-6]     executor.spin_once()
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[INFO] [oracle_steer-9]: sending signal 'SIGINT' to process[oracle_steer-9]
+[INFO] [motor_driver-8]: sending signal 'SIGINT' to process[motor_driver-8]
+[INFO] [encoder_sim-7]: sending signal 'SIGINT' to process[encoder_sim-7]
+[INFO] [pipe_markers-6]: sending signal 'SIGINT' to process[pipe_markers-6]
+[INFO] [odometry-5]: sending signal 'SIGINT' to process[odometry-5]
+[INFO] [parameter_bridge-4]: sending signal 'SIGINT' to process[parameter_bridge-4]
+[ERROR] [motor_driver-8]: process has died [pid 84674, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/tracked/robot.yaml --params-file /tmp/launch_params_kfvijfyi'].
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[ERROR] [oracle_steer-9]: process has died [pid 84676, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/oracle_steer --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/tracked/robot.yaml --params-file /tmp/launch_params_rikvsm4h --params-file /tmp/launch_params_zaytd_uh'].
+[ERROR] [encoder_sim-7]: process has died [pid 84672, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/tracked/robot.yaml --params-file /tmp/launch_params_uw99j5wu'].
+[INFO] [ign-1]: sending signal 'SIGINT' to process[ign-1]
+[ERROR] [pipe_markers-6]: process has died [pid 84670, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers --ros-args --params-file /tmp/launch_params_ngnxtc7i --params-file /tmp/launch_params_ghoiluc5'].
+[ERROR] [odometry-5]: process has died [pid 84668, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/odometry --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/tracked/robot.yaml --params-file /tmp/launch_params_op5ce6o2 --params-file /tmp/launch_params_b89pxphw'].
+[motor_driver-8]     return next(self._cb_iter)
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 579, in _wait_for_ready_callbacks
+[motor_driver-8]     subscriptions.extend(filter(self.can_execute, node.subscriptions))
+[motor_driver-8] KeyboardInterrupt
+[ERROR] [robot_state_publisher-2]: process has died [pid 84662, exit code -2, cmd '/opt/ros/humble/lib/robot_state_publisher/robot_state_publisher --ros-args --params-file /tmp/launch_params_9lf7jzm7 --params-file /tmp/launch_params_54o53oz7'].
+[encoder_sim-7]     return next(self._cb_iter)
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 748, in _wait_for_ready_callbacks
+[encoder_sim-7]     if srv.handle.pointer in services_ready:
+[encoder_sim-7] KeyboardInterrupt
+[odometry-5]     return next(self._cb_iter)
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 579, in _wait_for_ready_callbacks
+[odometry-5]     subscriptions.extend(filter(self.can_execute, node.subscriptions))
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 514, in can_execute
+[odometry-5]     return not entity._executor_event and entity.callback_group.can_execute(entity)
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/callback_groups.py", line 103, in can_execute
+[odometry-5]     assert weakref.ref(entity) in self.entities
+[odometry-5] KeyboardInterrupt
+[oracle_steer-9]     wait_set.wait(timeout_nsec)
+[oracle_steer-9] KeyboardInterrupt
+[pipe_markers-6]     self._spin_once_impl(timeout_sec)
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+[pipe_markers-6]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+[pipe_markers-6]     return next(self._cb_iter)
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+[pipe_markers-6]     wait_set.wait(timeout_nsec)
+[pipe_markers-6] KeyboardInterrupt
+[parameter_bridge-4] [INFO] [1791957514.337170983] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [ign-1]: process has finished cleanly [pid 84660]
+[INFO] [parameter_bridge-4]: process has finished cleanly [pid 84666]

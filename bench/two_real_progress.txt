@@ -1,0 +1,13 @@
+[1/13] two_real       straight  -        PASS    실물OK O 정렬max   0.2° 롤max   0.0° 한계접촉  0.0s() 미끄럼  -0.0% 정체  0.0s 추정오차    8mm | 최대정렬 위치 base_link@0.36m 
+[2/13] two_real       elbow45   -        PASS    실물OK X 정렬max  33.0° 롤max   8.2° 한계접촉  0.0s() 미끄럼   1.0% 정체  0.0s 추정오차   69mm | 최대정렬 위치 mid_link@1.06m 
+[3/13] two_real       elbow90   -        PASS    실물OK X 정렬max  52.8° 롤max  27.8° 한계접촉  0.0s() 미끄럼   3.3% 정체  0.1s 추정오차   62mm | 최대정렬 위치 mid_link@1.09m 
+[4/13] two_real       elbow90   dv_ll90  PASS    실물OK X 정렬max  44.0° 롤max  25.2° 한계접촉  0.0s() 미끄럼   2.7% 정체  0.2s 추정오차   46mm | 최대정렬 위치 mid_link@1.15m 
+[5/13] two_real       elbow90   ts90     PASS    실물OK X 정렬max  59.0° 롤max  25.0° 한계접촉  0.0s() 미끄럼   3.0% 정체  0.1s 추정오차   65mm | 최대정렬 위치 mid_link@1.10m 
+[6/13] two_real       demo      -        PASS    실물OK X 정렬max  52.8° 롤max  29.2° 한계접촉  0.0s() 미끄럼   2.9% 정체  0.0s 추정오차  106mm | 최대정렬 위치 mid_link@1.64m 
+[7/13] two_real       demo      dv_ll90  PASS    실물OK X 정렬max  40.8° 롤max  25.0° 한계접촉  0.0s() 미끄럼   3.3% 정체  0.0s 추정오차   59mm | 최대정렬 위치 mid_link@1.72m 
+[8/13] two_real       demo      ts90     PASS    실물OK X 정렬max  58.5° 롤max  28.9° 한계접촉  0.1s(j_front_yaw) 미끄럼   3.2% 정체  0.0s 추정오차   80mm | 최대정렬 위치 mid_link@1.65m 
+[9/13] two_real       elbow45_up -        PASS    실물OK X 정렬max  31.3° 롤max   2.9° 한계접촉  0.0s() 미끄럼   2.3% 정체  0.0s 추정오차   60mm | 최대정렬 위치 mid_link@1.06m 
+[10/13] two_real       elbow45_down -        PASS    실물OK X 정렬max  40.2° 롤max   2.9° 한계접촉  0.0s() 미끄럼   1.4% 정체  0.2s 추정오차   61mm | 최대정렬 위치 base_link@0.99m 
+[11/13] two_real       elbow90_up -        PASS    실물OK X 정렬max  53.2° 롤max  42.9° 한계접촉  2.2s(j_front_pitch) 미끄럼  20.4% 정체  3.8s 추정오차  212mm | 최대정렬 위치 mid_link@1.10m 
+[12/13] two_real       elbow90_down -        STUCK   실물OK X 정렬max  53.4° 롤max  26.3° 한계접촉  0.0s() 미끄럼 101.4% 정체 15.2s 추정오차  998mm | 최대정렬 위치 base_link@1.10m 
+[13/13] two_real       demo3d    -        PASS    실물OK X 정렬max  51.0° 롤max  33.2° 한계접촉  0.2s(mid_slider_1_joint) 미끄럼   3.7% 정체  0.2s 추정오차   98mm | 최대정렬 위치 mid_link@2.11m 

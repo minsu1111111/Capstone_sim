@@ -1,0 +1,52 @@
+# two_module: 자료 조사(Haiku) 권장 기준안 A1
+#   [앞마디 90] -(피치+요 수동 관절)- [뒷마디 100]   마디마다 120° 3륜, 바퀴마다 반경 방향 스프링
+#   근거: CVT 휠형 in-pipe 로봇(슬라이더-크랭크 + 스프링, k ~ 1 N/mm), 모듈 길이 <= 배관 지름 권장,
+#         수직관 등반에 바퀴당 법선력 약 8.7 N (0.8 kg, 마찰 0.6, 안전율 2)
+#   바퀴: 크라운(둥근) 고무 바퀴 권장 -> 시뮬에선 구 충돌체로 근사
+#   두 마디 바퀴 6개 모두 구동 (마디당 N20 하나가 3바퀴를 구동하는 구조를 바퀴별 모터로 근사)
+/**:
+  ros__parameters:
+    bench_spines: [base_link, mid_link]
+    n_segments: 2
+    driven_segments: [true, true, false]
+    wheel_joints: [wheel_0_joint, wheel_1_joint, wheel_2_joint, mid_wheel_0_joint, mid_wheel_1_joint, mid_wheel_2_joint]
+    wheel_radius: 0.012
+    encoder_cpr: 2800            # (추정)
+    motor_stall_torque: 0.147    # N·m (추정)
+    motor_no_load_speed: 16.8    # rad/s (추정)
+    rated_voltage: 6.0
+    supply_voltage: 7.4
+    control_rate: 100.0
+    drive_mode: speed_pid
+    kp: 0.01
+    ki: 1.0
+    kd: 0.0
+    servo_joints: [j_front_pitch, j_front_yaw]
+    servo_modes: [passive, passive]   # 조사안: 수동 관절
+    spawn_x: 0.20                # 앞마디 중심 스폰 위치
+
+    # ---- 모델(xacro)이 쓰는 값 ----
+    body_d: 0.056
+    seg_len: [0.090, 0.100, 0.0]       # 앞, 뒤 (세 번째는 안 씀)
+    seg_mass: [0.30, 0.35, 0.0]        # kg (추정: 앞 Pi·카메라·모터, 뒤 배터리·UT)
+    joint_gap: 0.040
+    body_len: 0.090
+    wheel_width: 0.008
+    wheel_mass: 0.008
+    wheel_mu: 0.7
+    motor_reflected_inertia: 1.0e-5
+    gear_friction: 0.002
+    idler_friction: 0.0003
+    wheel_angles_deg: [90.0, 210.0, 330.0]
+    slider_mass: 0.005
+    spring_k: 1000.0             # N/m (조사: k ~ 1 N/mm)
+    spring_preload: 0.009        # 벽에 닿은 뒤 더 펴질 길이 -> 바퀴당 약 9 N (수직관 등반 기준)
+    spring_damping: 5.0
+    stroke: 0.012
+    joint_limit_deg: 90.0
+    end_chamfer: 0.010
+    servo_torque: 0.21
+    servo_p: 2.0
+    servo_d: 0.02
+    passive_k: 0.3                      # N·m/rad. 약하면(0.01) 엘보에서 두 마디가 V자로 접혀 뒤집힘
+    passive_damping: 0.003

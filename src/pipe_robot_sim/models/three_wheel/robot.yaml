@@ -1,0 +1,37 @@
+# three_wheel: 앞마디 하나, 120° 3륜 전부 구동, 바퀴마다 반경 방향 스프링
+# 이 파일 하나를 xacro(모델)와 파이썬 노드(motor_driver, encoder_sim, odometry)가 같이 읽음
+# (추정) 표시 값은 데이터시트로 확인 후 수정
+/**:
+  ros__parameters:
+    # bench 평가용: 배관과 일자인지 볼 몸통 (링크 이름 = 그 링크의 x축, "앞:뒤" = 두 링크를 잇는 선)
+    bench_spines: [base_link]
+    # ---- 노드가 쓰는 값 ----
+    wheel_joints: [wheel_0_joint, wheel_1_joint, wheel_2_joint]
+    wheel_radius: 0.012          # Ø24
+    encoder_cpr: 2800            # 출력축 1회전당 카운트 = 7PPR x 4체배 x 100 (추정)
+    motor_stall_torque: 0.147    # N·m, 정격전압 기준 = 1.5 kg·cm (N20 1:100 6V 추정)
+    motor_no_load_speed: 16.8    # rad/s = 160 rpm (추정)
+    rated_voltage: 6.0
+    supply_voltage: 7.4          # 18650 2S
+    control_rate: 100.0          # ESP32 속도 제어 주기 [Hz]
+    drive_mode: speed_pid        # speed_pid | open_loop
+    kp: 0.01                     # duty / (rad/s). 바퀴 시정수(~2ms)가 제어주기(10ms)보다 짧아 크게 하면 발진 (kp x 최고속도 < 1)
+    ki: 1.0
+    kd: 0.0
+
+    # ---- 모델(xacro)이 쓰는 값 ----
+    body_d: 0.056
+    body_len: 0.090
+    body_mass: 0.20              # kg (추정)
+    wheel_width: 0.008
+    wheel_mass: 0.008
+    wheel_mu: 0.7                # O링(고무) - PVC 마찰계수 (추정)
+    motor_reflected_inertia: 1.0e-5   # 회전자 관성 x 감속비^2 [kg m^2] (추정)
+    gear_friction: 0.002         # N·m (추정)
+    wheel_angles_deg: [90.0, 210.0, 330.0]   # 위 1개, 아래 2개
+    wheel_x: [0.0, 0.0, 0.0]                  # 바퀴 축방향 위치. 엇갈리게 두면 스프링 힘이 피치 모멘트를 만들어 앞으로 고꾸라짐
+    slider_mass: 0.005
+    spring_k: 800.0              # N/m (0.8 N/mm)
+    spring_preload: 0.0045       # 벽에 닿은 상태에서 더 펴지려는 길이 -> 바퀴당 약 3.6 N
+    spring_damping: 5.0          # N·s/m
+    stroke: 0.006                # 슬라이더 ± 이동 범위

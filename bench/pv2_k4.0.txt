@@ -1,0 +1,9 @@
+[1/9] pirate_v       straight  -        PASS    실물OK X 정렬max   0.1° 롤max   0.0° 한계접촉  0.0s() 미끄럼  15.4% 정체  0.0s 추정오차  245mm | 최대정렬 위치 wheel_d_link:wheel_f_link@0.12m 
+[2/9] pirate_v       elbow45   -        PASS    실물OK X 정렬max  22.1° 롤max  21.8° 한계접촉  0.0s() 미끄럼  15.4% 정체  0.0s 추정오차  252mm | 최대정렬 위치 wheel_d_link:wheel_f_link@1.06m 
+[3/9] pirate_v       elbow90   -        PASS    실물OK X 정렬max  48.8° 롤max  38.7° 한계접촉  0.6s(c_pitch) 미끄럼 -94.6% 정체  0.4s 추정오차  347mm | 최대정렬 위치 wheel_d_link:wheel_f_link@1.10m 
+[4/9] pirate_v       demo      -        PASS    실물OK X 정렬max  46.9° 롤max  30.3° 한계접촉  1.5s(e_yaw) 미끄럼  15.8% 정체  0.0s 추정오차  431mm | 최대정렬 위치 wheel_d_link:wheel_f_link@1.65m 
+[5/9] pirate_v       elbow45_up -        STUCK   실물OK X 정렬max  14.1° 롤max   0.0° 한계접촉  0.0s() 미끄럼  63.6% 정체 14.8s 추정오차  429mm | 최대정렬 위치 wheel_a_link:wheel_c_link@1.00m 
+[6/9] pirate_v       elbow45_down -        PASS    실물OK X 정렬max  21.0° 롤max   1.1° 한계접촉  1.4s(c_pitch) 미끄럼  13.0% 정체  0.0s 추정오차  154mm | 최대정렬 위치 wheel_d_link:wheel_f_link@1.00m 
+[7/9] pirate_v       elbow90_up -        STUCK   실물OK X 정렬max  19.1° 롤max   0.0° 한계접촉 15.1s(b_pitch) 미끄럼  45.2% 정체 16.8s 추정오차  302mm | 최대정렬 위치 wheel_a_link:wheel_c_link@1.00m 
+[8/9] pirate_v       elbow90_down -        STUCK   실물OK X 정렬max 109.1° 롤max  71.4° 한계접촉 32.9s(c_pitch) 미끄럼 -15.8% 정체 12.0s 추정오차 1691mm | 최대정렬 위치 wheel_a_link:wheel_c_link@1.60m 
+[9/9] pirate_v       demo3d    -        STUCK   실물OK X 정렬max  14.0° 롤max  19.5° 한계접촉  0.0s() 미끄럼 -193.1% 정체  0.0s 추정오차  160mm | 최대정렬 위치 wheel_a_link:wheel_c_link@1.00m 

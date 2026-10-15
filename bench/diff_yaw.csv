@@ -1,0 +1,5 @@
+model,course,fitting,result,real_ok,time_s,progress,align_max,align_where,roll_max,sat_s,sat_joint,slip_pct,stall_s,est_err_mm,note
+two_real,elbow90,-,PASS,X,37.6,90%,52.9,base_link@1.10m,79.4,0.0,,24.4,4.5,253,
+two_real,elbow90,ts90,PASS,X,32.3,90%,56.4,base_link@1.10m,62.6,0.0,,8.9,0.0,99,
+two_real,demo,-,PASS,X,42.6,92%,53.5,mid_link@1.65m,33.4,0.0,j_front_yaw,8.3,0.3,144,
+two_real,demo,ts90,PASS,X,47.0,93%,56.2,mid_link@1.65m,91.1,0.1,j_front_pitch,17.7,4.0,191,

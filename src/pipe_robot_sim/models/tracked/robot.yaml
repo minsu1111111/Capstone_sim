@@ -1,0 +1,55 @@
+# tracked: 무한궤도 2개(아래 좌우) + 앞쪽 보조 바퀴 3개(120° 원형, 스프링으로 벽을 눌러 앞부분 중심 잡기)
+#   옆에서 본 모습:   [=== 몸체 ===]o  <- 앞쪽 보조 바퀴 고리 (120° 간격 3개)
+#                     [== 궤도 ==]      <- 아래 좌우 2개, 바닥에서 ±45°
+#   궤도는 시뮬에서 일렬 구동 바퀴 4개로 근사 (Gazebo 궤도 플러그인이 배관 접촉에서 동작하지 않음)
+#   궤도 하나 = 모터 1개라고 보고 바퀴 4개에 같은 속도 명령. 좌우 속도 차 조향은 아직 없음
+/**:
+  ros__parameters:
+    # bench 평가용: 배관과 일자인지 볼 몸통 (링크 이름 = 그 링크의 x축, "앞:뒤" = 두 링크를 잇는 선)
+    bench_spines: [base_link]
+    wheel_joints: [r_tw_0_joint, r_tw_1_joint, r_tw_2_joint, r_tw_3_joint, l_tw_0_joint, l_tw_1_joint, l_tw_2_joint, l_tw_3_joint]
+    wheel_radius: 0.008          # 궤도 근사 바퀴 반경 (= 궤도 두께/2)
+    encoder_cpr: 2800            # (추정)
+    motor_stall_torque: 0.147    # N·m (추정)
+    motor_no_load_speed: 16.8    # rad/s (추정)
+    rated_voltage: 6.0
+    supply_voltage: 7.4
+    control_rate: 100.0
+    drive_mode: speed_pid
+    kp: 0.01
+    ki: 1.0
+    kd: 0.0
+    # 좌우 속도 차 조향 (탱크식): 왼쪽으로 돌 때(+) 빨라지는 쪽 = +1 (오른쪽 궤도), 느려지는 쪽 = -1 (왼쪽 궤도)
+    wheel_sides: [1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0]
+    track_separation: 0.059      # 좌우 궤도 중심 간격 [m]
+    oracle_steer: true           # 배관 중심선을 아는 상태로 조향 (실물은 센서 필요)
+    steer_gain: 3.0
+    steer_lookahead: 0.08
+    spawn_x: 0.12                # 몸체 중심 스폰 위치
+
+    # ---- 모델(xacro)이 쓰는 값 ----
+    body_d: 0.044                # 몸체 지름 (궤도 사이)
+    body_len: 0.10
+    body_mass: 0.40              # kg (추정)
+    track_angles_deg: [225.0, 315.0]   # 궤도 위치 (오른쪽 아래, 왼쪽 아래)
+    track_len: 0.07              # 궤도 직선부 길이 (양 끝 반원 제외)
+    track_w: 0.020               # 궤도 폭
+    track_h: 0.016               # 궤도 두께 (끝 반원 지름)
+    track_mass: 0.05
+    track_mu: 0.8                # 고무 궤도 - PVC 마찰계수 (추정)
+    track_wheel_r: 0.008
+    track_wheel_x: [-0.03, -0.01, 0.01, 0.03]
+    motor_reflected_inertia: 1.0e-5
+    gear_friction: 0.002
+
+    aux_x: 0.058                 # 보조 바퀴 고리의 축방향 위치 (몸체 앞쪽)
+    aux_angles_deg: [90.0, 210.0, 330.0]   # 120° 간격 원형 (위 1, 아래 좌우 2)
+    aux_wheel_radius: 0.012
+    wheel_width: 0.008
+    wheel_mass: 0.008
+    wheel_mu: 0.7
+    slider_mass: 0.005
+    spring_k: 200.0              # N/m. 보조 바퀴는 중심만 잡게 약하게 (세면 몸체가 떠서 궤도가 바닥에 안 닿음)
+    spring_preload: 0.003        # 벽에 닿은 뒤 더 펴질 길이 -> 바퀴당 약 0.6 N
+    spring_damping: 5.0
+    stroke: 0.015

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!-- two_module: 자료 조사 권장 기준안(A1). 마디 2개, 마디마다 120° 3륜 스프링 벽 누름, 피치+요 수동 관절 1개.
+     구조는 three_segment 파일을 그대로 쓰고 마디 수만 2 (robot.yaml n_segments). -->
+<robot name="two_module" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find pipe_robot_sim)/models/three_segment/three_segment.urdf.xacro"/>
+</robot>

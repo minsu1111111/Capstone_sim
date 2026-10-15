@@ -1,0 +1,13 @@
+[1/13] two_module     straight  -        PASS    실물OK O 정렬max   0.8° 롤max   0.0° 한계접촉  0.0s() 미끄럼  -0.0% 정체  0.0s 추정오차   20mm | 최대정렬 위치 base_link@0.57m 
+[2/13] two_module     elbow45   -        PASS    실물OK X 정렬max  51.8° 롤max  82.0° 한계접촉 11.5s(j_front_pitch) 미끄럼  12.6% 정체  0.0s 추정오차  673mm | 최대정렬 위치 base_link@1.77m 
+[3/13] two_module     elbow90   -        PASS    실물OK X 정렬max  51.8° 롤max 109.3° 한계접촉 11.3s(j_front_pitch) 미끄럼  12.9% 정체  0.0s 추정오차  727mm | 최대정렬 위치 base_link@1.42m 
+[4/13] two_module     elbow90   dv_ll90  PASS    실물OK X 정렬max  51.8° 롤max 180.0° 한계접촉 17.3s(j_front_pitch) 미끄럼  14.0% 정체  0.0s 추정오차  231mm | 최대정렬 위치 base_link@1.73m 
+[5/13] two_module     elbow90   ts90     PASS    실물OK X 정렬max  62.7° 롤max 179.9° 한계접촉 17.3s(j_front_pitch) 미끄럼  14.1% 정체  0.5s 추정오차  196mm | 최대정렬 위치 base_link@1.10m 
+[6/13] two_module     demo      -        PASS    실물OK X 정렬max  66.5° 롤max 179.9° 한계접촉 13.6s(j_front_pitch) 미끄럼  15.2% 정체  0.3s 추정오차  329mm | 최대정렬 위치 base_link@1.62m 
+[7/13] two_module     demo      dv_ll90  PASS    실물OK X 정렬max  58.8° 롤max 179.8° 한계접촉 15.8s(j_front_pitch) 미끄럼  15.5% 정체  0.0s 추정오차  353mm | 최대정렬 위치 base_link@1.63m 
+[8/13] two_module     demo      ts90     STUCK   실물OK X 정렬max  87.9° 롤max 122.8° 한계접촉 16.3s(j_front_pitch) 미끄럼  67.9% 정체 15.0s 추정오차  916mm | 최대정렬 위치 base_link@1.62m 
+[9/13] two_module     elbow45_up -        PASS    실물OK X 정렬max  77.5° 롤max  27.1° 한계접촉  4.0s(mid_slider_2_joint) 미끄럼 -48.4% 정체  0.0s 추정오차  153mm | 최대정렬 위치 base_link@1.33m 
+[10/13] two_module     elbow45_down -        STUCK   실물OK X 정렬max  48.4° 롤max   0.2° 한계접촉  0.0s() 미끄럼  96.3% 정체 14.9s 추정오차  926mm | 최대정렬 위치 base_link@1.07m 
+[11/13] two_module     elbow90_up -        PASS    실물OK X 정렬max   0.0° 롤max 179.5° 한계접촉  0.0s() 미끄럼      % 정체  0.0s 추정오차     mm | 최대정렬 위치  
+[12/13] two_module     elbow90_down -        PASS    실물OK X 정렬max  55.7° 롤max  26.4° 한계접촉  5.8s(j_front_pitch) 미끄럼 -35.2% 정체  0.3s 추정오차  214mm | 최대정렬 위치 base_link@1.09m 
+[13/13] two_module     demo3d    -        PASS    실물OK X 정렬max  70.8° 롤max 179.7° 한계접촉 21.1s(j_front_yaw) 미끄럼  17.6% 정체  0.1s 추정오차  343mm | 최대정렬 위치 base_link@2.05m 

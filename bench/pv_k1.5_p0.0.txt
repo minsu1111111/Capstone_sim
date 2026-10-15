@@ -1,0 +1,9 @@
+[1/9] pirate_v       straight  -        STUCK   실물OK X 정렬max   0.0° 롤max   0.5° 한계접촉  0.0s() 미끄럼 -100.0% 정체  0.0s 추정오차 1466mm | 최대정렬 위치 wheel_a_link:wheel_c_link@0.34m 
+[2/9] pirate_v       elbow45   -        STUCK   실물OK X 정렬max   1.9° 롤max   0.6° 한계접촉  0.0s() 미끄럼      % 정체  0.0s 추정오차 1573mm | 최대정렬 위치 wheel_d_link:wheel_f_link@0.20m 
+[3/9] pirate_v       elbow90   -        STUCK   실물OK X 정렬max   1.9° 롤max   0.7° 한계접촉  0.0s() 미끄럼 -100.0% 정체  0.0s 추정오차 1603mm | 최대정렬 위치 wheel_d_link:wheel_f_link@0.21m 
+[4/9] pirate_v       demo      -        STUCK   실물OK X 정렬max   2.0° 롤max   0.7° 한계접촉  0.0s() 미끄럼 -99.0% 정체  0.0s 추정오차 1542mm | 최대정렬 위치 wheel_d_link:wheel_f_link@0.21m 
+[5/9] pirate_v       elbow45_up -        STUCK   실물OK X 정렬max   2.0° 롤max   0.7° 한계접촉  0.0s() 미끄럼      % 정체  0.0s 추정오차  468mm | 최대정렬 위치 wheel_d_link:wheel_f_link@0.23m 
+[6/9] pirate_v       elbow45_down -        STUCK   실물OK X 정렬max   2.0° 롤max   0.9° 한계접촉  0.0s() 미끄럼 -98.8% 정체  0.0s 추정오차 1645mm | 최대정렬 위치 wheel_d_link:wheel_f_link@0.22m 
+[7/9] pirate_v       elbow90_up -        STUCK   실물OK X 정렬max   2.0° 롤max   0.9° 한계접촉  0.0s() 미끄럼      % 정체  0.0s 추정오차 1658mm | 최대정렬 위치 wheel_d_link:wheel_f_link@0.24m 
+[8/9] pirate_v       elbow90_down -        STUCK   실물OK X 정렬max  90.0° 롤max  90.6° 한계접촉  0.0s() 미끄럼      % 정체  0.0s 추정오차  572mm | 최대정렬 위치 wheel_c_link:wheel_d_link@1.60m 
+[9/9] pirate_v       demo3d    -        STUCK   실물OK X 정렬max   2.0° 롤max   1.1° 한계접촉  0.0s() 미끄럼 -98.0% 정체  0.0s 추정오차 1773mm | 최대정렬 위치 wheel_d_link:wheel_f_link@0.24m 

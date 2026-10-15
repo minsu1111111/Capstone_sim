@@ -1,0 +1,50 @@
+# pirate_v: PIRATE(트벤테대) 변형. 뒤집힌 V 두 개 + 가운데 링크.
+#   옆에서 본 모양 (x = 진행):   F      D-----C      A   (바닥)
+#                                   \  /        \  /
+#                                    E           B        (천장)
+#   꼭짓점 관절 B, E에 서보 토크를 걸어 V를 벌려 위아래 벽을 누름 (바퀴 스프링 없음)
+#   관절마다 바퀴 2개를 나란히 (둥근 벽에서 옆으로 굴러 떨어지지 않게), 바퀴축 6개 모두 구동
+#   C, D: 가운데 링크와 V를 잇는 관절 = 요(좌우, 수평 엘보용) + 피치(V 모양 변화 흡수, 자유)
+/**:
+  ros__parameters:
+    # bench 평가용: 배관과 일자인지 볼 몸통 (링크 이름 = 그 링크의 x축, "앞:뒤" = 두 링크를 잇는 선)
+    bench_spines: ["wheel_a_link:wheel_c_link", "wheel_c_link:wheel_d_link", "wheel_d_link:wheel_f_link"]
+    # ---- 노드가 쓰는 값 ----
+    wheel_joints: [wheel_a_joint, wheel_b_joint, wheel_c_joint, wheel_d_joint, wheel_e_joint, wheel_f_joint]
+    wheel_radius: 0.012
+    encoder_cpr: 2800            # (추정)
+    motor_stall_torque: 0.147    # N·m (추정)
+    motor_no_load_speed: 16.8    # rad/s (추정)
+    rated_voltage: 6.0
+    supply_voltage: 7.4
+    control_rate: 100.0
+    drive_mode: speed_pid
+    kp: 0.01
+    ki: 1.0
+    kd: 0.0
+    clamp_joints: [b_pitch, e_pitch]
+    clamp_torque: [0.15, -0.15]  # N·m, 부호 = V를 벌리는 방향 (일정 토크 모드)
+    clamp_k: 0.0                 # 꼭짓점 토션 스프링 강성 [N·m/rad] (0이면 일정 토크 모드)
+    clamp_q_c: 0.066             # 꼭짓점이 벽에 닿는 각도 [rad] (측정값, 직관 정지 시)
+    clamp_T0: 0.15               # 접촉에서 누르는 토크 [N·m]
+    pitch_k: 0.0                 # C·D 관절 토션 스프링 강성 [N·m/rad] (0이면 없음)
+    pitch_ref: -0.033            # C 관절 기준각 [rad] (D 는 부호 반대, 정지 자세 측정값)
+    spawn_x: 0.22                # 가운데 링크 중심 스폰 위치 (뒷바퀴 F가 입구 안에 들어오게)
+
+    # ---- 모델(xacro)이 쓰는 값 ----
+    link_len: 0.10               # V 한 변 (바퀴축 사이)
+    mid_len: 0.06                # 가운데 링크 (C-D)
+    link_d: 0.024                # V 링크 몸통 지름
+    mid_d: 0.040                 # 가운데 링크 몸통 지름 (배터리·보드)
+    link_mass: 0.06
+    mid_mass: 0.25
+    wheel_width: 0.008
+    wheel_mass: 0.008
+    wheel_sep: 0.016             # 나란한 두 바퀴의 중심 간격 절반
+    wheel_mu: 0.7
+    motor_reflected_inertia: 1.0e-5
+    gear_friction: 0.002
+    yaw_limit_deg: 60.0
+    yaw_k: 0.01                  # C, D 요 관절 복원 스프링 (수동)
+    yaw_damping: 0.003
+    clamp_range: 0.6             # 꼭짓점·C·D 피치 관절 범위 ± [rad]

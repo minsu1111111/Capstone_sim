@@ -1,0 +1,233 @@
+[INFO] [launch]: All log files can be found below /home/aisl/.ros/log/2026-10-15-10-31-04-704409-aisl-15G880-SD76K-158880
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign-1]: process started with pid [159026]
+[INFO] [robot_state_publisher-2]: process started with pid [159028]
+[INFO] [create-3]: process started with pid [159030]
+[INFO] [parameter_bridge-4]: process started with pid [159032]
+[INFO] [odometry-5]: process started with pid [159034]
+[INFO] [pipe_markers-6]: process started with pid [159037]
+[INFO] [encoder_sim-7]: process started with pid [159039]
+[INFO] [motor_driver-8]: process started with pid [159044]
+[INFO] [clamp_torque-9]: process started with pid [159046]
+[create-3] [INFO] [1792027865.880767570] [ros_gz_sim]: Requesting list of world names.
+[robot_state_publisher-2] [WARN] [1792027866.153012665] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-2] [INFO] [1792027866.155300660] [robot_state_publisher]: got segment b_bracket
+[robot_state_publisher-2] [INFO] [1792027866.155382593] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1792027866.155397786] [robot_state_publisher]: got segment c_bracket
+[robot_state_publisher-2] [INFO] [1792027866.155407653] [robot_state_publisher]: got segment c_frame
+[robot_state_publisher-2] [INFO] [1792027866.155417537] [robot_state_publisher]: got segment d_bracket
+[robot_state_publisher-2] [INFO] [1792027866.155426664] [robot_state_publisher]: got segment d_frame
+[robot_state_publisher-2] [INFO] [1792027866.155435877] [robot_state_publisher]: got segment e_bracket
+[robot_state_publisher-2] [INFO] [1792027866.155445191] [robot_state_publisher]: got segment f1_link
+[robot_state_publisher-2] [INFO] [1792027866.155454347] [robot_state_publisher]: got segment f2_link
+[robot_state_publisher-2] [INFO] [1792027866.155463535] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-2] [INFO] [1792027866.155472022] [robot_state_publisher]: got segment nose_link
+[robot_state_publisher-2] [INFO] [1792027866.155480617] [robot_state_publisher]: got segment r1_link
+[robot_state_publisher-2] [INFO] [1792027866.155489397] [robot_state_publisher]: got segment r2_link
+[robot_state_publisher-2] [INFO] [1792027866.155497905] [robot_state_publisher]: got segment wheel_a_link
+[robot_state_publisher-2] [INFO] [1792027866.155506278] [robot_state_publisher]: got segment wheel_b_link
+[robot_state_publisher-2] [INFO] [1792027866.155514214] [robot_state_publisher]: got segment wheel_c_link
+[robot_state_publisher-2] [INFO] [1792027866.155522883] [robot_state_publisher]: got segment wheel_d_link
+[robot_state_publisher-2] [INFO] [1792027866.155531421] [robot_state_publisher]: got segment wheel_e_link
+[robot_state_publisher-2] [INFO] [1792027866.155539643] [robot_state_publisher]: got segment wheel_f_link
+[robot_state_publisher-2] [WARN] [1792027866.176991440] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.194498798] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.208725973] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.209753680] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.213950565] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.233398109] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.245366615] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.251222992] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.256882314] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.275802021] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.291535253] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.304251884] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.305918081] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.310414857] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.312833434] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.316853042] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.331243782] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.341254003] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.354583786] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.376267031] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.391399110] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.497230828] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.507680922] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.522141564] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.531194401] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.538215062] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.564348683] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.580378964] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.582866565] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.585619248] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.591809544] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.598609077] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.605072875] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.612912703] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.623032754] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.627607195] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.641774299] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.643817094] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.647875465] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[create-3] [INFO] [1792027866.653600050] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[robot_state_publisher-2] [WARN] [1792027866.657435447] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.666402162] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.678338204] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.680130518] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.684315136] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.690309223] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.701135614] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.710287253] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[create-3] [INFO] [1792027866.727438248] [ros_gz_sim]: Requested creation of entity.
+[create-3] [INFO] [1792027866.727490648] [ros_gz_sim]: OK creation of entity.
+[robot_state_publisher-2] [WARN] [1792027866.739272144] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.751220612] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.753710183] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.764517228] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.775126576] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.780439446] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.788110570] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.821303350] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.856797832] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.910850622] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[INFO] [create-3]: process has finished cleanly [pid 159030]
+[robot_state_publisher-2] [WARN] [1792027866.925163046] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.934333376] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.945033228] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.952320397] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.958331831] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.964040992] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.966701645] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.974283796] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.988383015] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.995442507] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027866.999710491] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027867.005374846] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027867.009603387] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[parameter_bridge-4] [INFO] [1792027867.014614101] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (ignition.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[robot_state_publisher-2] [INFO] [1792027867.021045120] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-4] [INFO] [1792027867.021125012] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [clamp_torque-9]: sending signal 'SIGINT' to process[clamp_torque-9]
+[INFO] [motor_driver-8]: sending signal 'SIGINT' to process[motor_driver-8]
+[INFO] [encoder_sim-7]: sending signal 'SIGINT' to process[encoder_sim-7]
+[INFO] [pipe_markers-6]: sending signal 'SIGINT' to process[pipe_markers-6]
+[INFO] [odometry-5]: sending signal 'SIGINT' to process[odometry-5]
+[INFO] [parameter_bridge-4]: sending signal 'SIGINT' to process[parameter_bridge-4]
+[ERROR] [motor_driver-8]: process has died [pid 159044, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_1q2qimju'].
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[INFO] [ign-1]: sending signal 'SIGINT' to process[ign-1]
+[motor_driver-8] Traceback (most recent call last):
+[motor_driver-8]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver", line 33, in <module>
+[motor_driver-8]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'motor_driver')())
+[motor_driver-8]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver", line 25, in importlib_load_entry_point
+[motor_driver-8]     return next(matches).load()
+[motor_driver-8]   File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 171, in load
+[motor_driver-8]     module = import_module(match.group('module'))
+[motor_driver-8]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[motor_driver-8]     return _bootstrap._gcd_import(name[level:], package, level)
+[motor_driver-8]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[motor_driver-8]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[motor_driver-8]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[motor_driver-8]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[motor_driver-8]   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[motor_driver-8]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[motor_driver-8]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/motor_driver.py", line 19, in <module>
+[motor_driver-8]     from std_msgs.msg import Float64, Float64MultiArray, Int64MultiArray
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/std_msgs/msg/__init__.py", line 19, in <module>
+[motor_driver-8]     from std_msgs.msg._int8_multi_array import Int8MultiArray  # noqa: F401
+[motor_driver-8] KeyboardInterrupt
+[parameter_bridge-4] [INFO] [1792027867.025539563] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/joint_states (ignition.msgs.Model) -> /joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-4] [WARN] [1792027867.025792121] [ros_gz_bridge]: Failed to create a bridge for topic [/joint_states] with ROS2 type [sensor_msgs/msg/JointState] to topic [/joint_states] with Gazebo Transport type [ignition.msgs.Model]
+[parameter_bridge-4] [INFO] [1792027867.025805452] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/imu (ignition.msgs.IMU) -> /imu (sensor_msgs/msg/Imu)] (Lazy 0)
+[parameter_bridge-4] [WARN] [1792027867.030794408] [ros_gz_bridge]: Failed to create a bridge for topic [/imu] with ROS2 type [sensor_msgs/msg/Imu] to topic [/imu] with Gazebo Transport type [ignition.msgs.IMU]
+[parameter_bridge-4] [INFO] [1792027867.030823727] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/ground_truth/odom (ignition.msgs.Odometry) -> /ground_truth/odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-4] [WARN] [1792027867.031059626] [ros_gz_bridge]: Failed to create a bridge for topic [/ground_truth/odom] with ROS2 type [nav_msgs/msg/Odometry] to topic [/ground_truth/odom] with Gazebo Transport type [ignition.msgs.Odometry]
+[parameter_bridge-4] [INFO] [1792027867.031083156] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/pipe_world/dynamic_pose/info (ignition.msgs.Pose_V) -> /gz_poses (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-4] [WARN] [1792027867.031271013] [ros_gz_bridge]: Failed to create a bridge for topic [/gz_poses] with ROS2 type [tf2_msgs/msg/TFMessage] to topic [/world/pipe_world/dynamic_pose/info] with Gazebo Transport type [ignition.msgs.Pose_V]
+[parameter_bridge-4] [INFO] [1792027867.031280267] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tof/front (ignition.msgs.LaserScan) -> /tof/front (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-4] [WARN] [1792027867.031745855] [ros_gz_bridge]: Failed to create a bridge for topic [/tof/front] with ROS2 type [sensor_msgs/msg/LaserScan] to topic [/tof/front] with Gazebo Transport type [ignition.msgs.LaserScan]
+[parameter_bridge-4] [INFO] [1792027867.031759872] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tof/left (ignition.msgs.LaserScan) -> /tof/left (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-4] [WARN] [1792027867.031854978] [ros_gz_bridge]: Failed to create a bridge for topic [/tof/left] with ROS2 type [sensor_msgs/msg/LaserScan] to topic [/tof/left] with Gazebo Transport type [ignition.msgs.LaserScan]
+[parameter_bridge-4] [INFO] [1792027867.031864842] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tof/right (ignition.msgs.LaserScan) -> /tof/right (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-4] [WARN] [1792027867.031931578] [ros_gz_bridge]: Failed to create a bridge for topic [/tof/right] with ROS2 type [sensor_msgs/msg/LaserScan] to topic [/tof/right] with Gazebo Transport type [ignition.msgs.LaserScan]
+[parameter_bridge-4] [INFO] [1792027867.031939666] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tof/front/points (ignition.msgs.PointCloudPacked) -> /tof/front/points (sensor_msgs/msg/PointCloud2)] (Lazy 0)
+[parameter_bridge-4] [WARN] [1792027867.032018033] [ros_gz_bridge]: Failed to create a bridge for topic [/tof/front/points] with ROS2 type [sensor_msgs/msg/PointCloud2] to topic [/tof/front/points] with Gazebo Transport type [ignition.msgs.PointCloudPacked]
+[parameter_bridge-4] [INFO] [1792027867.032026704] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/wheel_a_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/wheel_a_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [WARN] [1792027867.033146440] [ros_gz_bridge]: Failed to create a bridge for topic [/motor/wheel_a_joint/torque] with ROS2 type [std_msgs/msg/Float64] to topic [/model/pipe_robot/joint/wheel_a_joint/cmd_force] with Gazebo Transport type [ignition.msgs.Double]
+[parameter_bridge-4] [INFO] [1792027867.033166591] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/wheel_b_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/wheel_b_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [WARN] [1792027867.034154072] [ros_gz_bridge]: Failed to create a bridge for topic [/motor/wheel_b_joint/torque] with ROS2 type [std_msgs/msg/Float64] to topic [/model/pipe_robot/joint/wheel_b_joint/cmd_force] with Gazebo Transport type [ignition.msgs.Double]
+[parameter_bridge-4] [INFO] [1792027867.034170715] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/wheel_c_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/wheel_c_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [WARN] [1792027867.035002590] [ros_gz_bridge]: Failed to create a bridge for topic [/motor/wheel_c_joint/torque] with ROS2 type [std_msgs/msg/Float64] to topic [/model/pipe_robot/joint/wheel_c_joint/cmd_force] with Gazebo Transport type [ignition.msgs.Double]
+[parameter_bridge-4] [INFO] [1792027867.035021023] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/wheel_d_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/wheel_d_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [WARN] [1792027867.035718805] [ros_gz_bridge]: Failed to create a bridge for topic [/motor/wheel_d_joint/torque] with ROS2 type [std_msgs/msg/Float64] to topic [/model/pipe_robot/joint/wheel_d_joint/cmd_force] with Gazebo Transport type [ignition.msgs.Double]
+[parameter_bridge-4] [INFO] [1792027867.035733736] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/wheel_e_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/wheel_e_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [WARN] [1792027867.036548418] [ros_gz_bridge]: Failed to create a bridge for topic [/motor/wheel_e_joint/torque] with ROS2 type [std_msgs/msg/Float64] to topic [/model/pipe_robot/joint/wheel_e_joint/cmd_force] with Gazebo Transport type [ignition.msgs.Double]
+[parameter_bridge-4] [INFO] [1792027867.036565415] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/wheel_f_joint/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/wheel_f_joint/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [WARN] [1792027867.037292994] [ros_gz_bridge]: Failed to create a bridge for topic [/motor/wheel_f_joint/torque] with ROS2 type [std_msgs/msg/Float64] to topic [/model/pipe_robot/joint/wheel_f_joint/cmd_force] with Gazebo Transport type [ignition.msgs.Double]
+[parameter_bridge-4] [INFO] [1792027867.037309762] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/b_pitch/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/b_pitch/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [WARN] [1792027867.037940026] [ros_gz_bridge]: Failed to create a bridge for topic [/motor/b_pitch/torque] with ROS2 type [std_msgs/msg/Float64] to topic [/model/pipe_robot/joint/b_pitch/cmd_force] with Gazebo Transport type [ignition.msgs.Double]
+[parameter_bridge-4] [INFO] [1792027867.037954392] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/motor/e_pitch/torque (std_msgs/msg/Float64) -> /model/pipe_robot/joint/e_pitch/cmd_force (ignition.msgs.Double)] (Lazy 0)
+[parameter_bridge-4] [WARN] [1792027867.038708725] [ros_gz_bridge]: Failed to create a bridge for topic [/motor/e_pitch/torque] with ROS2 type [std_msgs/msg/Float64] to topic [/model/pipe_robot/joint/e_pitch/cmd_force] with Gazebo Transport type [ignition.msgs.Double]
+[parameter_bridge-4] [INFO] [1792027867.056384958] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-2] [INFO] [1792027867.059021340] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[encoder_sim-7] Traceback (most recent call last):
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 175, in __init__
+[encoder_sim-7]     self.__node = _rclpy.Node(
+[encoder_sim-7] rclpy._rclpy_pybind11.RCLError: error creating node: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/guard_condition.c:67
+[encoder_sim-7] 
+[encoder_sim-7] During handling of the above exception, another exception occurred:
+[encoder_sim-7] 
+[encoder_sim-7] Traceback (most recent call last):
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim", line 33, in <module>
+[encoder_sim-7]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'encoder_sim')())
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/encoder_sim.py", line 40, in main
+[encoder_sim-7]     rclpy.spin(EncoderSim())
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/encoder_sim.py", line 16, in __init__
+[encoder_sim-7]     super().__init__('encoder_sim')
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 175, in __init__
+[encoder_sim-7]     self.__node = _rclpy.Node(
+[encoder_sim-7] KeyboardInterrupt
+[ERROR] [encoder_sim-7]: process has died [pid 159039, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_ms53dbez'].
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 159028]
+[INFO] [parameter_bridge-4]: process has finished cleanly [pid 159032]
+[odometry-5] Traceback (most recent call last):
+[odometry-5]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/odometry", line 33, in <module>
+[odometry-5]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'odometry')())
+[odometry-5]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/odometry.py", line 170, in main
+[odometry-5]     rclpy.spin(Odom())
+[odometry-5]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/odometry.py", line 45, in __init__
+[odometry-5]     super().__init__('odometry')
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 199, in __init__
+[odometry-5]     self._parameter_event_publisher = self.create_publisher(
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1299, in create_publisher
+[clamp_torque-9] Traceback (most recent call last):
+[clamp_torque-9]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/clamp_torque", line 33, in <module>
+[clamp_torque-9]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'clamp_torque')())
+[clamp_torque-9]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/clamp_torque.py", line 28, in main
+[clamp_torque-9]     rclpy.spin(ClampTorque())
+[clamp_torque-9]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/clamp_torque.py", line 13, in __init__
+[clamp_torque-9]     super().__init__('clamp_torque')
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 199, in __init__
+[clamp_torque-9]     self._parameter_event_publisher = self.create_publisher(
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1299, in create_publisher
+[clamp_torque-9]     publisher_object = _rclpy.Publisher(
+[clamp_torque-9] KeyboardInterrupt
+[odometry-5]     publisher_object = _rclpy.Publisher(
+[odometry-5] KeyboardInterrupt
+[pipe_markers-6] Traceback (most recent call last):
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers", line 33, in <module>
+[pipe_markers-6]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'pipe_markers')())
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/pipe_markers.py", line 35, in main
+[pipe_markers-6]     rclpy.spin(PipeMarkers())
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/pipe_markers.py", line 14, in __init__
+[pipe_markers-6]     super().__init__('pipe_markers')
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 199, in __init__
+[pipe_markers-6]     self._parameter_event_publisher = self.create_publisher(
+[pipe_markers-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1299, in create_publisher
+[pipe_markers-6]     publisher_object = _rclpy.Publisher(
+[pipe_markers-6] KeyboardInterrupt
+[ERROR] [clamp_torque-9]: process has died [pid 159046, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/clamp_torque --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params__40u4uid'].
+[ERROR] [pipe_markers-6]: process has died [pid 159037, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers --ros-args --params-file /tmp/launch_params_v2f_x_z9 --params-file /tmp/launch_params_aonvtclt'].
+[ERROR] [odometry-5]: process has died [pid 159034, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/odometry --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_4d6lid18 --params-file /tmp/launch_params_6zvpn218'].
+[INFO] [ign-1]: process has finished cleanly [pid 159026]

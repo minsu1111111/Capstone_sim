@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!-- layout_check 로 생성: layout.yaml 의 부품 (보이기만, 충돌·질량 없음). 빨강 = 배치 문제 -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <link name="part_cell_14500_1_vis"><visual><origin xyz="0.0 0.0 -0.018600000000000002" rpy="0 1.5707963267948966 0"/><geometry><cylinder radius="0.0070999999999999995" length="0.05"/></geometry><material name="part_cell_14500_1_mat"><color rgba="0.9 0.6 0.1 1"/></material></visual></link>
+  <joint name="part_cell_14500_1_fix" type="fixed"><parent link="base_link"/><child link="part_cell_14500_1_vis"/></joint>
+  <link name="part_xiao_s3_sense_cam_vis"><visual><origin xyz="0.039 0.0 0.006" rpy="0 0 0"/><geometry><box size="0.021 0.0175 0.015"/></geometry><material name="part_xiao_s3_sense_cam_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_xiao_s3_sense_cam_fix" type="fixed"><parent link="base_link"/><child link="part_xiao_s3_sense_cam_vis"/></joint>
+  <link name="part_xiao_s3_ctrl_vis"><visual><origin xyz="-0.035 0.0 0.008" rpy="0 0 0"/><geometry><box size="0.021 0.0175 0.004"/></geometry><material name="part_xiao_s3_ctrl_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_xiao_s3_ctrl_fix" type="fixed"><parent link="base_link"/><child link="part_xiao_s3_ctrl_vis"/></joint>
+  <link name="part_mpu6050_vis"><visual><origin xyz="-0.035 0.0 0.014" rpy="0 0 0"/><geometry><box size="0.021 0.016 0.003"/></geometry><material name="part_mpu6050_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_mpu6050_fix" type="fixed"><parent link="base_link"/><child link="part_mpu6050_vis"/></joint>
+  <link name="part_drv8833_a_vis"><visual><origin xyz="-0.035 -0.011 -0.002" rpy="0 0 0"/><geometry><box size="0.018 0.016 0.004"/></geometry><material name="part_drv8833_a_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_drv8833_a_fix" type="fixed"><parent link="base_link"/><child link="part_drv8833_a_vis"/></joint>
+  <link name="part_drv8833_b_vis"><visual><origin xyz="-0.035 0.011 -0.002" rpy="0 0 0"/><geometry><box size="0.018 0.016 0.004"/></geometry><material name="part_drv8833_b_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_drv8833_b_fix" type="fixed"><parent link="base_link"/><child link="part_drv8833_b_vis"/></joint>
+  <link name="part_mp1584_logic_vis"><visual><origin xyz="0.03 -0.01 -0.004" rpy="0 0 0"/><geometry><box size="0.022 0.017 0.004"/></geometry><material name="part_mp1584_logic_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_mp1584_logic_fix" type="fixed"><parent link="base_link"/><child link="part_mp1584_logic_vis"/></joint>
+  <link name="part_mp1584_servo_vis"><visual><origin xyz="0.03 0.01 -0.004" rpy="0 0 0"/><geometry><box size="0.022 0.017 0.004"/></geometry><material name="part_mp1584_servo_mat"><color rgba="0.15 0.15 0.15 1"/></material></visual></link>
+  <joint name="part_mp1584_servo_fix" type="fixed"><parent link="base_link"/><child link="part_mp1584_servo_vis"/></joint>
+  <link name="part_bms_2s_vis"><visual><origin xyz="-0.035 0.015 -0.01" rpy="0 0 0"/><geometry><box size="0.025 0.003 0.008"/></geometry><material name="part_bms_2s_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_bms_2s_fix" type="fixed"><parent link="base_link"/><child link="part_bms_2s_vis"/></joint>
+  <link name="part_vl6180_left_vis"><visual><origin xyz="0.035 0.0235 0.003" rpy="0 0 0"/><geometry><box size="0.018 0.003 0.013"/></geometry><material name="part_vl6180_left_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_vl6180_left_fix" type="fixed"><parent link="base_link"/><child link="part_vl6180_left_vis"/></joint>
+  <link name="part_vl6180_right_vis"><visual><origin xyz="0.035 -0.0235 0.003" rpy="0 0 0"/><geometry><box size="0.018 0.003 0.013"/></geometry><material name="part_vl6180_right_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_vl6180_right_fix" type="fixed"><parent link="base_link"/><child link="part_vl6180_right_vis"/></joint>
+  <link name="part_led_ring_vis"><visual><origin xyz="0.052 0.0 0.006" rpy="0 0 0"/><geometry><box size="0.003 0.02 0.02"/></geometry><material name="part_led_ring_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_led_ring_fix" type="fixed"><parent link="base_link"/><child link="part_led_ring_vis"/></joint>
+  <link name="part_tof_vl53l5cx_vis"><visual><origin xyz="0.052 0.0 -0.014" rpy="0 0 0"/><geometry><box size="0.003 0.013 0.013"/></geometry><material name="part_tof_vl53l5cx_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_tof_vl53l5cx_fix" type="fixed"><parent link="base_link"/><child link="part_tof_vl53l5cx_vis"/></joint>
+  <link name="part_servo_pitch_vis"><visual><origin xyz="-0.058 0.0 0.0" rpy="0 0 0"/><geometry><box size="0.0225 0.012 0.03"/></geometry><material name="part_servo_pitch_mat"><color rgba="0.1 0.7 0.3 1"/></material></visual></link>
+  <joint name="part_servo_pitch_fix" type="fixed"><parent link="base_link"/><child link="part_servo_pitch_vis"/></joint>
+  <link name="part_servo_yaw_vis"><visual><origin xyz="-0.076 0.0 0.0" rpy="0 0 0"/><geometry><box size="0.012 0.03 0.0225"/></geometry><material name="part_servo_yaw_mat"><color rgba="0.15 0.15 0.15 1"/></material></visual></link>
+  <joint name="part_servo_yaw_fix" type="fixed"><parent link="base_link"/><child link="part_servo_yaw_vis"/></joint>
+  <link name="part_cell_14500_2_vis"><visual><origin xyz="-0.083 0.0 -0.018600000000000002" rpy="0 1.5707963267948966 0"/><geometry><cylinder radius="0.0070999999999999995" length="0.05"/></geometry><material name="part_cell_14500_2_mat"><color rgba="0.9 0.6 0.1 1"/></material></visual></link>
+  <joint name="part_cell_14500_2_fix" type="fixed"><parent link="mid_link"/><child link="part_cell_14500_2_vis"/></joint>
+  <link name="part_ut_pcb_vis"><visual><origin xyz="-0.044000000000000004 0.0 0.004" rpy="0 0 0"/><geometry><box size="0.032 0.028 0.01"/></geometry><material name="part_ut_pcb_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_ut_pcb_fix" type="fixed"><parent link="mid_link"/><child link="part_ut_pcb_vis"/></joint>
+  <link name="part_hv_ham1518_vis"><visual><origin xyz="-0.044000000000000004 0.0 0.015" rpy="0 0 0"/><geometry><box size="0.03 0.02 0.012"/></geometry><material name="part_hv_ham1518_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_hv_ham1518_fix" type="fixed"><parent link="mid_link"/><child link="part_hv_ham1518_vis"/></joint>
+  <link name="part_boost_12v_vis"><visual><origin xyz="-0.044000000000000004 0.016 -0.01" rpy="0 0 0"/><geometry><box size="0.02 0.012 0.005"/></geometry><material name="part_boost_12v_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_boost_12v_fix" type="fixed"><parent link="mid_link"/><child link="part_boost_12v_vis"/></joint>
+  <link name="part_mp1584_ut_vis"><visual><origin xyz="-0.044000000000000004 -0.016 -0.006" rpy="0 0 0"/><geometry><box size="0.022 0.004 0.017"/></geometry><material name="part_mp1584_ut_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_mp1584_ut_fix" type="fixed"><parent link="mid_link"/><child link="part_mp1584_ut_vis"/></joint>
+  <link name="part_xiao_s3_ut_vis"><visual><origin xyz="-0.07200000000000001 0.0 0.004" rpy="0 0 0"/><geometry><box size="0.021 0.0175 0.004"/></geometry><material name="part_xiao_s3_ut_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_xiao_s3_ut_fix" type="fixed"><parent link="mid_link"/><child link="part_xiao_s3_ut_vis"/></joint>
+  <link name="part_n20_rotate_vis"><visual><origin xyz="-0.0955 0.0 -0.0018" rpy="0 0 0"/><geometry><box size="0.025 0.012 0.01"/></geometry><material name="part_n20_rotate_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_n20_rotate_fix" type="fixed"><parent link="mid_link"/><child link="part_n20_rotate_vis"/></joint>
+  <link name="part_ut_hub_vis"><visual><origin xyz="-0.122 0.0 0.0" rpy="0 1.5707963267948966 0"/><geometry><cylinder radius="0.026" length="0.026"/></geometry><material name="part_ut_hub_mat"><color rgba="0.3 0.8 0.6 1"/></material></visual></link>
+  <joint name="part_ut_hub_fix" type="fixed"><parent link="mid_link"/><child link="part_ut_hub_vis"/></joint>
+  <link name="part_probe_5p14n_vis"><visual><origin xyz="-0.122 0.0 -0.03" rpy="0 0 0"/><geometry><cylinder radius="0.01" length="0.03"/></geometry><material name="part_probe_5p14n_mat"><color rgba="0.8 0.8 0.85 1"/></material></visual></link>
+  <joint name="part_probe_5p14n_fix" type="fixed"><parent link="mid_link"/><child link="part_probe_5p14n_vis"/></joint>
+</robot>

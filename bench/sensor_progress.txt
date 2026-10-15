@@ -1,0 +1,13 @@
+[1/13] three_segment  straight  -        PASS    실물OK O 정렬max   0.0° 롤max   0.0° 한계접촉  0.0s() 미끄럼  -0.0% 정체  0.0s 추정오차    9mm | 최대정렬 위치 base_link@1.79m 
+[2/13] three_segment  elbow45   -        PASS    실물OK X 정렬max  38.4° 롤max   6.3° 한계접촉  0.0s() 미끄럼   3.5% 정체  0.0s 추정오차   69mm | 최대정렬 위치 rear_link@1.06m 
+[3/13] three_segment  elbow90   -        PASS    실물OK X 정렬max  58.4° 롤max  51.6° 한계접촉  1.9s(j_front_yaw) 미끄럼   8.3% 정체  0.2s 추정오차  125mm | 최대정렬 위치 mid_link@1.10m 
+[4/13] three_segment  elbow90   dv_ll90  PASS    실물OK X 정렬max  42.2° 롤max   6.7° 한계접촉  0.0s() 미끄럼   3.6% 정체  0.0s 추정오차   61mm | 최대정렬 위치 mid_link@1.14m 
+[5/13] three_segment  elbow90   ts90     PASS    실물OK X 정렬max  61.5° 롤max  18.5° 한계접촉  2.0s(j_front_yaw) 미끄럼   5.4% 정체  0.3s 추정오차   44mm | 최대정렬 위치 mid_link@1.10m 
+[6/13] three_segment  demo      -        PASS    실물OK X 정렬max  56.5° 롤max  16.6° 한계접촉  1.0s(j_front_yaw) 미끄럼   6.6% 정체  0.0s 추정오차   31mm | 최대정렬 위치 mid_link@1.65m 
+[7/13] three_segment  demo      dv_ll90  PASS    실물OK X 정렬max  44.2° 롤max   8.7° 한계접촉  0.0s() 미끄럼   6.4% 정체  0.0s 추정오차   53mm | 최대정렬 위치 mid_link@1.73m 
+[8/13] three_segment  demo      ts90     PASS    실물OK X 정렬max  61.7° 롤max  16.7° 한계접촉  1.3s(j_front_yaw) 미끄럼   6.9% 정체  0.1s 추정오차   52mm | 최대정렬 위치 mid_link@1.66m 
+[9/13] three_segment  elbow45_up -        PASS    실물OK X 정렬max  50.0° 롤max   9.2° 한계접촉  0.1s(j_front_pitch) 미끄럼   9.5% 정체  0.0s 추정오차  103mm | 최대정렬 위치 base_link@1.13m 
+[10/13] three_segment  elbow45_down -        STUCK   실물OK X 정렬max  43.5° 롤max   0.0° 한계접촉  0.0s() 미끄럼 144.6% 정체 14.8s 추정오차  949mm | 최대정렬 위치 base_link@0.99m 
+[11/13] three_segment  elbow90_up -        PASS    실물OK X 정렬max   0.0° 롤max 180.0° 한계접촉  0.0s() 미끄럼      % 정체  0.0s 추정오차  949mm | 최대정렬 위치  
+[12/13] three_segment  elbow90_down -        STUCK   실물OK X 정렬max  90.0° 롤max 180.0° 한계접촉  0.9s(mid_slider_0_joint) 미끄럼 -42.6% 정체  2.7s 추정오차  142mm | 최대정렬 위치 base_link@1.60m 
+[13/13] three_segment  demo3d    -        PASS    실물OK X 정렬max  59.0° 롤max  19.1° 한계접촉  1.9s(j_front_yaw) 미끄럼  11.0% 정체  0.6s 추정오차  160mm | 최대정렬 위치 mid_link@2.11m 

@@ -1,0 +1,201 @@
+[INFO] [launch]: All log files can be found below /home/aisl/.ros/log/2026-10-15-10-33-00-181661-aisl-15G880-SD76K-160262
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign-1]: process started with pid [160263]
+[INFO] [robot_state_publisher-2]: process started with pid [160265]
+[INFO] [create-3]: process started with pid [160267]
+[INFO] [parameter_bridge-4]: process started with pid [160269]
+[INFO] [odometry-5]: process started with pid [160271]
+[INFO] [pipe_markers-6]: process started with pid [160273]
+[INFO] [encoder_sim-7]: process started with pid [160275]
+[INFO] [motor_driver-8]: process started with pid [160279]
+[INFO] [clamp_torque-9]: process started with pid [160281]
+[create-3] [INFO] [1792027981.370468264] [ros_gz_sim]: Requesting list of world names.
+[robot_state_publisher-2] [WARN] [1792027981.559838465] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-2] [INFO] [1792027981.563360897] [robot_state_publisher]: got segment b_bracket
+[robot_state_publisher-2] [INFO] [1792027981.566652648] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1792027981.566694622] [robot_state_publisher]: got segment c_bracket
+[robot_state_publisher-2] [INFO] [1792027981.566706305] [robot_state_publisher]: got segment c_frame
+[robot_state_publisher-2] [INFO] [1792027981.566715310] [robot_state_publisher]: got segment d_bracket
+[robot_state_publisher-2] [INFO] [1792027981.566723918] [robot_state_publisher]: got segment d_frame
+[robot_state_publisher-2] [INFO] [1792027981.566732140] [robot_state_publisher]: got segment e_bracket
+[robot_state_publisher-2] [INFO] [1792027981.566740597] [robot_state_publisher]: got segment f1_link
+[robot_state_publisher-2] [INFO] [1792027981.566749357] [robot_state_publisher]: got segment f2_link
+[robot_state_publisher-2] [INFO] [1792027981.566757889] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-2] [INFO] [1792027981.566766272] [robot_state_publisher]: got segment nose_link
+[robot_state_publisher-2] [INFO] [1792027981.566774421] [robot_state_publisher]: got segment r1_link
+[robot_state_publisher-2] [INFO] [1792027981.566782281] [robot_state_publisher]: got segment r2_link
+[robot_state_publisher-2] [INFO] [1792027981.566789912] [robot_state_publisher]: got segment wheel_a_link
+[robot_state_publisher-2] [INFO] [1792027981.566797730] [robot_state_publisher]: got segment wheel_b_link
+[robot_state_publisher-2] [INFO] [1792027981.566808401] [robot_state_publisher]: got segment wheel_c_link
+[robot_state_publisher-2] [INFO] [1792027981.566816687] [robot_state_publisher]: got segment wheel_d_link
+[robot_state_publisher-2] [INFO] [1792027981.566825072] [robot_state_publisher]: got segment wheel_e_link
+[robot_state_publisher-2] [INFO] [1792027981.566835033] [robot_state_publisher]: got segment wheel_f_link
+[robot_state_publisher-2] [WARN] [1792027981.660555361] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027981.723870529] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027981.756958352] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027981.773256716] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027981.782884377] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027981.787975356] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027981.834788336] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027981.852901931] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027981.892183020] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027981.904133692] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027981.917662934] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027981.928677905] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027981.945745682] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[create-3] [INFO] [1792027981.994100441] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[robot_state_publisher-2] [WARN] [1792027982.023131271] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.042524574] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.077339818] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.115730045] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[create-3] [INFO] [1792027982.120464247] [ros_gz_sim]: Requested creation of entity.
+[create-3] [INFO] [1792027982.120517608] [ros_gz_sim]: OK creation of entity.
+[robot_state_publisher-2] [WARN] [1792027982.132183142] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.170942509] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.212448464] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.223302645] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.236228096] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.250179753] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.265999213] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.273990630] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.297146461] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.305714552] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.318615595] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.325863406] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.332947039] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.339542422] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.353811590] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[INFO] [create-3]: process has finished cleanly [pid 160267]
+[robot_state_publisher-2] [WARN] [1792027982.366319283] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.383535155] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.408451394] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.416849006] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.470079475] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.489813953] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.514145085] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.522174595] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.548350777] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-2] [WARN] [1792027982.553668010] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[motor_driver-8] Traceback (most recent call last):
+[motor_driver-8]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver", line 33, in <module>
+[motor_driver-8]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'motor_driver')())
+[motor_driver-8]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver", line 25, in importlib_load_entry_point
+[motor_driver-8]     return next(matches).load()
+[motor_driver-8]   File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 171, in load
+[motor_driver-8]     module = import_module(match.group('module'))
+[motor_driver-8]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[motor_driver-8]     return _bootstrap._gcd_import(name[level:], package, level)
+[motor_driver-8]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[motor_driver-8]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[motor_driver-8]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[motor_driver-8]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[motor_driver-8]   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[motor_driver-8]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[motor_driver-8]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/motor_driver.py", line 17, in <module>
+[motor_driver-8]     from geometry_msgs.msg import Twist
+[motor_driver-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/geometry_msgs/msg/__init__.py", line 15, in <module>
+[INFO] [clamp_torque-9]: sending signal 'SIGINT' to process[clamp_torque-9]
+[ERROR] [motor_driver-8]: process has died [pid 160279, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/motor_driver --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_346le1ol'].
+[INFO] [encoder_sim-7]: sending signal 'SIGINT' to process[encoder_sim-7]
+[INFO] [pipe_markers-6]: sending signal 'SIGINT' to process[pipe_markers-6]
+[ERROR] [clamp_torque-9]: process has died [pid 160281, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/clamp_torque --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_r4_esa22'].
+[INFO] [odometry-5]: sending signal 'SIGINT' to process[odometry-5]
+[INFO] [parameter_bridge-4]: sending signal 'SIGINT' to process[parameter_bridge-4]
+[ERROR] [encoder_sim-7]: process has died [pid 160275, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_745ax8wn'].
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[ERROR] [pipe_markers-6]: process has died [pid 160273, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers --ros-args --params-file /tmp/launch_params_eot66fug --params-file /tmp/launch_params__uh32aoc'].
+[ERROR] [odometry-5]: process has died [pid 160271, exit code -2, cmd '/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/odometry --ros-args --params-file /home/aisl/Capstone_sim/install/pipe_robot_sim/share/pipe_robot_sim/models/pirate_v/robot.yaml --params-file /tmp/launch_params_xuf_ctk6 --params-file /tmp/launch_params_irdfehv1'].
+[INFO] [ign-1]: sending signal 'SIGINT' to process[ign-1]
+[motor_driver-8]     from geometry_msgs.msg._pose2_d import Pose2D  # noqa: F401
+[motor_driver-8]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[motor_driver-8]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[motor_driver-8]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[motor_driver-8]   File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+[motor_driver-8]   File "<frozen importlib._bootstrap_external>", line 1016, in get_code
+[motor_driver-8]   File "<frozen importlib._bootstrap_external>", line 1074, in get_data
+[motor_driver-8] KeyboardInterrupt
+[robot_state_publisher-2] [INFO] [1792027982.559415866] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[odometry-5] Traceback (most recent call last):
+[odometry-5]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/odometry", line 33, in <module>
+[odometry-5]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'odometry')())
+[odometry-5]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/odometry", line 25, in importlib_load_entry_point
+[odometry-5]     return next(matches).load()
+[odometry-5]   File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 171, in load
+[odometry-5]     module = import_module(match.group('module'))
+[odometry-5]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[odometry-5]     return _bootstrap._gcd_import(name[level:], package, level)
+[odometry-5]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[odometry-5]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[odometry-5]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[odometry-5]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[odometry-5]   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[odometry-5]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[odometry-5]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/odometry.py", line 21, in <module>
+[odometry-5]     from tf2_ros import TransformBroadcaster
+[odometry-5]   File "/opt/ros/humble/lib/python3.10/site-packages/tf2_ros/__init__.py", line 40, in <module>
+[odometry-5]     from .buffer_client import *
+[odometry-5]   File "/opt/ros/humble/lib/python3.10/site-packages/tf2_ros/buffer_client.py", line 54, in <module>
+[odometry-5]     from tf2_msgs.action import LookupTransform
+[odometry-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/tf2_msgs/action/__init__.py", line 1, in <module>
+[odometry-5]     from tf2_msgs.action._lookup_transform import LookupTransform  # noqa: F401
+[odometry-5] KeyboardInterrupt
+[clamp_torque-9] Traceback (most recent call last):
+[clamp_torque-9]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/clamp_torque", line 33, in <module>
+[clamp_torque-9]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'clamp_torque')())
+[clamp_torque-9]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/clamp_torque.py", line 28, in main
+[clamp_torque-9]     rclpy.spin(ClampTorque())
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[clamp_torque-9]     executor.spin_once()
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[clamp_torque-9]     self._spin_once_impl(timeout_sec)
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+[clamp_torque-9]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+[clamp_torque-9]     return next(self._cb_iter)
+[clamp_torque-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+[clamp_torque-9]     wait_set.wait(timeout_nsec)
+[clamp_torque-9] KeyboardInterrupt
+[parameter_bridge-4] [INFO] [1792027982.562759286] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[encoder_sim-7] Traceback (most recent call last):
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 175, in __init__
+[encoder_sim-7]     self.__node = _rclpy.Node(
+[encoder_sim-7] rclpy._rclpy_pybind11.RCLError: error creating node: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/guard_condition.c:67
+[encoder_sim-7] 
+[encoder_sim-7] During handling of the above exception, another exception occurred:
+[encoder_sim-7] 
+[encoder_sim-7] Traceback (most recent call last):
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/encoder_sim", line 33, in <module>
+[encoder_sim-7]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'encoder_sim')())
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/encoder_sim.py", line 40, in main
+[encoder_sim-7]     rclpy.spin(EncoderSim())
+[encoder_sim-7]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/encoder_sim.py", line 16, in __init__
+[encoder_sim-7]     super().__init__('encoder_sim')
+[encoder_sim-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 175, in __init__
+[encoder_sim-7]     self.__node = _rclpy.Node(
+[encoder_sim-7] KeyboardInterrupt
+[pipe_markers-6] Traceback (most recent call last):
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers", line 33, in <module>
+[pipe_markers-6]     sys.exit(load_entry_point('pipe-robot-sim', 'console_scripts', 'pipe_markers')())
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/install/pipe_robot_sim/lib/pipe_robot_sim/pipe_markers", line 25, in importlib_load_entry_point
+[pipe_markers-6]     return next(matches).load()
+[pipe_markers-6]   File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 171, in load
+[pipe_markers-6]     module = import_module(match.group('module'))
+[pipe_markers-6]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[pipe_markers-6]     return _bootstrap._gcd_import(name[level:], package, level)
+[pipe_markers-6]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[pipe_markers-6]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[pipe_markers-6]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[pipe_markers-6]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[pipe_markers-6]   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[pipe_markers-6]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[pipe_markers-6]   File "/home/aisl/Capstone_sim/build/pipe_robot_sim/pipe_robot_sim/pipe_markers.py", line 4, in <module>
+[pipe_markers-6]     from rclpy.node import Node
+[pipe_markers-6] KeyboardInterrupt
+[parameter_bridge-4] [INFO] [1792027982.664575745] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-2] [INFO] [1792027982.669400921] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [parameter_bridge-4]: process has finished cleanly [pid 160269]
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 160265]
+[ERROR] [ign-1]: process[ign-1] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [ign-1]: sending signal 'SIGTERM' to process[ign-1]
+[INFO] [ign-1]: process has finished cleanly [pid 160263]
